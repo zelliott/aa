@@ -1,0 +1,74 @@
+.header {
+  background: #fff;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  .logo {
+
+    img {
+      height: 20px;
+      float: left;
+    }
+
+    .logo-text {
+      color: #222;
+      font-size: 12px;
+      font-weight: 700;
+      float: left;
+      height: 60px;
+      line-height: 60px;
+      margin-left: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  .tab {
+    color: #999;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-right: 40px;
+
+    &:hover {
+      color: #666;
+    }
+  }
+
+  .tab-on {
+    color: #222;
+    font-weight: 600;
+
+    &:hover {
+      color: #222;
+    }
+  }
+
+  .user-info,
+  .logout {
+    color: #999;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-right: 40px;
+
+    span {
+      font-size: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  .logout {
+    color: #222;
+
+    &:hover {
+      color: palette(Red, $shade: 400);
+    }
+  }
+}

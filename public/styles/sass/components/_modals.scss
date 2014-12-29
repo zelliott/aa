@@ -1,5 +1,5 @@
 .modal {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.98);
   @include border-radius(4px);
   @include box-shadow(0px, 0px, 6px, rgba(0, 0, 0, 0.1));
   display: none;
@@ -11,11 +11,24 @@
   transform: translate(-50%, -50%);
   z-index: 1000;
 
+  .modal-section {
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: top;
+  }
+
   .modal-title {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 20px;
     vertical-align: top;
+  }
+
+  .modal-subtitle {
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
   }
 
   .modal-body {
@@ -28,11 +41,109 @@
     text-align: right;
 
     button {
-      
+      margin-left: 20px;
     }
   }
 }
 
+.schedule-modal {
+  width: 460px;
+
+  .table-year,
+  .table-month {
+    color: #999;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: #222;
+    }
+
+    span {
+      font-size: 8px;
+      margin: 0 10px;
+    }
+  }
+
+  table {
+
+    tr {
+
+      td {
+        @include border-radius(100px);
+        cursor: pointer;
+        font-size: 13px;
+        height: 20px;
+        width: 20px;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+
+        &:hover {
+          background: #222;
+          color: #fff;
+        }
+      }
+
+      .gray {
+        color: #bbb;
+
+        &:hover {
+          background: #eee;
+          color: #999;
+        }
+      }
+    }
+
+    .table-header {
+      color: #999;
+      font-weight: 600;
+    }
+  }
+
+  .modal-set-time,
+  .modal-choose-interviewer {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    color: #999;
+    padding: 5px 0;
+    margin-bottom: 40px;
+    width: 100px;
+
+    &:hover {
+      color: #999;
+      border-bottom-color: #bbb;
+    }
+
+    &:focus {
+      color: palette(Blue, $shade: 600);
+      border-bottom-color: palette(Blue, $shade: 600);
+    }
+  }
+
+  .modal-set-time-arrow,
+  .modal-choose-interviewer-arrow {
+    color: #999;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+
+    &:hover {
+      color: #222;
+    }
+  }
+
+  .modal-choose-interviewer {
+    width: 140px;
+    margin-bottom: 0px;
+  }
+
+}
+
+
+.advance-modal,
 .delete-modal {
   width: 240px;
 }

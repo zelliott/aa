@@ -68,7 +68,7 @@ block body
               .card-pos Engineer
             .upcoming-event
               div
-                span.schedule Schedule
+                span.schedule.open-modal(data='schedule-modal') Schedule
           .card
             .card-contact
               .card-name Jimmy Hendricks
@@ -91,6 +91,10 @@ block body
               div
                 span.date In 5 days
                 span.date-subtext Jan. 20th
+                
+      //- Offer
+      .pure-u-1-5
+          .column.onsite-column
 
   script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
   script(type='text/javascript', src='/js/global.js')

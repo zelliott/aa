@@ -1,3 +1,93 @@
+.schedule-modal.modal
+  .modal-title Schedule Interview
+  .modal-section
+    .modal-subtitle Date
+    .modal-calendar
+      //-.table-year
+        span.oi(data-glyph='caret-left')
+        | 2014
+        span.oi(data-glyph='caret-right')
+      .table-month 
+        span.oi(data-glyph='caret-left')
+        | December
+        span.oi(data-glyph='caret-right')
+      table
+        tr.table-header
+          td S
+          td M
+          td T
+          td W
+          td T
+          td F
+          td S
+        tr
+          td.gray 27
+          td.gray 28
+          td.gray 29
+          td.gray 30
+          td.gray 31
+          td 1
+          td 2
+        tr
+          td 3
+          td 4
+          td 5
+          td 6
+          td 7
+          td 8
+          td 9
+        tr 
+          td 10
+          td 11
+          td 12
+          td 13
+          td 14
+          td 15
+          td 16
+        tr
+          td 17
+          td 18
+          td 19
+          td 20
+          td 21
+          td 22
+          td 23
+        tr
+          td 24
+          td 25
+          td 26
+          td 27
+          td 28
+          td 29
+          td 30
+        tr
+          td 31
+          td.gray 1
+          td.gray 2
+          td.gray 3
+          td.gray 4
+          td.gray 5
+          td.gray 6
+  .modal-section
+    .modal-subtitle Time
+    input.modal-set-time(value='10:00 PM')
+    span.oi.modal-set-time-arrow(data-glyph='caret-bottom')
+      
+    .modal-subtitle Interviewer
+    input.modal-choose-interviewer(value='Daft Punk')
+    span.oi.modal-choose-interviewer-arrow(data-glyph='caret-bottom')
+        
+  .modal-actions
+    button.btn-flat.btn-blue Cancel
+    button.btn-flat.btn-blue Schedule
+
+.advance-modal.modal
+  .modal-title Are you sure?
+  .modal-body Advancing this candidate will move them to the next stage.
+  .modal-actions
+    button.btn-flat.btn-blue Cancel
+    button.btn-flat.btn-blue Advance
+
 .delete-modal.modal
   .modal-title Are you sure?
   .modal-body Deleting this candidate will remove him/her from the interview process.

@@ -16,7 +16,9 @@
 @import "components/inputs";
 @import "components/textareas";
 @import "components/modals";
+@import "components/tooltips";
 
 // Views
+@import "views/header";
 @import "views/candidate";
 @import "views/process";
