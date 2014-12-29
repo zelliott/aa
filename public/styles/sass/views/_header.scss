@@ -46,8 +46,13 @@
     margin-left: 40px;
 
     span {
+      float: left;
       font-size: 10px;
-      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: #666;
     }
   }
 

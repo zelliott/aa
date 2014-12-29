@@ -772,6 +772,7 @@ button {
     background: #1976D2;
     color: #E3F2FD; }
 
+input:focus,
 input[type=text]:focus,
 input[type=number]:focus {
   outline: none; }
@@ -858,6 +859,9 @@ textarea:focus {
   .schedule-modal table .table-header {
     color: #999;
     font-weight: 600; }
+    .schedule-modal table .table-header td:hover {
+      background: transparent;
+      color: #999; }
   .schedule-modal .modal-set-time,
   .schedule-modal .modal-choose-interviewer {
     border: none;
@@ -1015,8 +1019,12 @@ input[type=range]::-webkit-slider-thumb {
     margin-left: 40px; }
     .header .user-info span,
     .header .logout span {
+      float: left;
       font-size: 10px;
-      margin-left: 5px; }
+      margin-right: 5px; }
+    .header .user-info:hover,
+    .header .logout:hover {
+      color: #666; }
   .header .logout:hover {
     color: #EF5350; }
 
@@ -1054,12 +1062,25 @@ input[type=range]::-webkit-slider-thumb {
         color: #777;
         cursor: pointer;
         font-size: 14px;
-        margin-bottom: 5px; }
+        margin-bottom: 10px; }
         .candidate-bkg .container .candidate .left-info .left-block .block-link:hover {
           color: #ccc; }
         .candidate-bkg .container .candidate .left-info .left-block .block-link span.oi {
-          font-size: 10px;
-          margin-right: 5px; }
+          font-size: 12px;
+          margin-right: 10px; }
+      .candidate-bkg .container .candidate .left-info .left-block .block-doc-link {
+        color: #777;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        text-align: center;
+        padding: 0 20px;
+        vertical-align: top; }
+        .candidate-bkg .container .candidate .left-info .left-block .block-doc-link span.oi {
+          display: block;
+          margin-bottom: 5px; }
+        .candidate-bkg .container .candidate .left-info .left-block .block-doc-link:hover {
+          color: #ccc; }
   .candidate-bkg .container .candidate .content .content-header {
     border-bottom: 1px solid #ccc;
     color: #999;
