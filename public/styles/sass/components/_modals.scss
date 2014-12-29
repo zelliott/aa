@@ -1,0 +1,65 @@
+.modal {
+  background: rgba(255, 255, 255, 0.95);
+  @include border-radius(4px);
+  @include box-shadow(0px, 0px, 6px, rgba(0, 0, 0, 0.1));
+  display: none;
+  margin: 0 auto;
+  padding: 20px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  .modal-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    vertical-align: top;
+  }
+
+  .modal-body {
+    color: #999;
+    font-size: 14px;
+  }
+
+  .modal-actions {
+    margin-top: 20px;
+    text-align: right;
+
+    button {
+      
+    }
+  }
+}
+
+.delete-modal {
+  width: 240px;
+}
+
+.contact-modal {
+  height: auto;
+  width: 240px;
+
+  .contact-name {
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+
+  .contact-phone {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    float: left;
+  }
+
+  .contact-email {
+    color: palette(Blue, $shade: 600);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    float: right;
+  }
+}

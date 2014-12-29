@@ -1,0 +1,287 @@
+.process-bkg {
+  background: #eee;
+
+  .container {
+
+    .header {
+      background: #fff;
+      height: 60px;
+      line-height: 60px;
+      padding: 0 20px;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+
+      .logo {
+
+        img {
+          height: 20px;
+          float: left;
+        }
+
+        .logo-text {
+          color: #222;
+          font-size: 12px;
+          font-weight: 700;
+          float: left;
+          height: 60px;
+          line-height: 60px;
+          margin-left: 20px;
+          text-transform: uppercase;
+        }
+      }
+
+      .tab {
+        color: #999;
+        display: block;
+        float: left;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-right: 40px;
+
+        &:hover {
+          color: #666;
+        }
+      }
+
+      .tab-on {
+        color: #222;
+
+        &:hover {
+          color: #222;
+        }
+      }
+
+      .user-info,
+      .logout {
+        color: #999;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-right: 40px;
+
+        span {
+          font-size: 10px;
+          margin-left: 5px;
+        }
+      }
+
+      .logout {
+        color: #222;
+
+        &:hover {
+          color: palette(Red, $shade: 400);
+        }
+      }
+    }
+
+    .process {
+      padding-top: 60px;
+
+      .column-header {
+        background: palette(Blue, $shade: 700);
+        border-right: 1px solid palette(Blue, $shade: 800);
+        height: 20px;
+        line-height: 20px;
+        padding: 10px 20px;
+        top: 61px;
+
+        a {
+          color: palette(Blue, $shade: 100);
+          font-size: 12px;
+          font-weight: 500;
+
+          &:hover {
+            border-bottom: 1px dotted palette(Blue, $shade: 50);
+            color: palette(Blue, $shade: 50);
+          }
+
+          b {
+            font-weight: 600;
+            margin-left: 5px;
+          }
+        }
+
+        .column-header-filter {
+          color: palette(Blue, $shade: 200);
+          cursor: pointer;
+          display: inline-block;
+          font-size: 12px;
+          float: right;
+
+          &:hover {
+            color: palette(Blue, $shade: 50);
+          }
+
+          span {
+            font-size: 8px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .column {
+        border-right: 1px solid #ddd;
+        height: 100vh;
+
+        .card {
+          background: #eee;
+          border-bottom: 1px solid #ddd;
+          cursor: default;
+          font-size: 12px;
+          padding: 10px 20px;
+
+          &:hover {
+            background: #ddd;
+          }
+
+          .card-contact {
+            display: inline-block;
+
+            > div {
+              margin-bottom: 3px;
+            }
+
+            .card-name {
+              color: #222;
+            }
+
+            .card-pos {
+              color: #999;
+            }
+
+            .card-email {
+              color: palette(Blue, $shade: 500);
+            }
+          }
+        }
+
+        .on {
+          background: #ddd !important;
+          // border-left: 5px solid palette(Blue, $shade: 700);
+          position: relative;
+
+          .on-append {
+            display: inline-block;
+            height: 59px;
+            left: 100px;
+            position: absolute;
+            width: 300px;
+            vertical-align: top;
+            top: 0;
+            z-index: 10;
+
+            > a,
+            > span {
+              background: #fff;
+              @include border-radius(100px);
+              @include box-shadow(1px, 2px, 2px, rgba(0, 0, 0, 0.1));
+              cursor: pointer;
+              font-size: 12px;
+              line-height: 59px;
+              margin-left: 20px;
+              padding: 7px 10px;
+
+              &:hover {
+                background: #222;
+                @include box-shadow(1px, 2px, 2px, rgba(0, 0, 0, 0.3));
+                color: #eee;
+              }
+            }
+          }
+        }
+
+        .add-card {
+          background: palette(Teal, $shade: 400);
+          @include border-radius(4px);
+          color: palette(Teal, $shade: 100);
+          cursor: pointer;
+          font-size: 11px;
+          padding: 7px 20px;
+          margin: 10px;
+          text-align: center;
+
+          &:hover {
+            background: palette(Teal, $shade: 500);
+            color: palette(Teal, $shade: 50);
+          }
+
+          span {
+            font-size: 10px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .phone-column,
+      .onsite-column {
+
+        .upcoming-event {
+          display: inline-block;
+          height: 38px;
+          float: right;
+          width: 100px;
+          vertical-align: top;
+
+          span.oi {
+            color: #222;
+            display: inline-block;
+            height: 38px;
+            line-height: 38px;
+            margin-right: 15px;
+            vertical-align: top;
+          }
+
+          > div {
+            display: inline-block;
+            height: 35px;
+
+            > span {
+              display: block;
+
+            }
+
+            .date {
+              color: palette(Red, $shade: 300);
+              margin-bottom: 3px;
+            }
+
+            .date-subtext {
+              color: #555;
+            }
+
+            .date-ago {
+              color: #555;
+              margin-bottom: 3px;
+            }
+
+            .date-ago-follow-up {
+              color: palette(Blue, $shade: 600);
+              cursor: pointer;
+              display: inline-block;
+
+              &:hover {
+                border-bottom: 1px dotted palette(Blue, $shade: 500);
+                color: palette(Blue, $shade: 700);
+              }
+            }
+
+            .schedule {
+              color: palette(Blue, $shade: 600);
+              cursor: pointer;
+              margin: 10px 0 0 30px;
+              vertical-align: top;
+
+              &:hover {
+                border-bottom: 1px dotted palette(Blue, $shade: 500);
+                color: palette(Blue, $shade: 700);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

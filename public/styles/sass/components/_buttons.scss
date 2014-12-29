@@ -1,0 +1,26 @@
+button {
+  background: none;
+  @include border-radius(4px);
+  border: none;
+  font-size: 14px;
+  padding: 8px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-flat {
+}
+
+.btn-blue {
+  color: palette(Blue, $shade: 600);
+
+  &:hover {
+    color: palette(Blue, $shade: 800);
+  }
+
+  &:focus {
+
+  }
+}
