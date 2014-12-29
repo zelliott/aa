@@ -1,0 +1,55 @@
+extend layout
+
+block body
+  body.candidate-bkg
+    
+    include ./includes/modals.jade
+    
+    .container
+      include ./includes/header.jade
+      
+      .candidate.pure-g
+        .pure-u-1-5
+          .left-info
+            .photo
+            .name Zack Elliott
+            .left-block
+              .block-title Contact Info
+              .block-link (215) 921-1272
+              .block-link zelliottm@gmail.com
+              //-.addr
+                | 8106 SE 79th Street
+                | Mercer Island, WA
+            .left-block
+              .block-title Documents / Links
+              .block-link
+                span.oi(data-glyph='document')
+                | Resume
+              .block-link
+                span.oi(data-glyph='globe')
+                | Portfolio
+          
+        .pure-u-3-5
+          .content
+          
+        .pure-u-1-5
+          .right-info
+            .right-block
+              .block-title Applied For
+              .block-body
+                span Engineering Internship
+                span Engineering Department
+            .right-block
+              .block-title Recruitment Process
+              .flow
+                .event
+                  .date Jan. 15th
+                  .title Applied for Engineering
+                .path
+                .event
+                  .date Feb. 2nd
+                  .title Phone Interview with Nick Cage
+                .path
+                .event.future-event
+                  .date Mar. 11th
+                  .title Onsite Interview

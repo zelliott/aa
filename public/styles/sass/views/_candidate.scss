@@ -1,0 +1,128 @@
+.candidate-bkg {
+  background: #eee;
+
+  .container {
+
+    .candidate {
+      //padding-top: $header-height;
+
+      .left-info,
+      .right-info {
+        height: 100vh;
+        padding: 20px;
+      }
+
+      .left-info {
+        background: #222;
+        text-align: center;
+
+        .photo {
+          background: #fff;
+          @include border-radius(1000px);
+          height: 80px;
+          margin: 0 auto 20px auto;
+          width: 80px;
+        }
+
+        .name {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .left-block {
+          text-align: left;
+          margin-top: 40px;
+
+          .block-title {
+            color: #999;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+
+          .block-link {
+            color: #777;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 5px;
+
+            &:hover {
+              color: #ccc;
+            }
+
+            span.oi {
+              font-size: 10px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+
+      .content {
+        padding: 20px;
+
+
+      }
+
+      .right-info {
+        background: #eee;
+        border-left: 1px solid #ddd;
+
+        .right-block {
+          margin-bottom: 40px;
+
+          .block-title {
+            color: #777;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+
+          .block-body {
+            color: #999;
+            font-size: 12px;
+
+            span {
+              display: block;
+              margin-bottom: 5px;
+            }
+          }
+
+          .flow {
+            .event {
+              color: #999;
+
+              .date {
+                display: inline-block;
+                font-size: 12px;
+                text-align: center;
+                vertical-align: top;
+                width: 10%;
+              }
+
+              .title {
+                display: inline-block;
+                font-size: 12px;
+                margin-left: 10%;
+                width: 80%;
+                vertical-align: middle;
+
+              }
+            }
+            .path {
+              height: 30px;
+              border-left: 2px solid #ddd;
+              margin: 10px;
+            }
+
+            .future-event {
+              color: palette(Teal, $shade: 400);
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -24,9 +24,15 @@ app.use(stylus.middleware(
 ))
 app.use(express.static(__dirname + '/public'))
 
+app.get('/candidate', function (req, res) {
+  res.render('candidate',
+{ title : 'Candidate View' }
+)
+})
+
 app.get('/', function (req, res) {
   res.render('process',
-{ title : 'Process View' }
+{ title : 'Recruiting Overview' }
   )
 })
 

@@ -1,29 +1,16 @@
 .header {
   background: #fff;
-  height: 60px;
-  line-height: 60px;
+  height: $header-height;
+  line-height: $header-height;
   padding: 0 20px;
-  position: fixed;
-  width: 100%;
   z-index: 100;
 
   .logo {
-
-    img {
-      height: 20px;
-      float: left;
-    }
-
-    .logo-text {
-      color: #222;
-      font-size: 12px;
-      font-weight: 700;
-      float: left;
-      height: 60px;
-      line-height: 60px;
-      margin-left: 20px;
-      text-transform: uppercase;
-    }
+    height: 20px;
+    transform: translate(-50%, 0);
+    position: absolute;
+    left: 50%;
+    top: 20px;
   }
 
   .tab {
@@ -32,7 +19,7 @@
     float: left;
     font-size: 13px;
     font-weight: 500;
-    line-height: 60px;
+    line-height: $header-height;
     margin-right: 40px;
 
     &:hover {
@@ -55,8 +42,8 @@
     cursor: pointer;
     font-size: 13px;
     font-weight: 500;
-    line-height: 60px;
-    margin-right: 40px;
+    line-height: $header-height;
+    margin-left: 40px;
 
     span {
       font-size: 10px;
@@ -65,7 +52,6 @@
   }
 
   .logout {
-    color: #222;
 
     &:hover {
       color: palette(Red, $shade: 400);
