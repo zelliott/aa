@@ -94,3 +94,32 @@
   .modal-actions
     button.btn-flat.btn-blue Cancel
     button.btn-flat.btn-blue Delete
+    
+.evaluate-modal.modal
+  .modal-title Evaluate Candidate
+  .modal-section
+    .modal-subtitle Quick Rankings
+    div
+      //-input(type='range' min='0' value='0' max='10' step='1')
+      span.modal-label Personality
+      input(type='number' min='0' max='10' placeholder='10')
+    div
+      //-input(type='range' min='0' value='0' max='10' step='1')
+      span.modal-label Teamwork
+      input(type='number' min='0' max='10' placeholder='10')
+    div
+      //-input(type='range' min='0' value='0' max='10' step='1')
+      span.modal-label Motivation
+      input(type='number' min='0' max='10' placeholder='10')
+    div
+      //-input(type='range' min='0' value='0' max='10' step='1')
+      span.modal-label Culture
+      input(type='number' min='0' max='10' placeholder='10')
+  .modal-section.right-section
+    .modal-subtitle Other Notes
+    textarea(rows='1') Additional feedback on the interview
+        
+  .modal-actions
+    button.btn-flat.btn-blue Cancel
+    button.btn-flat.btn-blue Save evaluation 
+      

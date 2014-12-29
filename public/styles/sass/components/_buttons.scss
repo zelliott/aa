@@ -10,17 +10,21 @@ button {
   }
 }
 
-.btn-flat {
-}
-
-.btn-blue {
+.btn-flat.btn-blue {
   color: palette(Blue, $shade: 600);
 
   &:hover {
+    background: palette(Blue, $shade: 50);
     color: palette(Blue, $shade: 800);
   }
+}
 
-  &:focus {
+.btn-bkg.btn-blue {
+  background: palette(Blue, $shade: 600);
+  color: palette(Blue, $shade: 50);
 
+  &:hover {
+    background: palette(Blue, $shade: 700);
+    color: palette(Blue, $shade: 50);
   }
 }

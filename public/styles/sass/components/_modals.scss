@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 20px;
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -25,7 +25,7 @@
   }
 
   .modal-subtitle {
-    color: #444;
+    color: #555;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -172,5 +172,73 @@
     font-size: 16px;
     font-weight: 400;
     float: right;
+  }
+}
+
+.evaluate-modal {
+  width: 600px;
+
+  .modal-section {
+    margin-bottom: 40px;
+    width: 100%;
+
+    .modal-subtitle {
+      display: block;
+      text-align: left;
+    }
+
+    > div {
+      display: inline-block;
+      text-align: center;
+      width: 25%;
+
+      span.modal-label {
+        color: #999;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      input[type=number] {
+        border: none;
+        border-bottom: 2px solid #ddd;
+        color: #999;
+        padding: 5px 0;
+        text-align: center;
+
+        &:hover {
+          color: #999;
+          border-bottom-color: #bbb;
+        }
+
+        &:focus {
+          color: palette(Blue, $shade: 600);
+          border-bottom-color: palette(Blue, $shade: 600);
+        }
+      }
+    }
+
+    textarea {
+      border: none;
+      border-bottom: 2px solid #ddd;
+      color: #999;
+      font-size: 14px;
+      padding-bottom: 10px;
+      width: 100%;
+
+      &:hover {
+        color: #999;
+        border-bottom-color: #bbb;
+      }
+
+      &:focus {
+        color: palette(Blue, $shade: 600);
+        border-bottom-color: palette(Blue, $shade: 600);
+      }
+    }
+  }
+
+  .right-section {
+    margin: 0;
   }
 }

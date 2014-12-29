@@ -4,7 +4,6 @@
   .container {
 
     .candidate {
-      //padding-top: $header-height;
 
       .left-info,
       .right-info {
@@ -60,14 +59,43 @@
       }
 
       .content {
-        padding: 20px;
+
+        .content-header {
+          border-bottom: 1px solid #ccc;
+          color: #999;
+          font-size: 14px;
+          height: 60px;
+          line-height: 60px;
+          padding: 0 20px;
+
+
+          > div {
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 40px;
+
+            &:hover {
+              color: #777;
+            }
+          }
+
+          .tab-on {
+            border-bottom: 1px solid palette(Blue, $shade: 600);
+            color: palette(Blue, $shade: 600);
+            font-weight: 600;
+
+            &:hover {
+              color: palette(Blue, $shade: 600);
+            }
+          }
+        }
 
 
       }
 
       .right-info {
-        background: #eee;
-        border-left: 1px solid #ddd;
+        background: #e6e6e6;
+        // border-left: 1px solid #ddd;
 
         .right-block {
           margin-bottom: 40px;
@@ -87,6 +115,10 @@
               display: block;
               margin-bottom: 5px;
             }
+          }
+
+          .block-button {
+            width: 100%;
           }
 
           .flow {
@@ -112,7 +144,7 @@
             }
             .path {
               height: 30px;
-              border-left: 2px solid #ddd;
+              border-left: 1px solid #ccc;
               margin: 10px;
             }
 

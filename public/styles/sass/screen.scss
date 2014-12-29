@@ -17,8 +17,10 @@
 @import "components/textareas";
 @import "components/modals";
 @import "components/tooltips";
+@import "components/range";
 
 // Views
 @import "views/header";
 @import "views/candidate";
 @import "views/process";
+@import "views/today";

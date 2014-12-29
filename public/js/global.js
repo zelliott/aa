@@ -23,3 +23,12 @@ $('.card').click(function(e) {
     $(this).addClass('on');
   }
 });
+
+$('.open-modal').click(function() {
+  var data = $(this).attr('data');
+  $(data).show();
+});
+
+$('.modal-actions button').click(function() {
+  $(this).parent().parent().hide();
+});

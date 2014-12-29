@@ -1,0 +1,62 @@
+.today-bkg {
+  background: #eee;
+
+  .container {
+
+    .today {
+
+      .week-header {
+        background: #ddd;
+        border-bottom: 2px solid #ddd;
+        height: 50px;
+
+        .week-name {
+          color: #777;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 50px;
+          padding: 0 20px;
+          text-align: center;
+          vertical-align: top;
+        }
+
+        .week-flow {
+          display: inline-block;
+
+          > div {
+            border-left: 1px solid #ddd;
+            color: #999;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 12px;
+            padding: 9px 30px;
+            text-align: center;
+            width: 40px;
+
+            &:hover {
+              color: #666;
+            }
+          }
+        }
+      }
+
+      .right-info {
+        background: #e6e6e6;
+        height: 100vh;
+
+        > div {
+          background: transparent;
+          // border-bottom: 1px solid #ddd;
+          color: #777;
+          height: 50px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 50px;
+          padding: 0 20px;
+
+        }
+      }
+    }
+  }
+}
