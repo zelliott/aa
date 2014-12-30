@@ -5,8 +5,6 @@
 
     .today {
 
-
-
       .right-info {
         background: #e6e6e6;
         height: 100vh;
@@ -32,14 +30,6 @@
         }
 
         .right-block {
-          margin-bottom: 40px;
-
-          .block-title {
-            color: #777;
-            font-weight: 600;
-            font-size: 14px;
-            margin-bottom: 20px;
-          }
 
           .flow {
             .event {
@@ -79,6 +69,7 @@
 
             .future-event {
               color: palette(Teal, $shade: 300);
+              font-weight: 500;
             }
           }
         }

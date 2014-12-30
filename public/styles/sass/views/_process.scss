@@ -11,7 +11,6 @@
         height: 20px;
         line-height: 20px;
         padding: 10px 20px;
-        top: 61px;
 
         a {
           color: palette(Blue, $shade: 100);
@@ -44,6 +43,27 @@
             font-size: 8px;
             margin-left: 5px;
           }
+        }
+      }
+
+      .search-header {
+        background: palette(Blue, $shade: 800);
+        height: 40px;
+        padding: 0 !important;
+
+        span {
+          color: palette(Blue, $shade: 300);
+          font-size: 12px;
+          line-height: 40px;
+          padding: 0 20px;
+        }
+
+        input {
+          background: transparent;
+          border: none;
+          color: palette(Blue, $shade: 300);
+          font-size: 13px;
+          height: 40px;
         }
       }
 
@@ -205,6 +225,14 @@
             }
           }
         }
+      }
+
+      .search-column {
+        color: #999;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 20px;
+        text-align: center;
       }
     }
   }
