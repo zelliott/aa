@@ -728,6 +728,18 @@
 .oi-gray {
   color: #999 !important; }
 
+.oi-blue-circle {
+  background: #1E88E5;
+  color: #BBDEFB; }
+
+.oi-orange-circle {
+  background: #FB8C00;
+  color: #FFE0B2; }
+
+.oi-green-circle {
+  background: #00897B;
+  color: #B2DFDB; }
+
 body,
 input,
 textarea,
@@ -1147,7 +1159,7 @@ input[type=range]::-webkit-slider-thumb {
       .candidate-bkg .container .today .content .content-header > div b,
       .today-bkg .container .candidate .content .content-header > div b,
       .today-bkg .container .today .content .content-header > div b {
-        background: #1E88E5;
+        background: #999;
         border-radius: 10px;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -1563,6 +1575,79 @@ input[type=range]::-webkit-slider-thumb {
 
 .today-bkg {
   background: #eee; }
+  .today-bkg .container .today .content .content-tasks .task {
+    border-bottom: 1px dotted #ccc;
+    padding: 20px; }
+    .today-bkg .container .today .content .content-tasks .task .task-type {
+      display: inline-block;
+      width: 140px;
+      vertical-align: top; }
+      .today-bkg .container .today .content .content-tasks .task .task-type .task-icon {
+        display: inline-block;
+        vertical-align: top; }
+        .today-bkg .container .today .content .content-tasks .task .task-type .task-icon span {
+          border-radius: 100px;
+          -moz-border-radius: 100px;
+          -webkit-border-radius: 100px;
+          background-clip: padding-box;
+          display: inline-block;
+          padding: 10px 13px; }
+      .today-bkg .container .today .content .content-tasks .task .task-type .task-time {
+        display: inline-block;
+        margin-left: 20px;
+        vertical-align: top; }
+        .today-bkg .container .today .content .content-tasks .task .task-type .task-time span.absolute {
+          color: #444;
+          display: block;
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 3px;
+          text-align: center; }
+        .today-bkg .container .today .content .content-tasks .task .task-type .task-time span.relative {
+          color: #EF5350;
+          display: block;
+          font-size: 14px;
+          text-align: center; }
+    .today-bkg .container .today .content .content-tasks .task .task-arrow {
+      color: #999;
+      display: inline-block;
+      height: 42px;
+      padding: 0 40px;
+      text-align: center;
+      width: 100px; }
+      .today-bkg .container .today .content .content-tasks .task .task-arrow span.oi {
+        line-height: 42px; }
+    .today-bkg .container .today .content .content-tasks .task .task-body {
+      display: inline-block;
+      margin-right: 200px;
+      vertical-align: top; }
+      .today-bkg .container .today .content .content-tasks .task .task-body .body-icon {
+        background: #bbb;
+        border-radius: 100px;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        background-clip: padding-box;
+        display: inline-block;
+        height: 42px;
+        width: 42px;
+        vertical-align: top; }
+      .today-bkg .container .today .content .content-tasks .task .task-body .body-info {
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 20px;
+        vertical-align: top; }
+        .today-bkg .container .today .content .content-tasks .task .task-body .body-info span {
+          display: block; }
+        .today-bkg .container .today .content .content-tasks .task .task-body .body-info .title {
+          font-weight: 600;
+          margin-bottom: 5px; }
+        .today-bkg .container .today .content .content-tasks .task .task-body .body-info .info {
+          color: #999; }
+    .today-bkg .container .today .content .content-tasks .task .task-action {
+      display: inline-block;
+      vertical-align: top; }
+      .today-bkg .container .today .content .content-tasks .task .task-action button {
+        padding: 10px 40px; }
   .today-bkg .container .today .right-info {
     background: #e6e6e6;
     height: 100vh;

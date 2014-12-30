@@ -5,6 +5,113 @@
 
     .today {
 
+      .content {
+
+        .content-tasks {
+
+          .task {
+            border-bottom: 1px dotted #ccc;
+            padding: 20px;
+
+            .task-type {
+              display: inline-block;
+              width: 140px;
+              vertical-align: top;
+
+              .task-icon {
+                display: inline-block;
+                vertical-align: top;
+
+                span {
+                  @include border-radius(100px);
+                  display: inline-block;
+                  padding: 10px 13px;
+                }
+              }
+
+              .task-time {
+                display: inline-block;
+                margin-left: 20px;
+                vertical-align: top;
+
+                span.absolute {
+                  color: #444;
+                  display: block;
+                  font-size: 14px;
+                  font-weight: 600;
+                  margin-bottom: 3px;
+                  text-align: center;
+                }
+
+                span.relative {
+                  color: palette(Red, $shade: 400);
+                  display: block;
+                  font-size: 14px;
+                  text-align: center;
+                }
+              }
+            }
+
+            .task-arrow {
+              color: #999;
+              display: inline-block;
+              height: 42px;
+              padding: 0 40px;
+              text-align: center;
+              width: 100px;
+
+              span.oi {
+                line-height: 42px;
+              }
+            }
+
+            .task-body {
+              display: inline-block;
+              margin-right: 200px;
+              vertical-align: top;
+
+              .body-icon {
+                background: #bbb;
+                @include border-radius(100px);
+                display: inline-block;
+                height: 42px;
+                width: 42px;
+                vertical-align: top;
+              }
+
+              .body-info {
+                display: inline-block;
+                font-size: 14px;
+                margin-left: 20px;
+                vertical-align: top;
+
+                span {
+                  display: block;
+                }
+
+                .title {
+                  font-weight: 600;
+                  margin-bottom: 5px;
+                }
+
+                .info {
+                  color: #999;
+                }
+              }
+            }
+
+            .task-action {
+              display: inline-block;
+              vertical-align: top;
+
+              button {
+                padding: 10px 40px;
+              }
+            }
+          }
+        }
+      }
+
       .right-info {
         background: #e6e6e6;
         height: 100vh;
