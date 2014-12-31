@@ -159,6 +159,39 @@
         }
       }
 
+      .candidates-column {
+
+        .additional-info {
+          display: inline-block;
+          height: 38px;
+          float: right;
+          width: 100px;
+          vertical-align: top;
+
+          span.open-modal {
+            color: palette(Blue, $shade: 600);
+            cursor: pointer;
+            line-height: 38px;
+
+            &:hover {
+              border-bottom: 1px dotted palette(Blue, $shade: 500);
+              color: palette(Blue, $shade: 700);
+            }
+          }
+
+          span.oi {
+            color: #999;
+            line-height: 38px;
+            margin-right: 15px;
+          }
+
+          span.reviewed {
+            color: #999;
+            line-height: 38px;
+          }
+        }
+      }
+
       .phone-column,
       .onsite-column {
 

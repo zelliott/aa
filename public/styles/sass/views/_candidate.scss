@@ -172,6 +172,10 @@
                   span.interview-time {
                     float: right;
                   }
+
+                  span.interviewer {
+                    margin-right: 20px;
+                  }
                 }
 
                 > .content-body {
@@ -185,6 +189,7 @@
                 margin-top: 40px;
 
                 .comment {
+                  margin-bottom: 20px;
 
                   > .author {
                     display: inline-block;
@@ -221,6 +226,10 @@
                       color: #999;
                       font-size: 12px;
                       padding: 10px 20px 0 20px;
+
+                      span.comment-time {
+                        float: right;
+                      }
                     }
 
                     > .content-body {
@@ -232,6 +241,7 @@
                 }
 
                 .comment-path {
+                  display: none;
                   height: 20px;
                   border-left: 1px solid #ccc;
                   margin: 20px;
@@ -298,7 +308,7 @@
             }
 
             .future-event {
-              color: palette(Teal, $shade: 400);
+              color: palette(Teal, $shade: 500);
               font-weight: 600;
             }
           }

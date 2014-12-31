@@ -19,6 +19,24 @@ button {
   }
 }
 
+.btn-flat.btn-red {
+  color: palette(Red, $shade: 600);
+
+  &:hover {
+    background: palette(Red, $shade: 50);
+    color: palette(Red, $shade: 800);
+  }
+}
+
+.btn-flat.btn-gray {
+  color: #999;
+
+  &:hover {
+    background: #eee;
+    color: #666;
+  }
+}
+
 .btn-bkg.btn-blue {
   background: palette(Blue, $shade: 600);
   color: palette(Blue, $shade: 50);

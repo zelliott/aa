@@ -777,6 +777,18 @@ button {
     background: #E3F2FD;
     color: #1565C0; }
 
+.btn-flat.btn-red {
+  color: #E53935; }
+  .btn-flat.btn-red:hover {
+    background: #FFEBEE;
+    color: #C62828; }
+
+.btn-flat.btn-gray {
+  color: #999; }
+  .btn-flat.btn-gray:hover {
+    background: #eee;
+    color: #666; }
+
 .btn-bkg.btn-blue {
   background: #1E88E5;
   color: #E3F2FD; }
@@ -1001,11 +1013,13 @@ input[type=range]::-webkit-slider-thumb {
   padding: 0 20px;
   z-index: 100; }
   .header .logo {
-    height: 20px;
+    height: 60px;
     transform: translate(-50%, 0);
     position: absolute;
     left: 50%;
-    top: 20px; }
+    top: 3px; }
+    .header .logo img {
+      height: 20px; }
   .header .tab {
     color: #999;
     display: block;
@@ -1017,7 +1031,9 @@ input[type=range]::-webkit-slider-thumb {
     .header .tab:hover {
       color: #666; }
   .header .tab-on {
+    border-top: 2px solid #222;
     color: #222;
+    line-height: 58px;
     font-weight: 600; }
     .header .tab-on:hover {
       color: #222; }
@@ -1251,6 +1267,11 @@ input[type=range]::-webkit-slider-thumb {
           .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time,
           .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time {
             float: right; }
+          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.interviewer,
+          .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.interviewer,
+          .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.interviewer,
+          .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.interviewer {
+            margin-right: 20px; }
         .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-body,
         .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-body,
         .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-body,
@@ -1263,66 +1284,77 @@ input[type=range]::-webkit-slider-thumb {
       .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments,
       .today-bkg .container .today .content .content-posts .content-post > .content .post-comments {
         margin-top: 40px; }
-        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author,
-        .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author,
-        .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author,
-        .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author {
-          display: inline-block;
-          vertical-align: top;
-          width: 15%; }
-          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author div,
-          .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author div,
-          .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author div,
-          .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author div {
-            background: #ccc;
-            border-radius: 100px;
-            -moz-border-radius: 100px;
-            -webkit-border-radius: 100px;
+        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment,
+        .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment,
+        .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment,
+        .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment {
+          margin-bottom: 20px; }
+          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author,
+          .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author,
+          .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author,
+          .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author {
+            display: inline-block;
+            vertical-align: top;
+            width: 15%; }
+            .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author div,
+            .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author div,
+            .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author div,
+            .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author div {
+              background: #ccc;
+              border-radius: 100px;
+              -moz-border-radius: 100px;
+              -webkit-border-radius: 100px;
+              background-clip: padding-box;
+              height: 40px;
+              margin: 0 0 10px 0;
+              width: 40px; }
+            .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author span,
+            .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author span,
+            .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author span,
+            .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author span {
+              color: #777;
+              display: block;
+              font-size: 12px;
+              font-weight: 600;
+              width: 40px;
+              text-align: center; }
+          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content,
+          .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content,
+          .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content,
+          .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content {
+            background: #fff;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
             background-clip: padding-box;
-            height: 40px;
-            margin: 0 0 10px 0;
-            width: 40px; }
-          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author span,
-          .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author span,
-          .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author span,
-          .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author span {
-            color: #777;
-            display: block;
-            font-size: 12px;
-            font-weight: 600;
-            width: 40px;
-            text-align: center; }
-        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content,
-        .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content,
-        .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content,
-        .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content {
-          background: #fff;
-          border-radius: 4px;
-          -moz-border-radius: 4px;
-          -webkit-border-radius: 4px;
-          background-clip: padding-box;
-          display: inline-block;
-          overflow: hidden;
-          vertical-align: top;
-          width: 85%; }
-          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar,
-          .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar,
-          .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar,
-          .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar {
-            color: #999;
-            font-size: 12px;
-            padding: 10px 20px 0 20px; }
-          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body,
-          .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body,
-          .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body,
-          .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body {
-            color: #555;
-            font-size: 12px;
-            padding: 10px 20px; }
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+            width: 85%; }
+            .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar,
+            .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar,
+            .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar,
+            .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar {
+              color: #999;
+              font-size: 12px;
+              padding: 10px 20px 0 20px; }
+              .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar span.comment-time,
+              .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar span.comment-time,
+              .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar span.comment-time,
+              .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar span.comment-time {
+                float: right; }
+            .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body,
+            .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body,
+            .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body,
+            .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body {
+              color: #555;
+              font-size: 12px;
+              padding: 10px 20px; }
         .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment-path,
         .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment-path,
         .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment-path,
         .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment-path {
+          display: none;
           height: 20px;
           border-left: 1px solid #ccc;
           margin: 20px; }
@@ -1395,7 +1427,7 @@ input[type=range]::-webkit-slider-thumb {
       .candidate-bkg .container .today .right-info .right-block .flow .future-event,
       .today-bkg .container .candidate .right-info .right-block .flow .future-event,
       .today-bkg .container .today .right-info .right-block .flow .future-event {
-        color: #26A69A;
+        color: #009688;
         font-weight: 600; }
 
 .process-bkg {
@@ -1514,6 +1546,26 @@ input[type=range]::-webkit-slider-thumb {
       .process-bkg .container .process .column .add-card span {
         font-size: 10px;
         margin-right: 5px; }
+  .process-bkg .container .process .candidates-column .additional-info {
+    display: inline-block;
+    height: 38px;
+    float: right;
+    width: 100px;
+    vertical-align: top; }
+    .process-bkg .container .process .candidates-column .additional-info span.open-modal {
+      color: #1E88E5;
+      cursor: pointer;
+      line-height: 38px; }
+      .process-bkg .container .process .candidates-column .additional-info span.open-modal:hover {
+        border-bottom: 1px dotted #2196F3;
+        color: #1976D2; }
+    .process-bkg .container .process .candidates-column .additional-info span.oi {
+      color: #999;
+      line-height: 38px;
+      margin-right: 15px; }
+    .process-bkg .container .process .candidates-column .additional-info span.reviewed {
+      color: #999;
+      line-height: 38px; }
   .process-bkg .container .process .phone-column .upcoming-event,
   .process-bkg .container .process .onsite-column .upcoming-event {
     display: inline-block;
@@ -1576,8 +1628,10 @@ input[type=range]::-webkit-slider-thumb {
 .today-bkg {
   background: #eee; }
   .today-bkg .container .today .content .content-tasks .task {
-    border-bottom: 1px dotted #ccc;
+    border-bottom: 1px solid #ddd;
     padding: 20px; }
+    .today-bkg .container .today .content .content-tasks .task:hover {
+      background: #ddd; }
     .today-bkg .container .today .content .content-tasks .task .task-type {
       display: inline-block;
       width: 140px;
@@ -1619,7 +1673,7 @@ input[type=range]::-webkit-slider-thumb {
         line-height: 42px; }
     .today-bkg .container .today .content .content-tasks .task .task-body {
       display: inline-block;
-      margin-right: 200px;
+      width: 350px;
       vertical-align: top; }
       .today-bkg .container .today .content .content-tasks .task .task-body .body-icon {
         background: #bbb;
@@ -1639,8 +1693,12 @@ input[type=range]::-webkit-slider-thumb {
         .today-bkg .container .today .content .content-tasks .task .task-body .body-info span {
           display: block; }
         .today-bkg .container .today .content .content-tasks .task .task-body .body-info .title {
+          color: #444;
+          display: block;
           font-weight: 600;
           margin-bottom: 5px; }
+          .today-bkg .container .today .content .content-tasks .task .task-body .body-info .title:hover {
+            color: #222; }
         .today-bkg .container .today .content .content-tasks .task .task-body .body-info .info {
           color: #999; }
     .today-bkg .container .today .content .content-tasks .task .task-action {
@@ -1662,7 +1720,7 @@ input[type=range]::-webkit-slider-thumb {
       .today-bkg .container .today .right-info .today-block span.time {
         font-weight: 600; }
       .today-bkg .container .today .right-info .today-block span.date {
-        color: #777; }
+        color: #999; }
     .today-bkg .container .today .right-info .right-block .flow .event {
       color: #999; }
       .today-bkg .container .today .right-info .right-block .flow .event .date {
@@ -1678,16 +1736,16 @@ input[type=range]::-webkit-slider-thumb {
         width: 80%;
         vertical-align: middle; }
     .today-bkg .container .today .right-info .right-block .flow .path {
-      height: 10px;
+      height: 30px;
       border-left: 1px solid #ccc;
       margin: 10px; }
     .today-bkg .container .today .right-info .right-block .flow .future-path {
-      border-left-color: #80CBC4; }
+      border-left-color: #4DB6AC; }
     .today-bkg .container .today .right-info .right-block .flow .current-event {
-      color: #26A69A;
+      color: #009688;
       font-weight: 600; }
     .today-bkg .container .today .right-info .right-block .flow .future-event {
-      color: #4DB6AC;
+      color: #26A69A;
       font-weight: 500; }
 
 /*# sourceMappingURL=screen.css.map */

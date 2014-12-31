@@ -6,11 +6,15 @@
   z-index: 100;
 
   .logo {
-    height: 20px;
+    height: 60px;
     transform: translate(-50%, 0);
     position: absolute;
     left: 50%;
-    top: 20px;
+    top: 3px;
+
+    img {
+      height: 20px;
+    }
   }
 
   .tab {
@@ -28,7 +32,9 @@
   }
 
   .tab-on {
+    border-top: 2px solid #222;
     color: #222;
+    line-height: 58px;
     font-weight: 600;
 
     &:hover {

@@ -39,14 +39,22 @@ block body
             .card-contact
               .card-name Zack Elliott
               .card-pos Designer
+            .additional-info
+              span.open-modal(data='.resume-modal') Review resume
           .card
             .card-contact
               .card-name Zack Elliott
               .card-pos QA Engineer
+            .additional-info
+              span.oi(data-glyph='check')
+              span.reviewed Reviewed
           .card
             .card-contact
               .card-name Zack Elliott
               .card-pos Services
+            .additional-info
+              span.oi(data-glyph='check')
+              span.reviewed Reviewed
 
           .add-card.open-modal(data='.add-modal')
             span.oi(data-glyph='plus')
@@ -70,7 +78,7 @@ block body
               .card-pos Engineer
             .upcoming-event
               div
-                span.schedule.open-modal(data='schedule-modal') Schedule
+                span.schedule.open-modal(data='.schedule-modal') Schedule
           .card
             .card-contact
               .card-name Jimmy Hendricks
@@ -79,7 +87,7 @@ block body
               span.oi(data-glyph='check')
               div
                 span.date-ago 5 days ago
-                span.date-ago-follow-up Follow up
+                span.date-ago-follow-up.open-modal(data='.follow-up-modal') Follow up
                 
       //- Onsite
       .pure-u-1-5

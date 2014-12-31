@@ -1,9 +1,10 @@
 .header
-  a.tab.tab-on Recruiting Overview
-  a.tab Today's Tasks
-  a.tab Activity Feed
+  a.tab.tab_1(href='/') Recruiting Overview
+  a.tab.tab_2(href='/today') Your Tasks
+  a.tab.tab_3(href='/activity') Activity Feed
 
-  img.logo(src='assets/images/addepar.png')
+  a.logo(href='/')
+    img(src='assets/images/addepar.png')
 
   .pull-right.logout
     | Logout

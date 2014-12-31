@@ -10,8 +10,12 @@
         .content-tasks {
 
           .task {
-            border-bottom: 1px dotted #ccc;
+            border-bottom: 1px solid #ddd;
             padding: 20px;
+
+            &:hover {
+              background: #ddd;
+            }
 
             .task-type {
               display: inline-block;
@@ -67,7 +71,7 @@
 
             .task-body {
               display: inline-block;
-              margin-right: 200px;
+              width: 350px;
               vertical-align: top;
 
               .body-icon {
@@ -90,8 +94,14 @@
                 }
 
                 .title {
+                  color: #444;
+                  display: block;
                   font-weight: 600;
                   margin-bottom: 5px;
+
+                  &:hover {
+                    color: #222;
+                  }
                 }
 
                 .info {
@@ -132,7 +142,7 @@
           }
 
           span.date {
-            color: #777;
+            color: #999;
           }
         }
 
@@ -160,22 +170,22 @@
               }
             }
             .path {
-              height: 10px;
+              height: 30px;
               border-left: 1px solid #ccc;
               margin: 10px;
             }
 
             .future-path {
-              border-left-color: palette(Teal, $shade: 200);
+              border-left-color: palette(Teal, $shade: 300);
             }
 
             .current-event {
-              color: palette(Teal, $shade: 400);
+              color: palette(Teal, $shade: 500);
               font-weight: 600;
             }
 
             .future-event {
-              color: palette(Teal, $shade: 300);
+              color: palette(Teal, $shade: 400);
               font-weight: 500;
             }
           }

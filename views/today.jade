@@ -16,12 +16,12 @@ block body
                 | All Tasks
                 b 5
               div.tab-on Interviews
-              div Reviewing Candidates
+              div Completed
             .content-tasks
               .task
                 .task-type
                   .task-icon
-                    span.oi.oi-orange-circle(data-glyph='headphones')
+                    span.oi.oi-blue-circle(data-glyph='headphones')
                   .task-time
                     span.absolute 9:00 AM
                     span.relative In 5 min
@@ -30,8 +30,8 @@ block body
                 .task-body
                   .body-icon
                   .body-info
-                    span.title Zack Elliott
-                    span.info (215) 921-1272
+                    a.title(href='/candidate') Zack Elliott
+                    span.info Engineer
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
               .task
@@ -40,14 +40,14 @@ block body
                     span.oi.oi-green-circle(data-glyph='home')
                   .task-time
                     span.absolute 10:00 AM
-                    span.relative In 5 min
+                    span.relative In 1 hr
                 .task-arrow
                   span.oi(data-glyph='arrow-right')
                 .task-body
                   .body-icon
                   .body-info
-                    span.title Bob Francis
-                    span.info (215) 921-1272
+                    a.title(href='/candidate') Bob Francis
+                    span.info Engineer
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
           
@@ -67,10 +67,10 @@ block body
                   .date 11:00 AM
                   .title Phone Interview with Nick Cage
                 .path
-                .event.current-event
+                .event
                   .date 3:00 PM
                   .title Onsite Interview with Jessica Martin
-                .path.future-path
-                .event.future-event
+                .path
+                .event.current-event
                   .date 4:30 PM
                   .title Onsite Interview with Bob Barley
