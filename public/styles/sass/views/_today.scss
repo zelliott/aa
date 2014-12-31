@@ -101,7 +101,7 @@
                   margin-bottom: 4px;
 
                   &:hover {
-                    border-bottom-color: #666;
+                    //- border-bottom-color: #666;
                     color: #222;
                   }
                 }
@@ -140,7 +140,6 @@
               float: right;
               display: inline-block;
               line-height: 43px;
-              margin-right: 20px;
               vertical-align: top;
 
               span.oi {
@@ -159,12 +158,14 @@
               vertical-align: top;
 
               button {
-                margin-left: 20px;
+                margin-left: 40px;
                 padding: 10px 40px;
               }
 
               .btn-delete {
                 color: #999;
+                padding-left: 0;
+                padding-right: 0;
 
                 span.oi {
                   float: left;

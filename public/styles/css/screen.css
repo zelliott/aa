@@ -1803,7 +1803,6 @@ input[type=range]::-webkit-slider-thumb {
           font-weight: 600;
           margin-bottom: 4px; }
           .today-bkg .container .today .content .content-tasks .task .task-body .body-info .title:hover {
-            border-bottom-color: #666;
             color: #222; }
         .today-bkg .container .today .content .content-tasks .task .task-body .body-info .info {
           color: #999; }
@@ -1832,7 +1831,6 @@ input[type=range]::-webkit-slider-thumb {
       float: right;
       display: inline-block;
       line-height: 43px;
-      margin-right: 20px;
       vertical-align: top; }
       .today-bkg .container .today .content .content-tasks .task .more-eval span.oi {
         font-size: 10px;
@@ -1844,10 +1842,12 @@ input[type=range]::-webkit-slider-thumb {
       float: right;
       vertical-align: top; }
       .today-bkg .container .today .content .content-tasks .task .task-action button {
-        margin-left: 20px;
+        margin-left: 40px;
         padding: 10px 40px; }
       .today-bkg .container .today .content .content-tasks .task .task-action .btn-delete {
-        color: #999; }
+        color: #999;
+        padding-left: 0;
+        padding-right: 0; }
         .today-bkg .container .today .content .content-tasks .task .task-action .btn-delete span.oi {
           float: left;
           font-size: 10px;
