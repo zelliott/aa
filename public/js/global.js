@@ -38,9 +38,11 @@ $('.modal-actions button').click(function() {
   $(this).parent().parent().hide();
 });
 
+
+// Top header tab highlighting
 $(document).ready(function () {
   var path = window.location.pathname;
-  if(path == '/today') {
+  if(path == '/today/interviewer' || path == '/today/hr') {
     $('.tab_2').addClass('tab-on');
   } else if(path == '/') {
     $('.tab_1').addClass('tab-on');
@@ -48,3 +50,21 @@ $(document).ready(function () {
     $('.tab_3').addClass('tab-on');
   }
 })
+
+$('.content-header .tab-a').click(function (e) {
+  $('.view-a').show();
+  $('.view-b').hide();
+
+  $('.tab-b').removeClass('tab-on');
+  $('.tab-a b').show();
+  $('.tab-a').addClass('tab-on');
+});
+
+$('.content-header .tab-b').click(function (e) {
+  $('.view-b').show();
+  $('.view-a').hide();
+
+  $('.tab-a').removeClass('tab-on');
+  $('.tab-a b').hide();
+  $('.tab-b').addClass('tab-on');
+});

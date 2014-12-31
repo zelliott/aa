@@ -46,3 +46,23 @@ button {
     color: palette(Blue, $shade: 50);
   }
 }
+
+.btn-bkg.btn-red {
+  background: palette(Red, $shade: 600);
+  color: palette(Red, $shade: 50);
+
+  &:hover {
+    background: palette(Red, $shade: 700);
+    color: palette(Red, $shade: 50);
+  }
+}
+
+.btn-bkg.btn-green {
+  background: palette(Teal, $shade: 600);
+  color: palette(Teal, $shade: 50);
+
+  &:hover {
+    background: palette(Teal, $shade: 700);
+    color: palette(Teal, $shade: 50);
+  }
+}

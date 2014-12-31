@@ -71,7 +71,7 @@
 
             .task-body {
               display: inline-block;
-              width: 350px;
+              width: 200px;
               vertical-align: top;
 
               .body-icon {
@@ -94,12 +94,14 @@
                 }
 
                 .title {
+                  border-bottom: 1px dotted transparent;
                   color: #444;
                   display: block;
                   font-weight: 600;
-                  margin-bottom: 5px;
+                  margin-bottom: 4px;
 
                   &:hover {
+                    border-bottom-color: #666;
                     color: #222;
                   }
                 }
@@ -110,15 +112,81 @@
               }
             }
 
-            .task-action {
+            .task-eval {
               display: inline-block;
               vertical-align: top;
 
+              .eval {
+                display: inline-block;
+                margin-right: 40px;
+                vertical-align: top;
+
+                .eval-score {
+                  background: palette(Teal, $shade: 500);
+                  @include border-radius(100px);
+                  color: palette(Teal, $shade: 50);
+                  font-weight: 600;
+                  display: inline-block;
+                  padding: 10px 12px;
+                  vertical-align: top;
+                }
+              }
+            }
+
+            .more-eval {
+              color: palette(Blue, $shade: 600);
+              cursor: pointer;
+              font-size: 14px;
+              float: right;
+              display: inline-block;
+              line-height: 43px;
+              margin-right: 20px;
+              vertical-align: top;
+
+              span.oi {
+                font-size: 10px;
+                margin-right: 10px;
+              }
+
+              &:hover {
+                color: palette(Blue, $shade: 800);
+              }
+            }
+
+            .task-action {
+              display: inline-block;
+              float: right;
+              vertical-align: top;
+
               button {
+                margin-left: 20px;
                 padding: 10px 40px;
+              }
+
+              .btn-delete {
+                color: #999;
+
+                span.oi {
+                  float: left;
+                  font-size: 10px;
+                  margin-right: 10px;
+                  margin-top: 2px;
+                }
+
+                &:hover {
+                  color: palette(Red, $shade: 400);
+                }
               }
             }
           }
+        }
+
+        .view-a {
+          display: block;
+        }
+
+        .view-b {
+          display: none;
         }
       }
 

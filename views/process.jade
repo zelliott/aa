@@ -11,7 +11,7 @@ block body
     .process.pure-g
       .pure-u-1-5
         .column-header
-          a All Candidates
+          a New Candidates
             b 7
       .pure-u-1-5
         .column-header
@@ -40,21 +40,28 @@ block body
               .card-name Zack Elliott
               .card-pos Designer
             .additional-info
-              span.open-modal(data='.resume-modal') Review resume
+              span.oi(data-glyph='eye')
+              div
+                span.date-ago 5 days ago
+                span.date-ago-review.open-modal(data='.resume-modal') Review
           .card
             .card-contact
               .card-name Zack Elliott
               .card-pos QA Engineer
             .additional-info
-              span.oi(data-glyph='check')
-              span.reviewed Reviewed
+              span.oi(data-glyph='eye')
+              div
+                span.date-ago 5 days ago
+                span.date-ago-review.open-modal(data='.resume-modal') Review
           .card
             .card-contact
               .card-name Zack Elliott
               .card-pos Services
             .additional-info
-              span.oi(data-glyph='check')
-              span.reviewed Reviewed
+              span.oi(data-glyph='eye')
+              div
+                span.date-ago 5 days ago
+                span.date-ago-review.open-modal(data='.resume-modal') Review
 
           .add-card.open-modal(data='.add-modal')
             span.oi(data-glyph='plus')

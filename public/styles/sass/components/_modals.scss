@@ -190,12 +190,27 @@
     .modal-subtitle {
       display: block;
       text-align: left;
+
+      b {
+        background: #777;
+        @include border-radius(10px);
+        color: #fff;
+        float: left;
+        font-size: 10px;
+        padding: 2px 6px;
+        margin: 1px 10px 0 0;
+      }
     }
 
-    > div {
+    .phone-number {
+      color: palette(Blue, $shade: 600);
+      font-size: 20px;
+      margin-left: 30px;
+    }
+
+    .eval-num {
       display: inline-block;
-      text-align: center;
-      width: 25%;
+      margin: 0 30px;
 
       span.modal-label {
         color: #999;
@@ -229,7 +244,8 @@
       color: #999;
       font-size: 14px;
       padding-bottom: 10px;
-      width: 100%;
+      margin-left: 30px;
+      width: 560px;
 
       &:hover {
         color: #999;

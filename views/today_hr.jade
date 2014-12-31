@@ -12,51 +12,46 @@ block body
         .pure-u-4-5
           .content
             .content-header
-              div
-                | All Tasks
+              div.tab-on.tab-a
+                | New Candidates
                 b 5
-              div.tab-on Interviews
-              div Completed
-            .content-tasks
+              div.tab-b To Be Scheduled
+              div.header-action
+                span.oi(data-glyph='magnifying-glass')
+                input(type='text', placeholder='Search')
+            .content-tasks.view-a
               .task
-                .task-type
-                  .task-icon
-                    span.oi.oi-blue-circle(data-glyph='headphones')
-                  .task-time
-                    span.absolute 9:00 AM
-                    span.relative In 5 min
-                .task-arrow
-                  span.oi(data-glyph='arrow-right')
                 .task-body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Zack Elliott
-                    span.info Engineer
+                    span.info Applied for Engineer
                 .task-action
-                  button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
-              .task
-                .task-type
-                  .task-icon
-                    span.oi.oi-green-circle(data-glyph='home')
-                  .task-time
-                    span.absolute 10:00 AM
-                    span.relative In 1 hr
-                .task-arrow
-                  span.oi(data-glyph='arrow-right')
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
+                  //-button.btn-bkg.btn-blue.open-modal(data='.advance-modal')
+                    | Advance To Phone Stage
+                  //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
+                    span.oi(data-glyph='x')
+              .task    
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Bob Francis
-                    span.info Engineer
+                    a.title(href='/candidate') Zack Elliott
+                    span.info Applied for Engineer
                 .task-action
-                  button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
+                  //-button.btn-bkg.btn-blue.open-modal(data='.advance-modal')
+                    | Advance To Phone Stage
+                  //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
+                    span.oi(data-glyph='x')
+            .content-tasks.view-b 
           
         .pure-u-1-5
           .right-info
             .right-block.today-block
               span.time 3:00 PM PST 
               span.date Monday, January 5th
-            .right-block
+            //-.right-block
               .block-title Today
               .flow
                 .event
