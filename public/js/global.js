@@ -5,9 +5,11 @@ $('.card').click(function(e) {
   if($(e.target).is('.open-modal')) {
     var data = $(e.target).attr('data');
     $(data).show();
+    return false;
   } else if($(e.target).parent().is('.open-modal')) {
     var data = $(e.target).parent().attr('data');
     $(data).show();
+    return false;
   }
 
   if($(this).hasClass('on')) {
@@ -36,6 +38,10 @@ $('.open-modal').click(function() {
 
 $('.modal-actions button').click(function() {
   $(this).parent().parent().hide();
+});
+
+$('.candidate-actions button').click(function() {
+  $(this).parent().parent().parent().hide();
 });
 
 

@@ -12,21 +12,21 @@ block body
       .pure-u-1-5
         .column-header
           a New Candidates
-            b 7
+            b 3
       .pure-u-1-5
         .column-header
           a Phone Stage
-            b 5
-          .column-header-filter Scheduled
+            b 3
+          .column-header-filter All
             span.oi(data-glyph='caret-bottom')
       .pure-u-1-5
         .column-header
           a Onsite Stage
-            b 3
+            b 1
       .pure-u-1-5
         .column-header
           a Offer Made
-            b 1
+            b 0
       .pure-u-1-5
         .column-header.search-header
           span.oi(data-glyph='magnifying-glass')
@@ -37,31 +37,31 @@ block body
         .column.candidates-column
           .card
             .card-contact
-              .card-name Zack Elliott
-              .card-pos Designer
+              .card-name Luke Dunphy
+              .card-pos Advertising
             .additional-info
               span.oi(data-glyph='eye')
               div
-                span.date-ago 5 days ago
-                span.date-ago-review.open-modal(data='.resume-modal') Review
+                span.date-ago 1 week ago
+                span.date-ago-review.open-modal(data='.review-modal') Review
           .card
             .card-contact
-              .card-name Zack Elliott
-              .card-pos QA Engineer
+              .card-name Gloria Pritchett
+              .card-pos Engineer
             .additional-info
               span.oi(data-glyph='eye')
               div
-                span.date-ago 5 days ago
-                span.date-ago-review.open-modal(data='.resume-modal') Review
+                span.date-ago 3 days ago
+                span.date-ago-review.open-modal(data='.review-modal') Review
           .card
             .card-contact
-              .card-name Zack Elliott
-              .card-pos Services
+              .card-name Gob Bluth
+              .card-pos Management
             .additional-info
               span.oi(data-glyph='eye')
               div
-                span.date-ago 5 days ago
-                span.date-ago-review.open-modal(data='.resume-modal') Review
+                span.date-ago 2 days ago
+                span.date-ago-review.open-modal(data='.review-modal') Review
 
           .add-card.open-modal(data='.add-modal')
             span.oi(data-glyph='plus')
@@ -72,21 +72,30 @@ block body
         .column.phone-column
           .card
             .card-contact
-              .card-name Zack Elliott
+              .card-name Don Draper
+              .card-pos Engineer
+            .upcoming-event
+              span.oi(data-glyph='headphones')
+              div
+                span.date In 1 hour
+                span.date-subtext Jan. 20th
+          .card
+            .card-contact
+              .card-name Peggy Olson
               .card-pos Designer
             .upcoming-event
               span.oi(data-glyph='headphones')
               div
-                span.date In 5 days
+                span.date In 4 hours
                 span.date-subtext Jan. 20th
           .card
             .card-contact
-              .card-name Bob Dylan
+              .card-name Pete Campbell
               .card-pos Engineer
             .upcoming-event
               div
                 span.schedule.open-modal(data='.schedule-modal') Schedule
-          .card
+          //-.card
             .card-contact
               .card-name Jimmy Hendricks
               .card-pos Engineer
@@ -101,12 +110,12 @@ block body
         .column.onsite-column
           .card
             .card-contact
-              .card-name Zack Elliott
+              .card-name Lindsay Bluth
               .card-pos Designer
             .upcoming-event
               span.oi(data-glyph='home')
               div
-                span.date In 5 days
+                span.date In 2 hours
                 span.date-subtext Jan. 20th
                 
       //- Offer

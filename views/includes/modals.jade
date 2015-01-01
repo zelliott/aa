@@ -1,3 +1,36 @@
+.review-modal.modal
+  .modal-nav-bar
+    div
+      span.oi(data-glyph='chevron-left')
+      | Luke Dunphy
+    div.pull-right
+      | Gob Bluth
+      span.oi(data-glyph='chevron-right')
+  .modal-review-header
+    .candidate-info
+      .photo
+      .candidate-personal
+        span.name Gloria Pritchett
+        span.position Applied for Engineer
+    .candidate-actions
+      button.btn-flat.btn-gray 
+        span.oi.oi-l(data-glyph='x')
+        | Remove
+      button.btn-flat.btn-gray
+        span.oi.oi-l(data-glyph='eye')
+        | Mark as Reviewed
+      button.btn-bkg.btn-blue 
+        | Advance to Phone Stage
+        span.oi.oi-r(data-glyph='arrow-thick-right')
+  .modal-viewing
+    .modal-side-nav
+      img(src='../assets/images/document.png')
+      .img-title Resume
+    .modal-doc-view
+      img(src='../assets/images/document.png')
+    
+      
+
 .add-modal.modal
   .modal-title Add New Candidate
   .modal-section
@@ -79,11 +112,11 @@
           td.gray 6
   .modal-section
     .modal-subtitle Time
-    input.modal-set-time(value='10:00 PM')
+    input.modal-set-time(value='8:00 AM')
     span.oi.modal-set-time-arrow(data-glyph='caret-bottom')
       
     .modal-subtitle Interviewer
-    input.modal-choose-interviewer(value='Daft Punk')
+    input.modal-choose-interviewer(value='Michael Bluth')
     span.oi.modal-choose-interviewer-arrow(data-glyph='caret-bottom')
         
   .modal-actions
@@ -110,7 +143,7 @@
     .modal-subtitle 
       b 1
       | Call Candidate
-    span.phone-number (215) 921-1272
+    span.phone-number (445) 998-2230
   .modal-section
     .modal-subtitle 
       b 2
@@ -118,19 +151,19 @@
     .eval-num
       //-input(type='range' min='0' value='0' max='10' step='1')
       span.modal-label Personality
-      input(type='number' min='0' max='10' placeholder='10')
+      input(type='number' min='0' max='10')
     .eval-num
       //-input(type='range' min='0' value='0' max='10' step='1')
       span.modal-label Teamwork
-      input(type='number' min='0' max='10' placeholder='10')
+      input(type='number' min='0' max='10')
     .eval-num
       //-input(type='range' min='0' value='0' max='10' step='1')
       span.modal-label Motivation
-      input(type='number' min='0' max='10' placeholder='10')
+      input(type='number' min='0' max='10')
     .eval-num
       //-input(type='range' min='0' value='0' max='10' step='1')
       span.modal-label Culture
-      input(type='number' min='0' max='10' placeholder='10')
+      input(type='number' min='0' max='10')
   .modal-section.right-section
     textarea(rows='1') Additional feedback on the interview
         

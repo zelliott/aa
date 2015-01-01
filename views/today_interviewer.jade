@@ -25,14 +25,14 @@ block body
                   .task-icon
                     span.oi.oi-blue-circle(data-glyph='headphones')
                   .task-time
-                    span.absolute 9:00 AM
-                    span.relative In 5 min
+                    span.absolute 12:00 PM
+                    span.relative In 1 hour
                 .task-arrow
                   span.oi(data-glyph='arrow-right')
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Zack Elliott
+                    a.title(href='/candidate') Don Draper
                     span.info Engineer
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
@@ -41,30 +41,47 @@ block body
                   .task-icon
                     span.oi.oi-green-circle(data-glyph='home')
                   .task-time
-                    span.absolute 10:00 AM
-                    span.relative In 1 hr
+                    span.absolute 1:00 PM
+                    span.relative In 2 hours
                 .task-arrow
                   span.oi(data-glyph='arrow-right')
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Bob Francis
-                    span.info Engineer
+                    a.title(href='/candidate') Lindsay Bluth
+                    span.info Designer
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
+              .task
+                .task-type
+                  .task-icon
+                    span.oi.oi-blue-circle(data-glyph='headphones')
+                  .task-time
+                    span.absolute 3:00 PM
+                    span.relative In 4 hours
+                .task-arrow
+                  span.oi(data-glyph='arrow-right')
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Peggy Olson
+                    span.info Designer
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
+                            
             .content-tasks.view-b
               .task
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Zack Elliott
+                    a.title(href='/candidate') Don Draper
                     span.info Engineer
                 .task-eval
                   .eval
                     .eval-score 10
                   
                 .task-action
-                  button.btn-bkg.btn-blue.open-modal(data='.advance-modal') Make Offer
+                  button.btn-bkg.btn-blue.open-modal(data='.advance-modal') Advance to Onsite
                   button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
                     | Remove
@@ -75,23 +92,19 @@ block body
         .pure-u-1-5
           .right-info
             .right-block.today-block
-              span.time 3:00 PM PST 
-              span.date Monday, January 5th
+              span.time 11:00 AM PST 
+              span.date Monday, January 20th
             .right-block
               .block-title Today
               .flow
-                .event
-                  .date 9:00 AM
-                  .title Phone Interview with John Smith
+                .event.current-event
+                  .date 12:00 PM
+                  .title Phone Interview with Don Draper
                 .path
                 .event
-                  .date 11:00 AM
-                  .title Phone Interview with Nick Cage
+                  .date 1:00 PM
+                  .title Phone Interview with Lindsay Bluth
                 .path
                 .event
                   .date 3:00 PM
-                  .title Onsite Interview with Jessica Martin
-                .path
-                .event.current-event
-                  .date 4:30 PM
-                  .title Onsite Interview with Bob Barley
+                  .title Onsite Interview with Peggy Olson
