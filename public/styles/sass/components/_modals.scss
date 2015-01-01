@@ -271,6 +271,7 @@
 
   .modal-nav-bar {
     background: #444;
+    display: none;
     padding: 7px 20px;
 
     div {
@@ -372,6 +373,7 @@
       vertical-align: top;
 
       img {
+        @include box-shadow(0, 0, 5px, #444);
         height: 100px;
         width: 80px;
       }
@@ -391,6 +393,7 @@
       vertical-align: top;
 
       img {
+        @include box-shadow(0, 0, 5px, #444);
         height: 400px;
         width: 738px;
       }

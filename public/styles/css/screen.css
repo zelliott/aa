@@ -765,6 +765,16 @@ a {
   a:hover {
     text-decoration: none; }
 
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999; }
+
 button {
   background: none;
   border-radius: 4px;
@@ -1025,6 +1035,7 @@ textarea:focus {
   width: 900px; }
   .review-modal .modal-nav-bar {
     background: #444;
+    display: none;
     padding: 7px 20px; }
     .review-modal .modal-nav-bar div {
       color: #ccc;
@@ -1091,6 +1102,9 @@ textarea:focus {
       padding: 20px;
       vertical-align: top; }
       .review-modal .modal-viewing .modal-side-nav img {
+        -webkit-box-shadow: 0 0 5px #444;
+        -moz-box-shadow: 0 0 5px #444;
+        box-shadow: 0 0 5px #444;
         height: 100px;
         width: 80px; }
       .review-modal .modal-viewing .modal-side-nav .img-title {
@@ -1104,6 +1118,9 @@ textarea:focus {
       padding: 20px;
       vertical-align: top; }
       .review-modal .modal-viewing .modal-doc-view img {
+        -webkit-box-shadow: 0 0 5px #444;
+        -moz-box-shadow: 0 0 5px #444;
+        box-shadow: 0 0 5px #444;
         height: 400px;
         width: 738px; }
 
