@@ -66,21 +66,19 @@ $(document).ready(function () {
   }
 })
 
-$('.content-header .tab-a').click(function (e) {
+$('.tab-a').click(function (e) {
   $('.view-a').show();
   $('.view-b').hide();
-
+  $('.left-sub-tabs').show();
   $('.tab-b').removeClass('tab-on');
-  $('.tab-a b').show();
   $('.tab-a').addClass('tab-on');
 });
 
-$('.content-header .tab-b').click(function (e) {
+$('.tab-b').click(function (e) {
   $('.view-b').show();
   $('.view-a').hide();
-
+  $('.left-sub-tabs').hide();
   $('.tab-a').removeClass('tab-on');
-  $('.tab-a b').hide();
   $('.tab-b').addClass('tab-on');
 });
 

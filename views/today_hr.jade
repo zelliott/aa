@@ -10,16 +10,51 @@ block body
       include ./includes/header.jade
       
       .today.pure-g
-        .pure-u-4-5
+        .pure-u-1-5
+          .left-nav
+            .left-search
+              span.oi(data-glyph='magnifying-glass')
+              input(type='text', value='Search for a candidate')
+            .left-title Your Tasks
+            .left-tab.tab-on.tab-a
+              | Review Candidates
+              b 3
+            .left-tab.tab-b
+              | Schedule Interviews
+              b 0
+            .left-separator
+            .left-title Positions
+            .left-checkgroup
+              div
+                //-b &#x25a2;
+                span.oi.oi-l(data-glyph='task')
+                | Design
+              div
+                span.oi.oi-l(data-glyph='task')
+                | Engineering
+            .left-title Filters
+            .left-checkgroup
+              div
+                span.oi.oi-l(data-glyph='task')
+                | Resume
+              div
+                span.oi.oi-l(data-glyph='task')
+                | Cover Letter
+              div
+                span.oi.oi-l(data-glyph='task')
+                | Recommendation
+              
+        
+        .pure-u-3-5
           .content
             .content-header
-              div.tab-on.tab-a
+              //-div.tab-on.tab-a
                 | New Candidates
                 b 5
-              div.tab-b To Be Scheduled
-              div.header-action
+              //-div.tab-b To Be Scheduled
+              //-div.header-action
                 span.oi(data-glyph='magnifying-glass')
-                input(type='text', placeholder='Search')
+                input(type='text', value='Search')
             .content-tasks.view-a
               .task
                 .task-body
