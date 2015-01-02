@@ -1183,13 +1183,11 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     font-size: 13px;
     font-weight: 500;
-    line-height: 60px;
+    line-height: 59px;
     margin-left: 40px; }
     .header .user-info span,
     .header .logout span {
-      float: left;
-      font-size: 10px;
-      margin-right: 5px; }
+      font-size: 10px; }
     .header .user-info:hover,
     .header .logout:hover {
       color: #666; }
@@ -1348,28 +1346,23 @@ input[type=range]::-webkit-slider-thumb {
       .today-bkg .container .candidate .content .content-header .header-action span.oi,
       .today-bkg .container .today .content .content-header .header-action span.oi {
         cursor: pointer;
-        font-size: 16px; }
-        .candidate-bkg .container .candidate .content .content-header .header-action span.oi:hover,
-        .candidate-bkg .container .today .content .content-header .header-action span.oi:hover,
-        .today-bkg .container .candidate .content .content-header .header-action span.oi:hover,
-        .today-bkg .container .today .content .content-header .header-action span.oi:hover {
+        font-size: 10px; }
+      .candidate-bkg .container .candidate .content .content-header .header-action:hover,
+      .candidate-bkg .container .today .content .content-header .header-action:hover,
+      .today-bkg .container .candidate .content .content-header .header-action:hover,
+      .today-bkg .container .today .content .content-header .header-action:hover {
+        cursor: pointer; }
+        .candidate-bkg .container .candidate .content .content-header .header-action:hover:hover,
+        .candidate-bkg .container .today .content .content-header .header-action:hover:hover,
+        .today-bkg .container .candidate .content .content-header .header-action:hover:hover,
+        .today-bkg .container .today .content .content-header .header-action:hover:hover {
           color: #777; }
-      .candidate-bkg .container .candidate .content .content-header .header-action input,
-      .candidate-bkg .container .today .content .content-header .header-action input,
-      .today-bkg .container .candidate .content .content-header .header-action input,
-      .today-bkg .container .today .content .content-header .header-action input {
-        background: none;
-        border: none;
-        color: #999;
-        display: none;
-        font-size: 14px;
-        height: 60px;
-        width: 45px; }
-  .candidate-bkg .container .candidate .content .content-posts,
-  .candidate-bkg .container .today .content .content-posts,
-  .today-bkg .container .candidate .content .content-posts,
-  .today-bkg .container .today .content .content-posts {
-    padding: 60px; }
+  .candidate-bkg .container .candidate .content .content-posts .content-post,
+  .candidate-bkg .container .today .content .content-posts .content-post,
+  .today-bkg .container .candidate .content .content-posts .content-post,
+  .today-bkg .container .today .content .content-posts .content-post {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 40px; }
     .candidate-bkg .container .candidate .content .content-posts .content-post > .author,
     .candidate-bkg .container .today .content .content-posts .content-post > .author,
     .today-bkg .container .candidate .content .content-posts .content-post > .author,
@@ -1387,7 +1380,7 @@ input[type=range]::-webkit-slider-thumb {
         -webkit-border-radius: 100px;
         background-clip: padding-box;
         height: 40px;
-        margin: 0 0 10px 0;
+        margin: 0 auto 10px auto;
         width: 40px; }
       .candidate-bkg .container .candidate .content .content-posts .content-post > .author span,
       .candidate-bkg .container .today .content .content-posts .content-post > .author span,
@@ -1397,67 +1390,82 @@ input[type=range]::-webkit-slider-thumb {
         display: block;
         font-size: 12px;
         font-weight: 600;
-        width: 40px;
+        width: 42px;
         text-align: center; }
     .candidate-bkg .container .candidate .content .content-posts .content-post > .content,
     .candidate-bkg .container .today .content .content-posts .content-post > .content,
     .today-bkg .container .candidate .content .content-posts .content-post > .content,
     .today-bkg .container .today .content .content-posts .content-post > .content {
-      border-radius: 4px;
-      -moz-border-radius: 4px;
-      -webkit-border-radius: 4px;
-      background-clip: padding-box;
       display: inline-block;
-      overflow: hidden;
       vertical-align: top;
       width: 85%; }
-      .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main,
-      .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main,
-      .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main,
-      .today-bkg .container .today .content .content-posts .content-post > .content .content-main {
-        background: #fff; }
-        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar,
-        .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar,
-        .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar,
-        .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar {
-          background: transparent;
-          border-bottom: 1px solid #ddd;
+      .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar,
+      .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar,
+      .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar,
+      .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar {
+        background: transparent;
+        color: #999; }
+        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.oi,
+        .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.oi,
+        .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.oi,
+        .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.oi {
+          font-size: 10px; }
+        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time,
+        .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time,
+        .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time,
+        .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time {
+          float: right; }
+        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer,
+        .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer,
+        .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer,
+        .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer {
+          display: inline-block;
+          font-size: 14px;
+          vertical-align: top; }
+          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer .name,
+          .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer .name,
+          .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer .name,
+          .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer .name {
+            color: #444;
+            font-weight: 600;
+            margin-bottom: 5px; }
+          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer .position,
+          .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer .position,
+          .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer .position,
+          .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interviewer .position {
+            color: #999; }
+        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info,
+        .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info,
+        .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info,
+        .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info {
           color: #999;
-          font-size: 12px;
-          padding: 10px 20px; }
-          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.oi,
-          .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.oi,
-          .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.oi,
-          .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.oi {
-            font-size: 10px;
-            margin-right: 10px; }
-          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time,
-          .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time,
-          .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time,
-          .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.interview-time {
-            float: right; }
-          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.interviewer,
-          .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.interviewer,
-          .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar span.interviewer,
-          .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar span.interviewer {
-            margin-right: 20px; }
-        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-body,
-        .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-body,
-        .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-body,
-        .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-body {
-          color: #555;
-          font-size: 12px;
-          padding: 20px; }
+          float: right;
+          font-size: 12px; }
+          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info .type,
+          .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info .type,
+          .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info .type,
+          .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info .type {
+            margin-bottom: 5px; }
+      .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-body,
+      .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-body,
+      .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-body,
+      .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-body {
+        color: #555;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 20px 0 0 0; }
       .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments,
       .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments,
       .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments,
       .today-bkg .container .today .content .content-posts .content-post > .content .post-comments {
-        margin-top: 40px; }
+        background: #e6e6e6;
+        margin-top: 20px; }
         .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment,
         .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment,
         .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment,
         .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment {
-          margin-bottom: 20px; }
+          padding: 20px;
+          border-top: 1px solid #ddd; }
           .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author,
           .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .author,
           .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .author,
@@ -1491,13 +1499,7 @@ input[type=range]::-webkit-slider-thumb {
           .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content,
           .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content,
           .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content {
-            background: #fff;
-            border-radius: 4px;
-            -moz-border-radius: 4px;
-            -webkit-border-radius: 4px;
-            background-clip: padding-box;
             display: inline-block;
-            overflow: hidden;
             vertical-align: top;
             width: 85%; }
             .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar,
@@ -1505,20 +1507,39 @@ input[type=range]::-webkit-slider-thumb {
             .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar,
             .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar {
               color: #999;
-              font-size: 12px;
-              padding: 10px 20px 0 20px; }
-              .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar span.comment-time,
-              .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar span.comment-time,
-              .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar span.comment-time,
-              .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar span.comment-time {
+              font-size: 12px; }
+              .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter,
+              .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter,
+              .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter,
+              .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter {
+                display: inline-block;
+                font-size: 13px;
+                vertical-align: top; }
+                .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter .name,
+                .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter .name,
+                .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter .name,
+                .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter .name {
+                  color: #444;
+                  font-weight: 600;
+                  margin-bottom: 5px; }
+                .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter .position,
+                .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter .position,
+                .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter .position,
+                .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .commenter .position {
+                  color: #999; }
+              .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .comment-time,
+              .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .comment-time,
+              .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .comment-time,
+              .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-top-bar .comment-time {
                 float: right; }
             .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body,
             .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body,
             .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body,
             .today-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment > .content > .content-body {
               color: #555;
-              font-size: 12px;
-              padding: 10px 20px; }
+              font-size: 13px;
+              line-height: 20px;
+              padding: 20px 0 0 0; }
         .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment-path,
         .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments .comment-path,
         .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments .comment-path,

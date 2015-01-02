@@ -44,25 +44,28 @@ block body
                 .content
                   .content-main
                     .content-top-bar
-                      span.interviewer
-                        span.oi(data-glyph='person')
-                        | Michael Bluth
-                      span.interview-type 
-                        span.oi(data-glyph='headphones')
-                        | Phone Interview
-                      span.interview-time
-                        span.oi(data-glyph='clock')
-                        | 20 minutes ago
+                      .interviewer
+                        .name Michael Bluth
+                        .position Engineer
+                      .interview-info
+                        .type 
+                          span.oi.oi-l(data-glyph='headphones')
+                          | Phone Interview
+                        .time
+                          span.oi.oi-l(data-glyph='clock')
+                          | 20 minutes ago
                     .content-body
-                      | Overall- really nice candidate.  Has a strong engineering background and would recommend for a role on the Web Product team
+                      | Overall- really nice candidate.  Has a strong engineering background and would recommend for a role on the Web Product team.
                   .post-comments
                     .comment
                       .author
                         div
                       .content
                         .content-top-bar 
-                          span.commenter Mitchell Pritchett
-                          span.comment-time 10 min ago
+                          .commenter
+                            .name Mitchell Pritchett
+                            .position Engineer
+                          .comment-time 10 min ago
                         .content-body Good to hear!  He also has experience working with mobile, so he could help lead a potential transition in the future.
                     .comment-path
                     .comment
@@ -70,8 +73,10 @@ block body
                         div
                       .content
                         .content-top-bar 
-                          span.commenter Arya Stark
-                          span.comment-time 5 min ago
+                          .commenter
+                            .name Arya Stark
+                            .position Engineer
+                          .comment-time 5 min ago
                         .content-body Totally agree with Mitchell.  I'm on the mobile team right now and we could use another engineer.  Don seems like a nice guy.
           
         .pure-u-1-5

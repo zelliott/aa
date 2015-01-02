@@ -128,30 +128,25 @@
 
             span.oi {
               cursor: pointer;
-              font-size: 16px;
-              // margin-right: 10px;
+              font-size: 10px;
+            }
+
+            &:hover {
+              cursor: pointer;
 
               &:hover {
                 color: #777;
               }
             }
-
-            input {
-              background: none;
-              border: none;
-              color: #999;
-              display: none;
-              font-size: 14px;
-              height: 60px;
-              width: 45px;
-            }
           }
         }
 
         .content-posts {
-          padding: 60px;
 
           .content-post {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 40px;
+
             > .author {
               display: inline-block;
               vertical-align: top;
@@ -161,7 +156,7 @@
                 background: #ccc;
                 @include border-radius(100px);
                 height: 40px;
-                margin: 0 0 10px 0;
+                margin: 0 auto 10px auto;
                 width: 40px;
               }
 
@@ -170,54 +165,72 @@
                 display: block;
                 font-size: 12px;
                 font-weight: 600;
-                width: 40px;
+                width: 42px;
                 text-align: center;
               }
             }
 
             > .content {
-              @include border-radius(4px);
               display: inline-block;
-              overflow: hidden;
               vertical-align: top;
               width: 85%;
 
               .content-main {
-                background: #fff;
 
                 > .content-top-bar {
                   background: transparent;
-                  border-bottom: 1px solid #ddd;
                   color: #999;
-                  font-size: 12px;
-                  padding: 10px 20px;
 
                   span.oi {
                     font-size: 10px;
-                    margin-right: 10px;
                   }
 
                   span.interview-time {
                     float: right;
                   }
 
-                  span.interviewer {
-                    margin-right: 20px;
+                  .interviewer {
+                    display: inline-block;
+                    font-size: 14px;
+                    vertical-align: top;
+
+                    .name {
+                      color: #444;
+                      font-weight: 600;
+                      margin-bottom: 5px;
+                    }
+
+                    .position {
+                      color: #999;
+                    }
+                  }
+
+                  .interview-info {
+                    color: #999;
+                    float: right;
+                    font-size: 12px;
+
+                    .type {
+                      margin-bottom: 5px;
+                    }
                   }
                 }
 
                 > .content-body {
                   color: #555;
-                  font-size: 12px;
-                  padding: 20px;
+                  font-size: 14px;
+                  line-height: 22px;
+                  padding: 20px 0 0 0;
                 }
               }
 
               .post-comments {
-                margin-top: 40px;
+                background: #e6e6e6;
+                margin-top: 20px;
 
                 .comment {
-                  margin-bottom: 20px;
+                  padding: 20px;
+                  border-top: 1px solid #ddd;
 
                   > .author {
                     display: inline-block;
@@ -243,27 +256,40 @@
                   }
 
                   > .content {
-                    background: #fff;
-                    @include border-radius(4px);
                     display: inline-block;
-                    overflow: hidden;
                     vertical-align: top;
                     width: 85%;
 
                     > .content-top-bar {
                       color: #999;
                       font-size: 12px;
-                      padding: 10px 20px 0 20px;
 
-                      span.comment-time {
+                      .commenter {
+                        display: inline-block;
+                        font-size: 13px;
+                        vertical-align: top;
+
+                        .name {
+                          color: #444;
+                          font-weight: 600;
+                          margin-bottom: 5px;
+                        }
+
+                        .position {
+                          color: #999;
+                        }
+                      }
+
+                      .comment-time {
                         float: right;
                       }
                     }
 
                     > .content-body {
                       color: #555;
-                      font-size: 12px;
-                      padding: 10px 20px;
+                      font-size: 13px;
+                      line-height: 20px;
+                      padding: 20px 0 0 0;
                     }
                   }
                 }
