@@ -49,6 +49,10 @@ $('.candidate-actions button').click(function() {
   $('.overlay').hide();
 });
 
+$('.overlay').click(function() {
+  $('.modal').hide();
+  $(this).hide();
+});
 
 // Top header tab highlighting
 $(document).ready(function () {
@@ -78,4 +82,13 @@ $('.content-header .tab-b').click(function (e) {
   $('.tab-a').removeClass('tab-on');
   $('.tab-a b').hide();
   $('.tab-b').addClass('tab-on');
+});
+
+// Column process filter dropdown
+$('.column-header-filter').click(function() {
+  $(this).parent().find('.column-dropdown').show();
+});
+
+$('.column-dropdown').click(function() {
+  $(this).hide();
 });

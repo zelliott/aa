@@ -11,6 +11,7 @@
         height: 20px;
         line-height: 20px;
         padding: 10px 20px;
+        position: relative;
 
         a {
           color: palette(Blue, $shade: 100);
@@ -42,6 +43,37 @@
           span {
             font-size: 8px;
             margin-left: 5px;
+          }
+        }
+
+        .column-dropdown {
+          background: rgba(255, 255, 255, 1);
+          @include box-shadow(0, 0, 3px, rgba(0, 0, 0, 0.3));
+          color: #444;
+          display: none;
+          font-size: 12px;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+
+          div:first-child {
+            padding: 10px;
+          }
+
+          div {
+            cursor: pointer;
+            padding: 10px 10px 9px 10px;
+
+            &:hover {
+              background: #eee;
+              color: #222;
+            }
+
+            b {
+              float: right;
+              font-weight: 600;
+              margin-left: 10px;
+            }
           }
         }
       }
@@ -187,8 +219,8 @@
             vertical-align: top;
           }
 
-          span.oi[data-glyph='eye'] {
-            display: none;
+          .reviewed {
+            margin: 0;
           }
 
           > div {
@@ -202,26 +234,27 @@
 
             .date {
               color: palette(Red, $shade: 300);
-              margin-bottom: 3px;
             }
 
             .date-subtext {
               color: #555;
+              margin-bottom: 3px;
             }
 
             .date-ago {
-              color: #555;
-              margin-bottom: 3px;
+              color: #999;
             }
 
             .date-ago-review,
             .date-ago-follow-up {
+              border-bottom: 1px dotted transparent;
               color: palette(Blue, $shade: 600);
               cursor: pointer;
               display: inline-block;
+              margin-bottom: 2px;
 
               &:hover {
-                border-bottom: 1px dotted palette(Blue, $shade: 500);
+                border-bottom-color: palette(Blue, $shade: 500);
                 color: palette(Blue, $shade: 700);
               }
             }

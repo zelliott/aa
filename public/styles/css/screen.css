@@ -1603,7 +1603,8 @@ input[type=range]::-webkit-slider-thumb {
     border-right: 1px solid #1565C0;
     height: 20px;
     line-height: 20px;
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    position: relative; }
     .process-bkg .container .process .column-header a {
       color: #BBDEFB;
       font-size: 12px;
@@ -1625,6 +1626,29 @@ input[type=range]::-webkit-slider-thumb {
       .process-bkg .container .process .column-header .column-header-filter span {
         font-size: 8px;
         margin-left: 5px; }
+    .process-bkg .container .process .column-header .column-dropdown {
+      background: white;
+      -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      color: #444;
+      display: none;
+      font-size: 12px;
+      position: absolute;
+      right: 0px;
+      top: 0px; }
+      .process-bkg .container .process .column-header .column-dropdown div:first-child {
+        padding: 10px; }
+      .process-bkg .container .process .column-header .column-dropdown div {
+        cursor: pointer;
+        padding: 10px 10px 9px 10px; }
+        .process-bkg .container .process .column-header .column-dropdown div:hover {
+          background: #eee;
+          color: #222; }
+        .process-bkg .container .process .column-header .column-dropdown div b {
+          float: right;
+          font-weight: 600;
+          margin-left: 10px; }
   .process-bkg .container .process .search-header {
     background: #1565C0;
     height: 40px;
@@ -1739,13 +1763,13 @@ input[type=range]::-webkit-slider-thumb {
       line-height: 38px;
       margin-right: 15px;
       vertical-align: top; }
-    .process-bkg .container .process .candidates-column .additional-info span.oi[data-glyph='eye'],
-    .process-bkg .container .process .candidates-column .upcoming-event span.oi[data-glyph='eye'],
-    .process-bkg .container .process .phone-column .additional-info span.oi[data-glyph='eye'],
-    .process-bkg .container .process .phone-column .upcoming-event span.oi[data-glyph='eye'],
-    .process-bkg .container .process .onsite-column .additional-info span.oi[data-glyph='eye'],
-    .process-bkg .container .process .onsite-column .upcoming-event span.oi[data-glyph='eye'] {
-      display: none; }
+    .process-bkg .container .process .candidates-column .additional-info .reviewed,
+    .process-bkg .container .process .candidates-column .upcoming-event .reviewed,
+    .process-bkg .container .process .phone-column .additional-info .reviewed,
+    .process-bkg .container .process .phone-column .upcoming-event .reviewed,
+    .process-bkg .container .process .onsite-column .additional-info .reviewed,
+    .process-bkg .container .process .onsite-column .upcoming-event .reviewed {
+      margin: 0; }
     .process-bkg .container .process .candidates-column .additional-info > div,
     .process-bkg .container .process .candidates-column .upcoming-event > div,
     .process-bkg .container .process .phone-column .additional-info > div,
@@ -1767,23 +1791,22 @@ input[type=range]::-webkit-slider-thumb {
       .process-bkg .container .process .phone-column .upcoming-event > div .date,
       .process-bkg .container .process .onsite-column .additional-info > div .date,
       .process-bkg .container .process .onsite-column .upcoming-event > div .date {
-        color: #E57373;
-        margin-bottom: 3px; }
+        color: #E57373; }
       .process-bkg .container .process .candidates-column .additional-info > div .date-subtext,
       .process-bkg .container .process .candidates-column .upcoming-event > div .date-subtext,
       .process-bkg .container .process .phone-column .additional-info > div .date-subtext,
       .process-bkg .container .process .phone-column .upcoming-event > div .date-subtext,
       .process-bkg .container .process .onsite-column .additional-info > div .date-subtext,
       .process-bkg .container .process .onsite-column .upcoming-event > div .date-subtext {
-        color: #555; }
+        color: #555;
+        margin-bottom: 3px; }
       .process-bkg .container .process .candidates-column .additional-info > div .date-ago,
       .process-bkg .container .process .candidates-column .upcoming-event > div .date-ago,
       .process-bkg .container .process .phone-column .additional-info > div .date-ago,
       .process-bkg .container .process .phone-column .upcoming-event > div .date-ago,
       .process-bkg .container .process .onsite-column .additional-info > div .date-ago,
       .process-bkg .container .process .onsite-column .upcoming-event > div .date-ago {
-        color: #555;
-        margin-bottom: 3px; }
+        color: #999; }
       .process-bkg .container .process .candidates-column .additional-info > div .date-ago-review,
       .process-bkg .container .process .candidates-column .additional-info > div .date-ago-follow-up,
       .process-bkg .container .process .candidates-column .upcoming-event > div .date-ago-review,
@@ -1796,9 +1819,11 @@ input[type=range]::-webkit-slider-thumb {
       .process-bkg .container .process .onsite-column .additional-info > div .date-ago-follow-up,
       .process-bkg .container .process .onsite-column .upcoming-event > div .date-ago-review,
       .process-bkg .container .process .onsite-column .upcoming-event > div .date-ago-follow-up {
+        border-bottom: 1px dotted transparent;
         color: #1E88E5;
         cursor: pointer;
-        display: inline-block; }
+        display: inline-block;
+        margin-bottom: 2px; }
         .process-bkg .container .process .candidates-column .additional-info > div .date-ago-review:hover,
         .process-bkg .container .process .candidates-column .additional-info > div .date-ago-follow-up:hover,
         .process-bkg .container .process .candidates-column .upcoming-event > div .date-ago-review:hover,
@@ -1811,7 +1836,7 @@ input[type=range]::-webkit-slider-thumb {
         .process-bkg .container .process .onsite-column .additional-info > div .date-ago-follow-up:hover,
         .process-bkg .container .process .onsite-column .upcoming-event > div .date-ago-review:hover,
         .process-bkg .container .process .onsite-column .upcoming-event > div .date-ago-follow-up:hover {
-          border-bottom: 1px dotted #2196F3;
+          border-bottom-color: #2196F3;
           color: #1976D2; }
       .process-bkg .container .process .candidates-column .additional-info > div .schedule,
       .process-bkg .container .process .candidates-column .upcoming-event > div .schedule,
