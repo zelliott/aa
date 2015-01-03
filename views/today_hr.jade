@@ -17,11 +17,25 @@ block body
               input(type='text', value='Search for a candidate')
             .left-title Your Tasks
             .left-tab.tab-on.tab-a
-              | Review Candidates
+              | New Candidates
               b 3
-            .left-tab.tab-b
+            .left-sub-tabs.tab-sub-a
+              .left-sub-tab
+                | Unreviewed Candidates
+                b 3
+              .left-sub-tab
+                | Reviewed Candidates
+                b 0
+            .left-tab.tab-b.tab-green
               | Schedule Interviews
               b 0
+            .left-sub-tabs.tab-sub-b
+              .left-sub-tab
+                | Phone Interviews
+                b 0
+              .left-sub-tab
+                | Onsite Interviews
+                b 0
             .left-separator
             .left-title Positions
             .left-checkgroup

@@ -1909,7 +1909,7 @@ input[type=range]::-webkit-slider-thumb {
       color: #999;
       font-size: 14px;
       font-weight: 600;
-      padding: 10px 20px; }
+      padding: 20px 20px 10px 20px; }
     .today-bkg .container .today .left-nav .left-separator {
       border-top: 1px solid #333;
       margin: 10px 0; }
@@ -1949,6 +1949,8 @@ input[type=range]::-webkit-slider-thumb {
           font-size: 12px; }
         .today-bkg .container .today .left-nav .left-checkgroup div:hover {
           color: #999; }
+    .today-bkg .container .today .left-nav .tab-sub-b {
+      display: none; }
     .today-bkg .container .today .left-nav .tab-on {
       background: #444;
       border-left-color: #1E88E5;
@@ -2067,7 +2069,7 @@ input[type=range]::-webkit-slider-thumb {
       vertical-align: top; }
       .today-bkg .container .today .content .content-tasks .task .task-action button {
         margin-left: 40px;
-        padding: 10px 40px; }
+        padding: 10px 30px; }
       .today-bkg .container .today .content .content-tasks .task .task-action .btn-delete {
         color: #999;
         padding-left: 0;

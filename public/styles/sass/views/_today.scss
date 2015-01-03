@@ -32,7 +32,7 @@
           color: #999;
           font-size: 14px;
           font-weight: 600;
-          padding: 10px 20px;
+          padding: 20px 20px 10px 20px;
         }
 
         .left-separator {
@@ -98,6 +98,10 @@
           }
         }
 
+        .tab-sub-b {
+          display: none;
+        }
+
         .tab-on {
           background: #444;
           border-left-color: palette(Blue, $shade: 600);
@@ -108,6 +112,10 @@
             background: #444;
             color: #eee;
           }
+        }
+
+        .tab-green {
+
         }
       }
 
@@ -265,7 +273,7 @@
 
               button {
                 margin-left: 40px;
-                padding: 10px 40px;
+                padding: 10px 30px;
               }
 
               .btn-delete {

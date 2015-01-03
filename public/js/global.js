@@ -69,7 +69,8 @@ $(document).ready(function () {
 $('.tab-a').click(function (e) {
   $('.view-a').show();
   $('.view-b').hide();
-  $('.left-sub-tabs').show();
+  $('.tab-sub-b').hide();
+  $('.tab-sub-a').show();
   $('.tab-b').removeClass('tab-on');
   $('.tab-a').addClass('tab-on');
 });
@@ -77,7 +78,8 @@ $('.tab-a').click(function (e) {
 $('.tab-b').click(function (e) {
   $('.view-b').show();
   $('.view-a').hide();
-  $('.left-sub-tabs').hide();
+  $('.tab-sub-a').hide();
+  $('.tab-sub-b').show();
   $('.tab-a').removeClass('tab-on');
   $('.tab-b').addClass('tab-on');
 });
