@@ -129,7 +129,6 @@
 
             .task-type {
               display: inline-block;
-              width: 140px;
               vertical-align: top;
 
               .task-icon {
@@ -154,14 +153,12 @@
                   font-size: 14px;
                   font-weight: 600;
                   margin-bottom: 3px;
-                  text-align: center;
                 }
 
                 span.relative {
                   color: palette(Red, $shade: 400);
                   display: block;
                   font-size: 14px;
-                  text-align: center;
                 }
               }
             }
@@ -209,13 +206,13 @@
                 display: inline-block;
                 height: 42px;
                 width: 42px;
+                margin-right: 20px;
                 vertical-align: top;
               }
 
               .body-info {
                 display: inline-block;
                 font-size: 14px;
-                margin-left: 20px;
                 vertical-align: top;
 
                 span {
