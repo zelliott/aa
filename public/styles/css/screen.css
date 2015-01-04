@@ -2001,25 +2001,24 @@ input[type=range]::-webkit-slider-thumb {
           display: block;
           font-size: 14px;
           text-align: center; }
-    .today-bkg .container .today .content .content-tasks .task .task-gray-text {
+    .today-bkg .container .today .content .content-tasks .task .task-info {
       color: #999;
-      font-size: 14px;
       float: right;
-      line-height: 42px;
-      margin-left: 40px; }
-    .today-bkg .container .today .content .content-tasks .task .task-status-text {
-      color: #999;
       font-size: 14px;
-      float: right;
-      line-height: 42px;
-      margin-left: 40px; }
-      .today-bkg .container .today .content .content-tasks .task .task-status-text span.oi {
-        font-size: 12px; }
+      margin-left: 0px;
+      width: 160px; }
+      .today-bkg .container .today .content .content-tasks .task .task-info div {
+        margin-bottom: 5px;
+        text-align: right; }
+        .today-bkg .container .today .content .content-tasks .task .task-info div span.oi {
+          font-size: 12px; }
+      .today-bkg .container .today .content .content-tasks .task .task-info .status {
+        color: #666; }
     .today-bkg .container .today .content .content-tasks .task .task-arrow {
       color: #999;
       display: inline-block;
       height: 42px;
-      padding: 0 20px;
+      padding: 0 10px;
       text-align: center;
       width: 100px; }
       .today-bkg .container .today .content .content-tasks .task .task-arrow span.oi {

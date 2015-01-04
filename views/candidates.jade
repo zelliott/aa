@@ -20,20 +20,34 @@ block body
               | All
               b 150
             .left-tab(data='.view-b')
-              | Unreviewed
+              | New
               b 0
+            .left-sub-tabs.view-b.tab-closed
+              .left-sub-tab
+                | Unreviewed
+                b 0
+              .left-sub-tab
+                | Saved
+                b 0
             .left-tab(data='.view-c')
-              | Saved
-              b 0
-            .left-tab(data='.view-d')
-              | Interviewing
+              | Phone Interviews
               b 5
+            .left-sub-tabs.view-c.tab-closed
+              .left-sub-tab
+                | Unscheduled
+                b 3
+              .left-sub-tab
+                | Scheduled
+                b 2
+            .left-tab(data='.view-d')
+              | Onsite Interviews
+              b 0
             .left-sub-tabs.view-d.tab-closed
               .left-sub-tab
-                | Phone
-                b 1
+                | Unscheduled
+                b 0
               .left-sub-tab
-                | Onsite
+                | Scheduled
                 b 0
             .left-tab(data='.view-e')
               | Offer Extended
@@ -88,26 +102,29 @@ block body
                   .body-info
                     a.title(href='/candidate') Luke Dunphy
                     span.info Applied for Advertising
-                .task-gray-text 5 days ago
-                .task-status-text
-                  | Not reviewed
+                .task-info
+                  .status Unreviewed
+                  div 5 days ago
               .task    
                 .task-body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Gloria Pritchett
                     span.info Applied for Engineer
-                .task-gray-text 5 days ago
-                .task-status-text.green
-                  span.oi.oi-l(data-glyph='eye')
-                  | Reviewed
+                .task-info
+                  .status Unreviewed
+                  div 5 days ago
               .task
                 .task-body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Gob Bluth
                     span.info Applied for Management
-                .task-gray-text 5 days ago
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='box')
+                    | Saved
+                  div 5 days ago
             .content-tasks.view-b 
           
         .pure-u-1-5

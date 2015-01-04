@@ -83,7 +83,10 @@ block body
                   .body-info
                     a.title(href='/candidate') Luke Dunphy
                     span.info Applied for Designer
-                .task-gray-text 5 days ago
+                .task-info
+                  .status
+                    | Unreviewed
+                  div 5 days ago
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
@@ -95,7 +98,10 @@ block body
                   .body-info
                     a.title(href='/candidate') Gloria Pritchett
                     span.info Applied for Designer
-                .task-gray-text 5 days ago
+                .task-info
+                  .status
+                    | Unreviewed
+                  div 5 days ago
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
@@ -107,7 +113,10 @@ block body
                   .body-info
                     a.title(href='/candidate') Gob Bluth
                     span.info Applied for Designer
-                .task-gray-text 5 days ago
+                .task-info
+                  .status
+                    | Unreviewed
+                  div 5 days ago
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
@@ -119,15 +128,16 @@ block body
                   .body-info
                     a.title(href='/candidate') Rob Stark
                     span.info Applied for Designer
-                .task-gray-text 5 days ago
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='box')
+                    | Saved
+                  div 5 days ago
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
                     | Remove
-                .task-status-text
-                  span.oi.oi-l(data-glyph='box')
-                  | Saved
             .content-tasks.view-b
               .task
                 .task-type
@@ -188,7 +198,11 @@ block body
                 .task-eval
                   .eval
                     .eval-score 10
-                .task-gray-text 5 days ago  
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='headphones')
+                    | Interview
+                  div 5 days ago 
                 .task-action
                   button.btn-bkg.btn-blue
                     | Decision

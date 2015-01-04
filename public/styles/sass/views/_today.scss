@@ -166,23 +166,24 @@
               }
             }
 
-            .task-gray-text {
+            .task-info {
               color: #999;
-              font-size: 14px;
               float: right;
-              line-height: 42px;
-              margin-left: 40px;
-            }
-
-            .task-status-text {
-              color: #999;
               font-size: 14px;
-              float: right;
-              line-height: 42px;
-              margin-left: 40px;
+              margin-left: 0px;
+              width: 160px;
 
-              span.oi {
-                font-size: 12px;
+              div {
+                margin-bottom: 5px;
+                text-align: right;
+
+                span.oi {
+                  font-size: 12px;
+                }
+              }
+
+              .status {
+                color: #666;
               }
             }
 
@@ -190,7 +191,7 @@
               color: #999;
               display: inline-block;
               height: 42px;
-              padding: 0 20px;
+              padding: 0 10px;
               text-align: center;
               width: 100px;
 

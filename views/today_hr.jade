@@ -17,17 +17,20 @@ block body
               input(type='text', value='Search for a candidate')
             .left-title My Tasks
             .left-tab.tab-on(data='.view-a')
-              | Follow Up
+              | Notify Candidates
               b 3
             .left-sub-tabs.view-a
               .left-sub-tab
                 | Need More Info
-                b 3
+                b 2
               .left-sub-tab
                 | Removed
                 b 0
+              .left-sub-tab
+                | Offer Update
+                b 1
             .left-tab(data='.view-b')
-              | Interviews
+              | Manage Interviews
               b 0
             .left-sub-tabs.tab-closed.view-b
               .left-sub-tab
@@ -36,23 +39,20 @@ block body
               .left-sub-tab
                 | Scheduled
                 b 0
-            .left-tab(data='.view-c')
-              | Offers
+            //-.left-tab(data='.view-c')
+              | Onsite Interviews
               b 0
-            .left-sub-tabs.tab-closed.view-c
+            //-.left-sub-tabs.tab-closed.view-c
               .left-sub-tab
-                | Waiting
-                b 1
-              .left-sub-tab
-                | Accepted
+                | Unscheduled
                 b 0
               .left-sub-tab
-                | Declined
+                | Scheduled
                 b 0
                 
-            .left-separator
-            .left-title Positions
-            .left-checkgroup
+            //-.left-separator
+            //-.left-title Positions
+            //-.left-checkgroup
               div
                 //-b &#x25a2;
                 span.oi.oi-l(data-glyph='task')
@@ -90,26 +90,39 @@ block body
                   .body-info
                     a.title(href='/candidate') Luke Dunphy
                     span.info Applied for Advertising
-                .task-gray-text 5 days ago
-                .task-status-text
-                  | Not reviewed
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='box')
+                    | Saved
+                  div 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue Mark as notified
               .task    
                 .task-body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Gloria Pritchett
                     span.info Applied for Engineer
-                .task-gray-text 5 days ago
-                .task-status-text.green
-                  span.oi.oi-l(data-glyph='eye')
-                  | Reviewed
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='x')
+                    | Removed
+                  div 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue Mark as notified
               .task
                 .task-body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Gob Bluth
                     span.info Applied for Management
-                .task-gray-text 5 days ago
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='check')
+                    | Offer extended
+                  div 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue Mark as notified
             .content-tasks.view-b 
           
         .pure-u-1-5
