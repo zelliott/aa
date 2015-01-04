@@ -17,7 +17,7 @@ block body
               input(type='text', value='Search for a candidate')
             .left-title My Tasks
             .left-tab.tab-on(data='.view-a')
-              | New Candidates
+              | Manage New Candidates
               b 4
             .left-sub-tabs.view-a
               .left-sub-tab
@@ -201,18 +201,18 @@ block body
                 .task-info
                   .status
                     span.oi.oi-l(data-glyph='headphones')
-                    | Interview
+                    | Post Interview
                   div 5 days ago 
                 .task-action
+                  button.btn-flat.btn-blue
+                    span.oi.oi-l(data-glyph='document')
+                    | Evaluation
                   button.btn-bkg.btn-blue
                     | Decision
                     span.oi.oi-r(data-glyph='caret-bottom')
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
                     | Remove
-                .more-eval
-                  span.oi(data-glyph='document')
-                  | Evaluation
           
         .pure-u-1-5
           .right-info

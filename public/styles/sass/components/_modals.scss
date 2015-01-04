@@ -43,6 +43,10 @@
     button {
       margin-left: 20px;
     }
+
+    .btn-flat.btn-blue:hover {
+      background: palette(Blue, $shade: 50);
+    }
   }
 }
 
@@ -149,7 +153,8 @@
 
 
 .advance-modal,
-.delete-modal {
+.delete-modal,
+.note-modal {
   width: 240px;
 }
 

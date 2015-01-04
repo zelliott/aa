@@ -191,7 +191,6 @@
               color: #999;
               display: inline-block;
               height: 42px;
-              padding: 0 10px;
               text-align: center;
               width: 100px;
 
@@ -202,7 +201,6 @@
 
             .task-body {
               display: inline-block;
-              margin-right: 40px;
               vertical-align: top;
 
               .body-icon {
@@ -245,11 +243,12 @@
 
             .task-eval {
               display: inline-block;
+              margin-left: 40px;
               vertical-align: top;
 
               .eval {
                 display: inline-block;
-                margin-right: 40px;
+                margin-right: 0px;
                 vertical-align: top;
 
                 .eval-score {
@@ -264,25 +263,6 @@
               }
             }
 
-            .more-eval {
-              color: palette(Blue, $shade: 600);
-              cursor: pointer;
-              font-size: 14px;
-              float: right;
-              display: inline-block;
-              line-height: 43px;
-              vertical-align: top;
-
-              span.oi {
-                font-size: 10px;
-                margin-right: 10px;
-              }
-
-              &:hover {
-                color: palette(Blue, $shade: 800);
-              }
-            }
-
             .task-action {
               display: inline-block;
               float: right;
@@ -290,11 +270,15 @@
 
               button {
                 margin-left: 40px;
-                padding: 10px 30px;
+                padding: 10px 20px;
 
                 span.oi {
                   font-size: 10px;
                 }
+              }
+
+              .btn-flat.btn-blue:hover {
+                background: #ddd;
               }
 
               .btn-delete {

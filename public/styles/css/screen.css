@@ -793,7 +793,6 @@ button {
 .btn-flat.btn-blue {
   color: #1E88E5; }
   .btn-flat.btn-blue:hover {
-    background: #E3F2FD;
     color: #1565C0; }
 
 .btn-flat.btn-red {
@@ -876,6 +875,8 @@ textarea:focus {
     text-align: right; }
     .modal .modal-actions button {
       margin-left: 20px; }
+    .modal .modal-actions .btn-flat.btn-blue:hover {
+      background: #E3F2FD; }
 
 .schedule-modal {
   width: 460px; }
@@ -949,7 +950,8 @@ textarea:focus {
     margin-bottom: 0px; }
 
 .advance-modal,
-.delete-modal {
+.delete-modal,
+.note-modal {
   width: 240px; }
 
 .contact-modal {
@@ -2018,14 +2020,12 @@ input[type=range]::-webkit-slider-thumb {
       color: #999;
       display: inline-block;
       height: 42px;
-      padding: 0 10px;
       text-align: center;
       width: 100px; }
       .today-bkg .container .today .content .content-tasks .task .task-arrow span.oi {
         line-height: 42px; }
     .today-bkg .container .today .content .content-tasks .task .task-body {
       display: inline-block;
-      margin-right: 40px;
       vertical-align: top; }
       .today-bkg .container .today .content .content-tasks .task .task-body .body-icon {
         background: #bbb;
@@ -2056,10 +2056,11 @@ input[type=range]::-webkit-slider-thumb {
           color: #999; }
     .today-bkg .container .today .content .content-tasks .task .task-eval {
       display: inline-block;
+      margin-left: 40px;
       vertical-align: top; }
       .today-bkg .container .today .content .content-tasks .task .task-eval .eval {
         display: inline-block;
-        margin-right: 40px;
+        margin-right: 0px;
         vertical-align: top; }
         .today-bkg .container .today .content .content-tasks .task .task-eval .eval .eval-score {
           background: #009688;
@@ -2072,28 +2073,17 @@ input[type=range]::-webkit-slider-thumb {
           display: inline-block;
           padding: 10px 12px;
           vertical-align: top; }
-    .today-bkg .container .today .content .content-tasks .task .more-eval {
-      color: #1E88E5;
-      cursor: pointer;
-      font-size: 14px;
-      float: right;
-      display: inline-block;
-      line-height: 43px;
-      vertical-align: top; }
-      .today-bkg .container .today .content .content-tasks .task .more-eval span.oi {
-        font-size: 10px;
-        margin-right: 10px; }
-      .today-bkg .container .today .content .content-tasks .task .more-eval:hover {
-        color: #1565C0; }
     .today-bkg .container .today .content .content-tasks .task .task-action {
       display: inline-block;
       float: right;
       vertical-align: top; }
       .today-bkg .container .today .content .content-tasks .task .task-action button {
         margin-left: 40px;
-        padding: 10px 30px; }
+        padding: 10px 20px; }
         .today-bkg .container .today .content .content-tasks .task .task-action button span.oi {
           font-size: 10px; }
+      .today-bkg .container .today .content .content-tasks .task .task-action .btn-flat.btn-blue:hover {
+        background: #ddd; }
       .today-bkg .container .today .content .content-tasks .task .task-action .btn-delete {
         color: #999;
         padding-left: 0;

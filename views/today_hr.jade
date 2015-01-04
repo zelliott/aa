@@ -31,11 +31,11 @@ block body
                 b 1
             .left-tab(data='.view-b')
               | Manage Interviews
-              b 0
+              b 1
             .left-sub-tabs.tab-closed.view-b
               .left-sub-tab
                 | Unscheduled
-                b 0
+                b 1
               .left-sub-tab
                 | Scheduled
                 b 0
@@ -96,7 +96,10 @@ block body
                     | Saved
                   div 5 days ago
                 .task-action
-                  button.btn-bkg.btn-blue Mark as notified
+                  button.btn-flat.btn-blue.open-modal(data='.note-modal')
+                    span.oi.oi-l(data-glyph='document')
+                    | Feedback
+                  button.btn-bkg.btn-blue Notified
               .task    
                 .task-body
                   .body-icon
@@ -109,7 +112,10 @@ block body
                     | Removed
                   div 5 days ago
                 .task-action
-                  button.btn-bkg.btn-blue Mark as notified
+                  button.btn-flat.btn-blue.open-modal(data='.note-modal')
+                    span.oi.oi-l(data-glyph='document')
+                    | Feedback
+                  button.btn-bkg.btn-blue Notified
               .task
                 .task-body
                   .body-icon
@@ -122,8 +128,45 @@ block body
                     | Offer extended
                   div 5 days ago
                 .task-action
-                  button.btn-bkg.btn-blue Mark as notified
+                  button.btn-bkg.btn-blue Notified
             .content-tasks.view-b 
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Don Draper
+                    span.info Applied for Designer
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='headphones')
+                    | Unscheduled
+                  div 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.schedule-modal')
+                    span.oi.oi-l(data-glyph='calendar')
+                    | Schedule
+              //-.task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Linsday Bluth
+                    span.info Applied for Engineer
+                .task-arrow
+                  span.oi(data-glyph='arrow-right')
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='') Michael Bluth
+                    span.info Interviewer
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='headphones')
+                    | Scheduled
+                  div 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.schedule-modal')
+                    span.oi.oi-l(data-glyph='calendar')
+                    | Reschedule
           
         .pure-u-1-5
           .right-info
