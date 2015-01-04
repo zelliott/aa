@@ -63,25 +63,19 @@ $(document).ready(function () {
     $('.tab_1').addClass('tab-on');
   } else if(path == '/activity') {
     $('.tab_3').addClass('tab-on');
+  } else if(path =='/candidates') {
+    $('.tab_4').addClass('tab-on');
   }
 })
 
-$('.tab-a').click(function (e) {
-  $('.view-a').show();
-  $('.view-b').hide();
-  $('.tab-sub-b').hide();
-  $('.tab-sub-a').show();
-  $('.tab-b').removeClass('tab-on');
-  $('.tab-a').addClass('tab-on');
-});
+$('.left-tab').click(function (e) {
+  $('.content-tasks').hide();
+  $('.left-sub-tabs').hide();
+  var data = $(this).attr('data');
+  $(data).show();
 
-$('.tab-b').click(function (e) {
-  $('.view-b').show();
-  $('.view-a').hide();
-  $('.tab-sub-a').hide();
-  $('.tab-sub-b').show();
-  $('.tab-a').removeClass('tab-on');
-  $('.tab-b').addClass('tab-on');
+  $('.left-tab').removeClass('tab-on');
+  $(this).addClass('tab-on');
 });
 
 // Column process filter dropdown

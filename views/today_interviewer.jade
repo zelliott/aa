@@ -15,40 +15,120 @@ block body
             .left-search
               span.oi(data-glyph='magnifying-glass')
               input(type='text', value='Search for a candidate')
-            .left-title Your Tasks
-            .left-tab.tab-on.tab-a
-              | Your Interviews
+            .left-title My Tasks
+            .left-tab.tab-on(data='.view-a')
+              | New Candidates
+              b 4
+            .left-sub-tabs.view-a
+              .left-sub-tab
+                | Unreviewed
+                b 3
+              .left-sub-tab
+                | Saved
+                b 1
+              .left-sub-tab
+                | Advanced
+                b 0
+              .left-sub-tab
+                | Removed
+                b 0
+            .left-tab(data='.view-b')
+              | My Interviews
               b 3
-            .left-sub-tabs.tab-sub-a
+            .left-sub-tabs.tab-closed.view-b
               .left-sub-tab
                 | Phone Interviews
                 b 2
               .left-sub-tab
                 | Onsite Interviews
                 b 1
-            .left-tab.tab-b
-              | Your Decisions
+            .left-tab(data='.view-c')
+              | My Decisions
               b 1
-            .left-sub-tabs.tab-sub-b
+            .left-sub-tabs.tab-closed.view-c
               .left-sub-tab
                 | Phone Decision
                 b 1
               .left-sub-tab
                 | Onsite Decision
                 b 0
-        
+            .left-separator
+            //-.left-title Positions
+            //-.left-checkgroup
+              div
+                span.oi.oi-l(data-glyph='task')
+                | Design
+              div
+                span.oi.oi-l(data-glyph='task')
+                | Engineering
+            .left-title Filters
+            .left-checkgroup
+              div
+                span.oi.oi-l(data-glyph='task')
+                | Resume
+              div
+                span.oi.oi-l(data-glyph='task')
+                | Cover Letter
+              div
+                span.oi.oi-l(data-glyph='task')
+                | Recommendation
         
         .pure-u-3-5
           .content
             .content-header
-              //-div.tab-on.tab-a
-                | Interviews
-                b 5
-              //-div.tab-b Decisions
-              //-div.header-action
-                span.oi(data-glyph='magnifying-glass')
-                input(type='text', placeholder='Search')
             .content-tasks.view-a
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Luke Dunphy
+                    span.info Applied for Designer
+                .task-gray-text 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
+                  //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
+                    span.oi(data-glyph='x')
+                    | Remove
+              .task    
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Gloria Pritchett
+                    span.info Applied for Designer
+                .task-gray-text 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
+                  //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
+                    span.oi(data-glyph='x')
+                    | Remove
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Gob Bluth
+                    span.info Applied for Designer
+                .task-gray-text 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
+                  //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
+                    span.oi(data-glyph='x')
+                    | Remove
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Rob Stark
+                    span.info Applied for Designer
+                .task-gray-text 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
+                  //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
+                    span.oi(data-glyph='x')
+                    | Remove
+                .task-status-text
+                  span.oi.oi-l(data-glyph='box')
+                  | Saved
+            .content-tasks.view-b
               .task
                 .task-type
                   .task-icon
@@ -98,7 +178,7 @@ block body
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
                             
-            .content-tasks.view-b
+            .content-tasks.view-c
               .task
                 .task-body
                   .body-icon
@@ -108,10 +188,12 @@ block body
                 .task-eval
                   .eval
                     .eval-score 10
-                  
+                .task-gray-text 5 days ago  
                 .task-action
-                  button.btn-bkg.btn-blue.open-modal(data='.advance-modal') Advance to Onsite
-                  button.btn-flat.btn-delete.open-modal(data='.delete-modal')
+                  button.btn-bkg.btn-blue
+                    | Decision
+                    span.oi.oi-r(data-glyph='caret-bottom')
+                  //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
                     | Remove
                 .more-eval

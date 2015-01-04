@@ -98,7 +98,7 @@
           }
         }
 
-        .tab-sub-b {
+        .tab-closed {
           display: none;
         }
 
@@ -112,10 +112,6 @@
             background: #444;
             color: #eee;
           }
-        }
-
-        .tab-green {
-
         }
       }
 
@@ -167,6 +163,26 @@
                   font-size: 14px;
                   text-align: center;
                 }
+              }
+            }
+
+            .task-gray-text {
+              color: #999;
+              font-size: 14px;
+              float: right;
+              line-height: 42px;
+              margin-left: 40px;
+            }
+
+            .task-status-text {
+              color: #999;
+              font-size: 14px;
+              float: right;
+              line-height: 42px;
+              margin-left: 40px;
+
+              span.oi {
+                font-size: 12px;
               }
             }
 
@@ -274,6 +290,10 @@
               button {
                 margin-left: 40px;
                 padding: 10px 30px;
+
+                span.oi {
+                  font-size: 10px;
+                }
               }
 
               .btn-delete {
@@ -300,7 +320,11 @@
           display: block;
         }
 
-        .view-b {
+        .view-b,
+        .view-c,
+        .view-d,
+        .view-e,
+        .view-f {
           display: none;
         }
       }

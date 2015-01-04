@@ -42,6 +42,12 @@ app.get('/candidate', function (req, res) {
 )
 })
 
+app.get('/candidates', function (req, res) {
+  res.render('candidates',
+{ title : 'All Candidates View' }
+)
+})
+
 app.get('/', function (req, res) {
   res.render('process',
 { title : 'Recruiting Overview' }

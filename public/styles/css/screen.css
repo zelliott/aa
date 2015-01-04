@@ -746,6 +746,9 @@
 .oi-r {
   margin-left: 10px; }
 
+.green {
+  color: #26A69A !important; }
+
 body,
 input,
 textarea,
@@ -1035,7 +1038,6 @@ textarea:focus {
   width: 900px; }
   .review-modal .modal-nav-bar {
     background: #444;
-    display: none;
     padding: 7px 20px; }
     .review-modal .modal-nav-bar div {
       color: #ccc;
@@ -1571,13 +1573,20 @@ input[type=range]::-webkit-slider-thumb {
       .today-bkg .container .candidate .right-info .right-block .block-body,
       .today-bkg .container .today .right-info .right-block .block-body {
         color: #999;
-        font-size: 12px; }
+        font-size: 13px; }
         .candidate-bkg .container .candidate .right-info .right-block .block-body span,
         .candidate-bkg .container .today .right-info .right-block .block-body span,
         .today-bkg .container .candidate .right-info .right-block .block-body span,
         .today-bkg .container .today .right-info .right-block .block-body span {
           display: block;
           margin-bottom: 5px; }
+      .candidate-bkg .container .candidate .right-info .right-block .block-desc,
+      .candidate-bkg .container .today .right-info .right-block .block-desc,
+      .today-bkg .container .candidate .right-info .right-block .block-desc,
+      .today-bkg .container .today .right-info .right-block .block-desc {
+        color: #999;
+        font-size: 13px;
+        margin-bottom: 20px; }
       .candidate-bkg .container .candidate .right-info .right-block .block-button,
       .candidate-bkg .container .today .right-info .right-block .block-button,
       .today-bkg .container .candidate .right-info .right-block .block-button,
@@ -1949,7 +1958,7 @@ input[type=range]::-webkit-slider-thumb {
           font-size: 12px; }
         .today-bkg .container .today .left-nav .left-checkgroup div:hover {
           color: #999; }
-    .today-bkg .container .today .left-nav .tab-sub-b {
+    .today-bkg .container .today .left-nav .tab-closed {
       display: none; }
     .today-bkg .container .today .left-nav .tab-on {
       background: #444;
@@ -1992,6 +2001,20 @@ input[type=range]::-webkit-slider-thumb {
           display: block;
           font-size: 14px;
           text-align: center; }
+    .today-bkg .container .today .content .content-tasks .task .task-gray-text {
+      color: #999;
+      font-size: 14px;
+      float: right;
+      line-height: 42px;
+      margin-left: 40px; }
+    .today-bkg .container .today .content .content-tasks .task .task-status-text {
+      color: #999;
+      font-size: 14px;
+      float: right;
+      line-height: 42px;
+      margin-left: 40px; }
+      .today-bkg .container .today .content .content-tasks .task .task-status-text span.oi {
+        font-size: 12px; }
     .today-bkg .container .today .content .content-tasks .task .task-arrow {
       color: #999;
       display: inline-block;
@@ -2070,6 +2093,8 @@ input[type=range]::-webkit-slider-thumb {
       .today-bkg .container .today .content .content-tasks .task .task-action button {
         margin-left: 40px;
         padding: 10px 30px; }
+        .today-bkg .container .today .content .content-tasks .task .task-action button span.oi {
+          font-size: 10px; }
       .today-bkg .container .today .content .content-tasks .task .task-action .btn-delete {
         color: #999;
         padding-left: 0;
@@ -2083,7 +2108,11 @@ input[type=range]::-webkit-slider-thumb {
           color: #EF5350; }
   .today-bkg .container .today .content .view-a {
     display: block; }
-  .today-bkg .container .today .content .view-b {
+  .today-bkg .container .today .content .view-b,
+  .today-bkg .container .today .content .view-c,
+  .today-bkg .container .today .content .view-d,
+  .today-bkg .container .today .content .view-e,
+  .today-bkg .container .today .content .view-f {
     display: none; }
   .today-bkg .container .today .right-info {
     background: #e6e6e6;

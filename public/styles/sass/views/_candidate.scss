@@ -322,12 +322,18 @@
 
           .block-body {
             color: #999;
-            font-size: 12px;
+            font-size: 13px;
 
             span {
               display: block;
               margin-bottom: 5px;
             }
+          }
+
+          .block-desc {
+            color: #999;
+            font-size: 13px;
+            margin-bottom: 20px;
           }
 
           .block-button {

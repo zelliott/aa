@@ -17,10 +17,10 @@
         span.oi.oi-l(data-glyph='x')
         | Remove
       button.btn-flat.btn-gray
-        span.oi.oi-l(data-glyph='eye')
-        | Mark as Reviewed
+        span.oi.oi-l(data-glyph='box')
+        | Save for later
       button.btn-bkg.btn-blue 
-        | Advance to Phone Stage
+        | Advance to phone stage
         span.oi.oi-r(data-glyph='arrow-thick-right')
   .modal-viewing
     .modal-side-nav
@@ -28,8 +28,6 @@
       .img-title Resume
     .modal-doc-view
       img(src='../assets/images/document.png')
-    
-      
 
 .add-modal.modal
   .modal-title Add New Candidate
@@ -151,19 +149,19 @@
     .eval-num
       //-input(type='range' min='0' value='0' max='10' step='1')
       span.modal-label Personality
-      input(type='number' min='0' max='10')
+      input(type='number' min='0' max='10', placeholder='10')
     .eval-num
       //-input(type='range' min='0' value='0' max='10' step='1')
       span.modal-label Teamwork
-      input(type='number' min='0' max='10')
+      input(type='number' min='0' max='10', placeholder='10')
     .eval-num
       //-input(type='range' min='0' value='0' max='10' step='1')
       span.modal-label Motivation
-      input(type='number' min='0' max='10')
+      input(type='number' min='0' max='10', placeholder='10')
     .eval-num
       //-input(type='range' min='0' value='0' max='10' step='1')
       span.modal-label Culture
-      input(type='number' min='0' max='10')
+      input(type='number' min='0' max='10', placeholder='10')
   .modal-section.right-section
     textarea(rows='1') Additional feedback on the interview
         

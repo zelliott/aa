@@ -15,40 +15,42 @@ block body
             .left-search
               span.oi(data-glyph='magnifying-glass')
               input(type='text', value='Search for a candidate')
-            .left-title My Tasks
+            .left-title Candidates
             .left-tab.tab-on(data='.view-a')
-              | Follow Up
-              b 3
-            .left-sub-tabs.view-a
-              .left-sub-tab
-                | Need More Info
-                b 3
-              .left-sub-tab
-                | Removed
-                b 0
+              | All
+              b 150
             .left-tab(data='.view-b')
-              | Interviews
+              | Unreviewed
               b 0
-            .left-sub-tabs.tab-closed.view-b
-              .left-sub-tab
-                | Unscheduled
-                b 0
-              .left-sub-tab
-                | Scheduled
-                b 0
             .left-tab(data='.view-c')
-              | Offers
+              | Saved
               b 0
-            .left-sub-tabs.tab-closed.view-c
+            .left-tab(data='.view-d')
+              | Interviewing
+              b 5
+            .left-sub-tabs.view-d.tab-closed
+              .left-sub-tab
+                | Phone
+                b 1
+              .left-sub-tab
+                | Onsite
+                b 0
+            .left-tab(data='.view-e')
+              | Offer Extended
+              b 5
+            .left-sub-tabs.view-e.tab-closed
               .left-sub-tab
                 | Waiting
                 b 1
               .left-sub-tab
                 | Accepted
-                b 0
+                b 3
               .left-sub-tab
                 | Declined
-                b 0
+                b 1
+            .left-tab(data='.view-f')
+              | Removed
+              b 140
                 
             .left-separator
             .left-title Positions
@@ -76,11 +78,7 @@ block body
         .pure-u-3-5
           .content
             .content-header
-              //-div.tab-on.tab-a
-                | New Candidates
-                b 5
-              //-div.tab-b To Be Scheduled
-              //-div.header-action
+              div.header-action
                 span.oi.oi-l(data-glyph='plus')
                 | Add new candidate
             .content-tasks.view-a
