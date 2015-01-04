@@ -804,7 +804,7 @@ button {
 .btn-flat.btn-gray {
   color: #999; }
   .btn-flat.btn-gray:hover {
-    background: #eee;
+    background: rgba(0, 0, 0, 0.08);
     color: #666; }
 
 .btn-bkg.btn-blue {
@@ -822,10 +822,10 @@ button {
     color: #FFEBEE; }
 
 .btn-bkg.btn-green {
-  background: #00897B;
+  background: #26A69A;
   color: #E0F2F1; }
   .btn-bkg.btn-green:hover {
-    background: #00796B;
+    background: #009688;
     color: #E0F2F1; }
 
 input:focus,

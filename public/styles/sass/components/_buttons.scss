@@ -31,7 +31,7 @@ button {
   color: #999;
 
   &:hover {
-    background: #eee;
+    background: rgba(0, 0, 0, 0.08);
     color: #666;
   }
 }
@@ -57,11 +57,11 @@ button {
 }
 
 .btn-bkg.btn-green {
-  background: palette(Teal, $shade: 600);
+  background: palette(Teal, $shade: 400);
   color: palette(Teal, $shade: 50);
 
   &:hover {
-    background: palette(Teal, $shade: 700);
+    background: palette(Teal, $shade: 500);
     color: palette(Teal, $shade: 50);
   }
 }
