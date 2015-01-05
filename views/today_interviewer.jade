@@ -30,7 +30,7 @@ block body
                 | Advanced
                 b 0
               .left-sub-tab
-                | Removed
+                | Rejected
                 b 0
             .left-tab(data='.view-b')
               | My Interviews
@@ -52,7 +52,7 @@ block body
               .left-sub-tab
                 | Onsite Decision
                 b 0
-            .left-separator
+            //-.left-separator
             //-.left-title Positions
             //-.left-checkgroup
               div
@@ -61,8 +61,8 @@ block body
               div
                 span.oi.oi-l(data-glyph='task')
                 | Engineering
-            .left-title Filters
-            .left-checkgroup
+            //-.left-title Filters
+            //-.left-checkgroup
               div
                 span.oi.oi-l(data-glyph='task')
                 | Resume
@@ -76,6 +76,13 @@ block body
         .pure-u-3-5
           .content
             .content-header
+              .header-filter Materials
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div Resume
+                    b 3
+                  div Portfolio
+                    b 2
             .content-tasks.view-a
               .task
                 .task-body
@@ -91,7 +98,7 @@ block body
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
-                    | Remove
+                    | Reject
               .task    
                 .task-body
                   .body-icon
@@ -106,7 +113,7 @@ block body
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
-                    | Remove
+                    | Reject
               .task
                 .task-body
                   .body-icon
@@ -121,7 +128,7 @@ block body
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
-                    | Remove
+                    | Reject
               .task
                 .task-body
                   .body-icon
@@ -137,7 +144,7 @@ block body
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review again
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
-                    | Remove
+                    | Reject
             .content-tasks.view-b
               .task
                 .task-type
@@ -212,7 +219,7 @@ block body
                     span.oi.oi-r(data-glyph='caret-bottom')
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
-                    | Remove
+                    | Reject
           
         .pure-u-1-5
           .right-info

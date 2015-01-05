@@ -86,3 +86,12 @@ $('.column-header-filter').click(function() {
 $('.column-dropdown').click(function() {
   $(this).hide();
 });
+
+// Header filter dropdown
+$('.header-filter').click(function(e) {
+  if($(e.target).parent().is('.header-dropdown')) {
+    $(e.target).parent().hide();
+  } else {
+    $(this).find('.header-dropdown').show();
+  }
+});

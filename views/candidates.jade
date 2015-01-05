@@ -15,14 +15,11 @@ block body
             .left-search
               span.oi(data-glyph='magnifying-glass')
               input(type='text', value='Search for a candidate')
-            .left-title Candidates
+            .left-title Active Candidates
             .left-tab.tab-on(data='.view-a')
-              | All
-              b 150
-            .left-tab(data='.view-b')
               | New
               b 0
-            .left-sub-tabs.view-b.tab-closed
+            .left-sub-tabs.view-a
               .left-sub-tab
                 | Unreviewed
                 b 0
@@ -62,13 +59,22 @@ block body
               .left-sub-tab
                 | Declined
                 b 1
-            .left-tab(data='.view-f')
-              | Removed
-              b 140
-                
             .left-separator
-            .left-title Positions
-            .left-checkgroup
+            .left-tab(data='.view-b')
+              | Active
+              b 10
+            .left-tab(data='.view-f')
+              | Rejected
+              b 140
+            .left-tab(data='.view-g')
+              | Archived
+              b 1000
+            .left-tab(data='.view-h')
+              | All
+              b 1150  
+            .left-separator
+            //-.left-title Positions
+            //-.left-checkgroup
               div
                 //-b &#x25a2;
                 span.oi.oi-l(data-glyph='task')
@@ -91,12 +97,34 @@ block body
         
         .pure-u-3-5
           .content
+            //-.view-info.view-a
+              .view-title Active candidates
+              .view-desc All candidates being reviewed or interviewed in the system.
+              span.oi(data-glyph='x')
             .content-header
-              div.header-action
+              .header-filter All Positions
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div All Positions
+                    b 10
+                  div Designer
+                    b 5
+                  div Engineer
+                    b 2
+                  div Tester
+                    b 3  
+              .header-filter Materials
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div Resume
+                    b 3
+                  div Portfolio
+                    b 2
+              .header-action
                 span.oi.oi-l(data-glyph='plus')
                 | Add new candidate
-            .content-tasks.view-a
             .content-tasks.view-b
+            .content-tasks.view-a
               .task
                 .task-body
                   .body-icon
@@ -170,7 +198,7 @@ block body
                     | Offer extended
                   div 5 days ago
                 .task-action
-                  button.btn-bkg.btn-green
+                  button.btn-bkg.btn-blue
                     span.oi.oi-l(data-glyph='check')
                     | Accepted
                   button.btn-flat.btn-gray
@@ -185,7 +213,7 @@ block body
                     span.info  Designer
                 .task-info
                   .status
-                    | Removed
+                    | Rejected
                   div 5 days ago
                 .task-action
                   button.btn-flat.btn-blue.open-modal(data='.note-modal')

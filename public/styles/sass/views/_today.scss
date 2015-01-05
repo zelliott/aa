@@ -117,6 +117,85 @@
 
       .content {
 
+        .content-header {
+
+          .header-filter {
+            color: #999;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 50px !important;
+            position: relative;
+
+            &:hover {
+              color: palette(Blue, $shade: 50);
+            }
+
+            span {
+              font-size: 10px;
+            }
+          }
+
+          .header-dropdown {
+            background: rgba(255, 255, 255, 1);
+            @include box-shadow(0, 0, 5px, rgba(0, 0, 0, 0.2));
+            color: #444;
+            display: none;
+            font-size: 13px;
+            position: absolute;
+            left: 0px;
+            line-height: normal;
+            top: 15px;
+            width: 130px;
+
+            div:first-child {
+              padding: 10px;
+            }
+
+            div {
+              cursor: pointer;
+              padding: 10px 10px 9px 10px;
+
+              &:hover {
+                background: #eee;
+                color: #222;
+              }
+
+              b {
+                float: right;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+
+        .view-info {
+          background: palette(Blue, $shade: 600);
+          padding: 20px;
+          position: relative;
+
+          .view-title {
+            color: #fff;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            margin-right: 20px;
+          }
+
+          .view-desc {
+            color: palette(Blue, $shade: 100);
+            display: inline-block;
+            font-size: 13px;
+          }
+
+          span.oi {
+            color: palette(Blue, $shade: 100);
+            font-size: 14px;
+            position: absolute;
+            right: 20px;
+            top: 22px;
+          }
+        }
+
         .content-tasks {
 
           .task {
@@ -297,18 +376,18 @@
             }
           }
         }
+      }
 
-        .view-a {
-          display: block;
-        }
+      .view-a {
+        display: block;
+      }
 
-        .view-b,
-        .view-c,
-        .view-d,
-        .view-e,
-        .view-f {
-          display: none;
-        }
+      .view-b,
+      .view-c,
+      .view-d,
+      .view-e,
+      .view-f {
+        display: none;
       }
 
       .right-info {

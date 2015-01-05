@@ -1299,34 +1299,18 @@ input[type=range]::-webkit-slider-thumb {
     height: 60px;
     line-height: 60px;
     padding: 0 20px; }
-    .candidate-bkg .container .candidate .content .content-header > div:not(.header-action),
-    .candidate-bkg .container .today .content .content-header > div:not(.header-action),
-    .today-bkg .container .candidate .content .content-header > div:not(.header-action),
-    .today-bkg .container .today .content .content-header > div:not(.header-action) {
+    .candidate-bkg .container .candidate .content .content-header > div:not(.header-action):not(.header-dropdown),
+    .candidate-bkg .container .today .content .content-header > div:not(.header-action):not(.header-dropdown),
+    .today-bkg .container .candidate .content .content-header > div:not(.header-action):not(.header-dropdown),
+    .today-bkg .container .today .content .content-header > div:not(.header-action):not(.header-dropdown) {
       cursor: pointer;
       display: inline-block;
       margin-right: 40px; }
-      .candidate-bkg .container .candidate .content .content-header > div:not(.header-action):hover,
-      .candidate-bkg .container .today .content .content-header > div:not(.header-action):hover,
-      .today-bkg .container .candidate .content .content-header > div:not(.header-action):hover,
-      .today-bkg .container .today .content .content-header > div:not(.header-action):hover {
+      .candidate-bkg .container .candidate .content .content-header > div:not(.header-action):not(.header-dropdown):hover,
+      .candidate-bkg .container .today .content .content-header > div:not(.header-action):not(.header-dropdown):hover,
+      .today-bkg .container .candidate .content .content-header > div:not(.header-action):not(.header-dropdown):hover,
+      .today-bkg .container .today .content .content-header > div:not(.header-action):not(.header-dropdown):hover {
         color: #777; }
-      .candidate-bkg .container .candidate .content .content-header > div:not(.header-action) b,
-      .candidate-bkg .container .today .content .content-header > div:not(.header-action) b,
-      .today-bkg .container .candidate .content .content-header > div:not(.header-action) b,
-      .today-bkg .container .today .content .content-header > div:not(.header-action) b {
-        background: #1E88E5;
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        background-clip: padding-box;
-        color: #fff;
-        float: right;
-        font-size: 10px;
-        line-height: 14px;
-        padding: 2px 6px;
-        margin-left: 10px;
-        margin-top: 21px; }
     .candidate-bkg .container .candidate .content .content-header .tab-on,
     .candidate-bkg .container .today .content .content-header .tab-on,
     .today-bkg .container .candidate .content .content-header .tab-on,
@@ -1970,6 +1954,60 @@ input[type=range]::-webkit-slider-thumb {
       .today-bkg .container .today .left-nav .tab-on:hover {
         background: #444;
         color: #eee; }
+  .today-bkg .container .today .content .content-header .header-filter {
+    color: #999;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 50px !important;
+    position: relative; }
+    .today-bkg .container .today .content .content-header .header-filter:hover {
+      color: #E3F2FD; }
+    .today-bkg .container .today .content .content-header .header-filter span {
+      font-size: 10px; }
+  .today-bkg .container .today .content .content-header .header-dropdown {
+    background: white;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: #444;
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    left: 0px;
+    line-height: normal;
+    top: 15px;
+    width: 130px; }
+    .today-bkg .container .today .content .content-header .header-dropdown div:first-child {
+      padding: 10px; }
+    .today-bkg .container .today .content .content-header .header-dropdown div {
+      cursor: pointer;
+      padding: 10px 10px 9px 10px; }
+      .today-bkg .container .today .content .content-header .header-dropdown div:hover {
+        background: #eee;
+        color: #222; }
+      .today-bkg .container .today .content .content-header .header-dropdown div b {
+        float: right;
+        font-weight: 600; }
+  .today-bkg .container .today .content .view-info {
+    background: #1E88E5;
+    padding: 20px;
+    position: relative; }
+    .today-bkg .container .today .content .view-info .view-title {
+      color: #fff;
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-right: 20px; }
+    .today-bkg .container .today .content .view-info .view-desc {
+      color: #BBDEFB;
+      display: inline-block;
+      font-size: 13px; }
+    .today-bkg .container .today .content .view-info span.oi {
+      color: #BBDEFB;
+      font-size: 14px;
+      position: absolute;
+      right: 20px;
+      top: 22px; }
   .today-bkg .container .today .content .content-tasks .task {
     border-bottom: 1px solid #ddd;
     padding: 20px; }
@@ -2092,13 +2130,13 @@ input[type=range]::-webkit-slider-thumb {
           margin-top: 2px; }
         .today-bkg .container .today .content .content-tasks .task .task-action .btn-delete:hover {
           color: #EF5350; }
-  .today-bkg .container .today .content .view-a {
+  .today-bkg .container .today .view-a {
     display: block; }
-  .today-bkg .container .today .content .view-b,
-  .today-bkg .container .today .content .view-c,
-  .today-bkg .container .today .content .view-d,
-  .today-bkg .container .today .content .view-e,
-  .today-bkg .container .today .content .view-f {
+  .today-bkg .container .today .view-b,
+  .today-bkg .container .today .view-c,
+  .today-bkg .container .today .view-d,
+  .today-bkg .container .today .view-e,
+  .today-bkg .container .today .view-f {
     display: none; }
   .today-bkg .container .today .right-info {
     background: #e6e6e6;

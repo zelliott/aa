@@ -19,10 +19,10 @@ block body
           .column-dropdown
             div All
               b 4
-            div Reviewed
-              b 1
             div Unreviewed
               b 3
+            div Saved
+              b 1
       .pure-u-1-5
         .column-header
           a Phone Interviews
@@ -32,7 +32,7 @@ block body
           .column-dropdown
             div All
               b 4
-            div Interviewed
+            div Post Interview
               b 1
             div Scheduled
               b 2
@@ -47,7 +47,7 @@ block body
           .column-dropdown
             div All
               b 1
-            div Interviewed
+            div Post Interview
               b 0
             div Scheduled
               b 1
@@ -108,9 +108,9 @@ block body
               .card-name Tobias Funke
               .card-pos Analyst
             .additional-info
-              span.oi(data-glyph='eye')
+              span.oi(data-glyph='box')
               div.reviewed
-                span.date-subtext Reviewed
+                span.date-subtext Saved
                 span.date-ago 10 days ago
 
           .add-card.open-modal(data='.add-modal')
