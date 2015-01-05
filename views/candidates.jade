@@ -11,7 +11,7 @@ block body
       
       .today.pure-g
         .pure-u-1-5
-          .left-nav
+          .left-nav(data-step='2', data-intro='This sidebar groups all of the candidates by their statuses.  We can choose to view different groups by clicking on different tabs.', data-position='right')
             .left-search
               span.oi(data-glyph='magnifying-glass')
               input(type='text', value='Search for a candidate')
@@ -96,7 +96,7 @@ block body
               
         
         .pure-u-3-5
-          .content
+          .content(data-step='3', data-intro='This middle section is where all of the candidates for the current tab group are listed.', data-position='bottom')
             //-.view-info.view-a
               .view-title Active candidates
               .view-desc All candidates being reviewed or interviewed in the system.
@@ -221,7 +221,7 @@ block body
                     | Feedback
           
         .pure-u-1-5
-          .right-info
+          .right-info(data-step='4', data-intro='This is the right column for god knows what.  Maybe activity...', data-position='left')
             .right-block.today-block
               span.time 3:00 PM PST 
               span.date Monday, January 5th

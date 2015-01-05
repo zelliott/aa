@@ -11,7 +11,7 @@ block body
       
       .candidate.pure-g
         .pure-u-1-5
-          .left-info
+          .left-info(data-step='2', data-intro='Candidate personal info and application materials.', data-position='right')
             .photo
             .name Don Draper
             .left-block
@@ -35,7 +35,7 @@ block body
                 | Portfolio
           
         .pure-u-3-5
-          .content
+          .content(data-step='3', data-intro='All discussion about the candidate goes here.  General coments about resume, personal recommendations from employees, interview feedback, etc.  The tab currently shows the evaluation from a phone interview with the interviewer Michael Bluth.', data-position='right')
             .content-header
               div All
               div Resume Discussion
@@ -75,7 +75,7 @@ block body
                         b 10
                     .content-body
                       | Overall- really nice candidate.  Has a strong engineering background and would recommend for a role on the Web Product team.
-                  .post-comments
+                  .post-comments(data-step='4', data-intro='Other Addepar employees can comment on the evaluation', data-position='top')
                     .comment
                       .author
                         div
@@ -99,17 +99,17 @@ block body
                         .content-body Totally agree with Mitchell.  I'm on the mobile team right now and we could use another engineer.  Don seems like a nice guy.
           
         .pure-u-1-5
-          .right-info
-            .right-block
+          .right-info(data-step='5', data-intro='Right sidebar shows information about the recruitment status/process.', data-position='left')
+            .right-block(data-step='6', data-intro='Next action item for the candidate (could be "Review", "Make Offer Decision", "Start Interview", etc...).', data-position='left')
               .block-title Current Status
               .block-desc Phone Interview with Michael Bluth in 15 minutes
               button.block-button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
-            .right-block
+            .right-block(data-step='7', data-intro='Position/department the candidate applied for.', data-position='left')
               .block-title Position Applied For
               .block-body
                 span Engineering Position
                 span Engineering Department
-            .right-block
+            .right-block(data-step='8', data-intro='Candidate\'s process through the recruitment system.', data-position='left')
               .block-title Recruitment Process
               .flow
                 .event

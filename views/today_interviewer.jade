@@ -11,7 +11,7 @@ block body
       
       .today.pure-g
         .pure-u-1-5
-          .left-nav
+          .left-nav(data-step='2', data-intro='These are the common tasks that the interviewer must complete.  First, reviewing new candidates, and choosing to either advance, reject, or save each application.  Second, upcoming interviews that the interviewer has.  Third, post-interview decisions that the interviewer must make (i.e. further advancement, offer, or rejection).', data-position='right')
             .left-search
               span.oi(data-glyph='magnifying-glass')
               input(type='text', value='Search for a candidate')
@@ -23,7 +23,7 @@ block body
               .left-sub-tab
                 | Unreviewed
                 b 3
-              .left-sub-tab
+              .left-sub-tab(data-step='3', data-intro='Why saving?  If an interviewer reviews a new candidate, and can\'t immediately make a decision, but still wants to keep them in the process, they can choose to save that candidate.  Also useful if more information is required, or you\'re unsure if you will have room for additional employees/interns.', data-position='right')
                 | Saved
                 b 1
               .left-sub-tab
@@ -74,7 +74,7 @@ block body
                 | Recommendation
         
         .pure-u-3-5
-          .content
+          .content(data-step='4', data-intro='The list of new candidates to be managed.  Personal info on the left, recruitment info on the right, action item in blue.', data-position='bottom')
             .content-header
               .header-filter Materials
                 span.oi.oi-r(data-glyph='caret-bottom')
@@ -222,7 +222,7 @@ block body
                     | Reject
           
         .pure-u-1-5
-          .right-info
+          .right-info(data-step='5', data-intro='Not sure how useful this sidebar is because it is almost a duplicate of the "My Interviews" tab.  Might place recent activity here instead.', data-position='left')
             .right-block.today-block
               span.time 11:00 AM PST 
               span.date Monday, January 20th

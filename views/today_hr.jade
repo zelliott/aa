@@ -11,7 +11,7 @@ block body
       
       .today.pure-g
         .pure-u-1-5
-          .left-nav
+          .left-nav(data-step='2', data-intro='These are the common tasks that the HR manager must complete.  First, notifying candidates of changes in their recruitment status (i.e. We need more information before we can proceed, rejection notification, offer update).  Second, manage interview scheduling.', data-position='right')
             .left-search
               span.oi(data-glyph='magnifying-glass')
               input(type='text', value='Search for a candidate')
@@ -74,7 +74,7 @@ block body
               
         
         .pure-u-3-5
-          .content
+          .content(data-step='3', data-intro='Here is the list of candidates that need to be notified because of some status update.  Luke\'s application has been saved by the reviewer... the feedback attached will probably explain that more information is needed.  Gloria\'s application also has feedback, but she was rejected.  Gob has an offer extended to him, and you have to notify him via email.  Once you have notified the candidate, you click the "Notified" button, and the task is completed.', data-position='bottom')
             .content-header
               //-div.tab-on.tab-a
                 | New Candidates

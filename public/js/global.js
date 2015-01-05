@@ -95,3 +95,7 @@ $('.header-filter').click(function(e) {
     $(this).find('.header-dropdown').show();
   }
 });
+
+$('.logo').click(function() {
+  introJs().start();
+});

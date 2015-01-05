@@ -10,7 +10,7 @@ block body
     include ./includes/header.jade
 
     .process.pure-g
-      .pure-u-1-5
+      .pure-u-1-5(data-step='2', data-intro='All new candidates.  You can choose to filter by status.', data-position='right')
         .column-header
           a New Candidates
             b 4
@@ -23,7 +23,7 @@ block body
               b 3
             div Saved
               b 1
-      .pure-u-1-5
+      .pure-u-1-5(data-step='4', data-intro='Candidates in the phone interview stage.  Can filter by status (unscheduled, scheduled, post interview)', data-position='right')
         .column-header
           a Phone Interviews
             b 4
@@ -38,7 +38,7 @@ block body
               b 2
             div Unscheduled
               b 3
-      .pure-u-1-5
+      .pure-u-1-5(data-step='5', data-intro='Candidates in the onsite interview stage.', data-position='left')
         .column-header
           a Onsite Interviews
             b 1
@@ -53,9 +53,9 @@ block body
               b 1
             div Unscheduled
               b 0
-      .pure-u-1-5
+      .pure-u-1-5(data-step='6', data-intro='Candidates to which an offer has been extended to.', data-position='left')
         .column-header
-          a Offer Made
+          a Offer Extended
             b 0
           .column-header-filter All
             span.oi(data-glyph='caret-bottom')
@@ -69,14 +69,14 @@ block body
             div Waiting
               b 0
       .pure-u-1-5
-        .column-header.search-header
+        .column-header.search-header(data-step='7', data-intro='Quickly search for any active candidate, and it will pull up their candidate "card".', data-position='left')
           span.oi(data-glyph='magnifying-glass')
           input(type='text', value='Search for a candidate')
 
       //- Candidates
       .pure-u-1-5
         .column.candidates-column
-          .card
+          .card(data-step='3', data-intro='Clicking on Luke\'s card will reveal quick actions.  Not all of the actions are applicable, however.  Either need different actions or need to rethink the purpose of this view.', data-position='right')
             .card-contact
               .card-name Luke Dunphy
               .card-pos Advertising
