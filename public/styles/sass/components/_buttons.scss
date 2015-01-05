@@ -3,7 +3,7 @@ button {
   @include border-radius(4px);
   border: none;
   font-size: 14px;
-  padding: 8px;
+  padding: 10px 20px;
 
   &:focus {
     outline: none;
@@ -33,6 +33,16 @@ button {
   &:hover {
     background: rgba(0, 0, 0, 0.08);
     color: #666;
+  }
+}
+
+.btn-bkg.btn-gray {
+  background: #eee;
+  color: #777;
+
+  &:hover {
+    background: #ddd;
+    color: #444;
   }
 }
 

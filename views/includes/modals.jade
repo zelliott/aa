@@ -33,7 +33,20 @@
   .modal-title Add New Candidate
   .modal-section
     .modal-subtitle Personal Info
+    input(type='text', placeholder='First name')
+    input(type='text', placeholder='Last name')
+    input(type='text', placeholder='Email')
+    input(type='text', placeholder='Phone number')
+  .modal-section
+    .modal-subtitle Position
+    input.display-block(type='text', placeholder='Position applied for')
+    input.display-block(type='text', placeholder='Position department')
+  .modal-section
     .modal-subtitle Application Materials
+    button.btn-bkg.btn-gray Upload Resume
+    button.btn-bkg.btn-gray Upload Recommendation
+    input(type='text', placeholder='Portfolio link')
+      
   .modal-actions
     button.btn-flat.btn-blue Cancel
     button.btn-flat.btn-blue Add

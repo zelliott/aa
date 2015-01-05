@@ -749,6 +749,9 @@
 .green {
   color: #26A69A !important; }
 
+.display-block {
+  display: block; }
+
 body,
 input,
 textarea,
@@ -786,7 +789,7 @@ button {
   background-clip: padding-box;
   border: none;
   font-size: 14px;
-  padding: 8px; }
+  padding: 10px 20px; }
   button:focus {
     outline: none; }
 
@@ -806,6 +809,13 @@ button {
   .btn-flat.btn-gray:hover {
     background: rgba(0, 0, 0, 0.08);
     color: #666; }
+
+.btn-bkg.btn-gray {
+  background: #eee;
+  color: #777; }
+  .btn-bkg.btn-gray:hover {
+    background: #ddd;
+    color: #444; }
 
 .btn-bkg.btn-blue {
   background: #1E88E5;
@@ -877,6 +887,25 @@ textarea:focus {
       margin-left: 20px; }
     .modal .modal-actions .btn-flat.btn-blue:hover {
       background: #E3F2FD; }
+
+.add-modal input[type=text] {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #999;
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin: 0 20px 20px 0;
+  width: 200px; }
+  .add-modal input[type=text]:hover {
+    color: #999;
+    border-bottom-color: #bbb; }
+  .add-modal input[type=text]:focus {
+    color: #1E88E5;
+    border-bottom-color: #1E88E5; }
+.add-modal button.btn-bkg.btn-gray {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 20px; }
 
 .schedule-modal {
   width: 460px; }

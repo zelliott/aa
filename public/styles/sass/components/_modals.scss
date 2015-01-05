@@ -50,6 +50,35 @@
   }
 }
 
+.add-modal {
+
+  input[type=text] {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    color: #999;
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin: 0 20px 20px 0;
+    width: 200px;
+
+    &:hover {
+      color: #999;
+      border-bottom-color: #bbb;
+    }
+
+    &:focus {
+      color: palette(Blue, $shade: 600);
+      border-bottom-color: palette(Blue, $shade: 600);
+    }
+  }
+
+  button.btn-bkg.btn-gray {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
+}
+
 .schedule-modal {
   width: 460px;
 
