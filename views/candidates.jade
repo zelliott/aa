@@ -60,16 +60,16 @@ block body
                 | Declined
                 b 1
             .left-separator
-            .left-tab(data='.view-b')
+            .left-tab(data='.view-b', data-step='3', data-intro='Active candidates are those who are in the recruitment system and still being considered.', data-position='right')
               | Active
               b 10
-            .left-tab(data='.view-f')
+            .left-tab(data='.view-f', data-step='4', data-intro='Candidates who weren\'t a good fit for some reason.  These candidates are no longer considered active.', data-position='right')
               | Rejected
               b 140
-            .left-tab(data='.view-g')
+            .left-tab(data='.view-g', data-step='5', data-intro='No candidate is ever removed from this app.  Instead, after a certain amount of time inactive (a month or so) the candidate is archived.  This way, candidates who re-apply will already have a bunch of useful data in the system.  We can also search for candidates who we previously interviewed/recruited.', data-position='right')
               | Archived
               b 1000
-            .left-tab(data='.view-h')
+            .left-tab(data='.view-h', data-step='6', data-intro='Active + Rejected + Archived = All', data-position='right')
               | All
               b 1150  
             .left-separator
@@ -96,7 +96,7 @@ block body
               
         
         .pure-u-3-5
-          .content(data-step='3', data-intro='This middle section is where all of the candidates for the current tab group are listed.', data-position='bottom')
+          .content(data-step='7', data-intro='This middle section is where all of the candidates for the current tab group are listed.', data-position='bottom')
             //-.view-info.view-a
               .view-title Active candidates
               .view-desc All candidates being reviewed or interviewed in the system.
@@ -221,7 +221,7 @@ block body
                     | Feedback
           
         .pure-u-1-5
-          .right-info(data-step='4', data-intro='This is the right column for god knows what.  Maybe activity...', data-position='left')
+          .right-info(data-step='8', data-intro='This is the right column for god knows what.  Maybe activity...', data-position='left')
             .right-block.today-block
               span.time 3:00 PM PST 
               span.date Monday, January 5th
