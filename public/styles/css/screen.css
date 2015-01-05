@@ -749,6 +749,9 @@
 .green {
   color: #26A69A !important; }
 
+.yellow {
+  color: #F57F17 !important; }
+
 .display-block {
   display: block; }
 
@@ -1463,6 +1466,33 @@ input[type=range]::-webkit-slider-thumb {
           .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info .type,
           .today-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-top-bar .interview-info .type {
             margin-bottom: 5px; }
+      .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main .content-rating,
+      .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main .content-rating,
+      .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main .content-rating,
+      .today-bkg .container .today .content .content-posts .content-post > .content .content-main .content-rating {
+        margin-top: 20px;
+        padding: 20px 0; }
+        .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main .content-rating div,
+        .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main .content-rating div,
+        .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main .content-rating div,
+        .today-bkg .container .today .content .content-posts .content-post > .content .content-main .content-rating div {
+          display: inline-block;
+          vertical-align: top;
+          width: 20%; }
+          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main .content-rating div span,
+          .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main .content-rating div span,
+          .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main .content-rating div span,
+          .today-bkg .container .today .content .content-posts .content-post > .content .content-main .content-rating div span {
+            display: block;
+            font-size: 12px;
+            margin-bottom: 5px; }
+          .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main .content-rating div b,
+          .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main .content-rating div b,
+          .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main .content-rating div b,
+          .today-bkg .container .today .content .content-posts .content-post > .content .content-main .content-rating div b {
+            display: block;
+            font-weight: 600;
+            font-size: 18px; }
       .candidate-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-body,
       .candidate-bkg .container .today .content .content-posts .content-post > .content .content-main > .content-body,
       .today-bkg .container .candidate .content .content-posts .content-post > .content .content-main > .content-body,
@@ -1470,7 +1500,7 @@ input[type=range]::-webkit-slider-thumb {
         color: #555;
         font-size: 14px;
         line-height: 22px;
-        padding: 20px 0 0 0; }
+        margin: 20px 0 0 0; }
       .candidate-bkg .container .candidate .content .content-posts .content-post > .content .post-comments,
       .candidate-bkg .container .today .content .content-posts .content-post > .content .post-comments,
       .today-bkg .container .candidate .content .content-posts .content-post > .content .post-comments,

@@ -204,11 +204,34 @@
                   }
                 }
 
+                .content-rating {
+                  margin-top: 20px;
+                  padding: 20px 0;
+
+                  div {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 20%;
+
+                    span {
+                      display: block;
+                      font-size: 12px;
+                      margin-bottom: 5px;
+                    }
+
+                    b {
+                      display: block;
+                      font-weight: 600;
+                      font-size: 18px;
+                    }
+                  }
+                }
+
                 > .content-body {
                   color: #555;
                   font-size: 14px;
                   line-height: 22px;
-                  padding: 20px 0 0 0;
+                  margin: 20px 0 0 0;
                 }
               }
 
