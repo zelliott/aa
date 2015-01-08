@@ -1239,14 +1239,34 @@ input[type=range]::-webkit-slider-thumb {
   .today-bkg .container .candidate .right-info,
   .today-bkg .container .today .left-info,
   .today-bkg .container .today .right-info {
-    height: 100vh;
-    padding: 20px; }
+    height: 100vh; }
   .candidate-bkg .container .candidate .left-info,
   .candidate-bkg .container .today .left-info,
   .today-bkg .container .candidate .left-info,
   .today-bkg .container .today .left-info {
     background: #222;
     text-align: center; }
+    .candidate-bkg .container .candidate .left-info .left-back,
+    .candidate-bkg .container .today .left-info .left-back,
+    .today-bkg .container .candidate .left-info .left-back,
+    .today-bkg .container .today .left-info .left-back {
+      background: #111;
+      border-bottom: 1px solid #000;
+      color: #666;
+      cursor: pointer;
+      font-size: 13px;
+      padding: 21px 20px;
+      text-align: center; }
+      .candidate-bkg .container .candidate .left-info .left-back span.oi,
+      .candidate-bkg .container .today .left-info .left-back span.oi,
+      .today-bkg .container .candidate .left-info .left-back span.oi,
+      .today-bkg .container .today .left-info .left-back span.oi {
+        font-size: 10px; }
+      .candidate-bkg .container .candidate .left-info .left-back:hover,
+      .candidate-bkg .container .today .left-info .left-back:hover,
+      .today-bkg .container .candidate .left-info .left-back:hover,
+      .today-bkg .container .today .left-info .left-back:hover {
+        color: #999; }
     .candidate-bkg .container .candidate .left-info .photo,
     .candidate-bkg .container .today .left-info .photo,
     .today-bkg .container .candidate .left-info .photo,
@@ -1257,7 +1277,7 @@ input[type=range]::-webkit-slider-thumb {
       -webkit-border-radius: 1000px;
       background-clip: padding-box;
       height: 80px;
-      margin: 0 auto 20px auto;
+      margin: 20px auto;
       width: 80px; }
     .candidate-bkg .container .candidate .left-info .name,
     .candidate-bkg .container .today .left-info .name,
@@ -1271,7 +1291,8 @@ input[type=range]::-webkit-slider-thumb {
     .today-bkg .container .candidate .left-info .left-block,
     .today-bkg .container .today .left-info .left-block {
       text-align: left;
-      margin-top: 40px; }
+      margin-top: 40px;
+      padding: 0 20px; }
       .candidate-bkg .container .candidate .left-info .left-block .block-title,
       .candidate-bkg .container .today .left-info .left-block .block-title,
       .today-bkg .container .candidate .left-info .left-block .block-title,
@@ -1599,7 +1620,8 @@ input[type=range]::-webkit-slider-thumb {
   .candidate-bkg .container .today .right-info,
   .today-bkg .container .candidate .right-info,
   .today-bkg .container .today .right-info {
-    background: #e6e6e6; }
+    background: #e6e6e6;
+    padding: 20px; }
     .candidate-bkg .container .candidate .right-info .right-block,
     .candidate-bkg .container .today .right-info .right-block,
     .today-bkg .container .candidate .right-info .right-block,
@@ -1947,19 +1969,22 @@ input[type=range]::-webkit-slider-thumb {
     background: #222;
     height: 100vh;
     padding-bottom: 40px; }
-    .today-bkg .container .today .left-nav .left-search {
-      background: #111; }
-      .today-bkg .container .today .left-nav .left-search span {
-        background: #111;
-        color: #666;
-        font-size: 12px;
-        padding: 0 0 0 20px; }
-      .today-bkg .container .today .left-nav .left-search input {
-        background: transparent;
-        border: none;
-        color: #666;
-        font-size: 13px;
-        padding: 21px 20px; }
+    .today-bkg .container .today .left-nav .left-add {
+      background: #111;
+      border-bottom: 1px solid #000;
+      color: #666;
+      cursor: pointer;
+      font-size: 13px;
+      padding: 21px 20px;
+      text-align: center; }
+      .today-bkg .container .today .left-nav .left-add span.oi {
+        font-size: 10px; }
+      .today-bkg .container .today .left-nav .left-add:hover {
+        color: #999; }
+    .today-bkg .container .today .left-nav .left-filler {
+      background: #111;
+      border-bottom: 1px solid #000;
+      height: 60px; }
     .today-bkg .container .today .left-nav .left-title {
       color: #999;
       font-size: 14px;

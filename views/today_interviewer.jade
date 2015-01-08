@@ -12,9 +12,10 @@ block body
       .today.pure-g
         .pure-u-1-5
           .left-nav(data-step='2', data-intro='These are the common tasks that the interviewer must complete.  First, reviewing new candidates, and choosing to either advance, reject, or save each application.  Second, upcoming interviews that the interviewer has.  Third, post-interview decisions that the interviewer must make (i.e. further advancement, offer, or rejection).', data-position='right')
-            .left-search
+            //-.left-search
               span.oi(data-glyph='magnifying-glass')
               input(type='text', value='Search for a candidate')
+            .left-filler
             .left-title My Tasks
             .left-tab.tab-on(data='.view-a')
               | Manage New Candidates
@@ -83,6 +84,9 @@ block body
                     b 3
                   div Portfolio
                     b 2
+              .header-action
+                span.oi.oi-l(data-glyph='magnifying-glass')
+                | Search
             .content-tasks.view-a
               .task
                 .task-body

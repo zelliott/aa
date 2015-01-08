@@ -10,18 +10,35 @@
       .left-info,
       .right-info {
         height: 100vh;
-        padding: 20px;
       }
 
       .left-info {
         background: #222;
         text-align: center;
 
+        .left-back {
+          background: #111;
+          border-bottom: 1px solid #000;
+          color: #666;
+          cursor: pointer;
+          font-size: 13px;
+          padding: 21px 20px;
+          text-align: center;
+
+          span.oi {
+            font-size: 10px;
+          }
+
+          &:hover {
+            color: #999;
+          }
+        }
+
         .photo {
           background: #fff;
           @include border-radius(1000px);
           height: 80px;
-          margin: 0 auto 20px auto;
+          margin: 20px auto;
           width: 80px;
         }
 
@@ -34,6 +51,7 @@
         .left-block {
           text-align: left;
           margin-top: 40px;
+          padding: 0 20px;
 
           .block-title {
             color: #999;
@@ -320,6 +338,7 @@
       .right-info {
         background: #e6e6e6;
         // border-left: 1px solid #ddd;
+        padding: 20px;
 
         .right-block {
           margin-bottom: 40px;

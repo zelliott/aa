@@ -12,9 +12,12 @@ block body
       .today.pure-g
         .pure-u-1-5
           .left-nav(data-step='2', data-intro='This sidebar groups all of the candidates by their statuses.  We can choose to view different groups by clicking on different tabs.', data-position='right')
-            .left-search
+            //-.left-search
               span.oi(data-glyph='magnifying-glass')
               input(type='text', value='Search for a candidate')
+            .left-add.open-modal(data='.add-modal')
+              span.oi.oi-l(data-glyph='plus')
+              | Add new candidate 
             .left-title Active Candidates
             .left-tab.tab-on(data='.view-a')
               | New
@@ -120,9 +123,12 @@ block body
                     b 3
                   div Portfolio
                     b 2
-              .header-action.open-modal(data='.add-modal')
+              //-.header-action.open-modal(data='.add-modal')
                 span.oi.oi-l(data-glyph='plus')
                 | Add new candidate
+              .header-action
+                span.oi.oi-l(data-glyph='magnifying-glass')
+                | Search
             .content-tasks.view-b
             .content-tasks.view-a
               .task

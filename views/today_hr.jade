@@ -12,9 +12,12 @@ block body
       .today.pure-g
         .pure-u-1-5
           .left-nav(data-step='2', data-intro='These are the common tasks that the HR manager must complete.  First, notifying candidates of changes in their recruitment status (i.e. We need more information before we can proceed, rejection notification, offer update).  Second, manage interview scheduling.', data-position='right')
-            .left-search
+            //-.left-search
               span.oi(data-glyph='magnifying-glass')
               input(type='text', value='Search for a candidate')
+            .left-add.open-modal(data='.add-modal')
+              span.oi.oi-l(data-glyph='plus')
+              | Add new candidate 
             .left-title My Tasks
             .left-tab.tab-on(data='.view-a')
               | Notify Candidates
@@ -83,6 +86,9 @@ block body
               //-div.header-action
                 span.oi.oi-l(data-glyph='plus')
                 | Add new candidate
+              .header-action
+                span.oi.oi-l(data-glyph='magnifying-glass')
+                | Search
             .content-tasks.view-a
               .task
                 .task-body
