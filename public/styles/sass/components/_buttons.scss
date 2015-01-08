@@ -2,7 +2,8 @@ button {
   background: none;
   @include border-radius(4px);
   border: none;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
   padding: 10px 20px;
 
   &:focus {

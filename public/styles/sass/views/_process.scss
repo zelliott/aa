@@ -6,38 +6,38 @@
     .process {
 
       .column-header {
-        background: palette(Blue, $shade: 700);
-        border-right: 1px solid palette(Blue, $shade: 800);
+        background: #222;
+        border-right: 1px solid #111;
         height: 20px;
         line-height: 20px;
-        padding: 10px 20px;
+        padding: 15px 20px;
         position: relative;
 
         a {
-          color: palette(Blue, $shade: 100);
-          font-size: 12px;
+          color: #999;
+          font-size: 13px;
           font-weight: 500;
 
           &:hover {
-            border-bottom: 1px dotted palette(Blue, $shade: 50);
-            color: palette(Blue, $shade: 50);
+            border-bottom: 1px dotted #999;
+            color: #ccc;
           }
 
           b {
             font-weight: 600;
-            margin-left: 5px;
+            margin-left: 10px;
           }
         }
 
         .column-header-filter {
-          color: palette(Blue, $shade: 200);
+          color: #999;
           cursor: pointer;
           display: inline-block;
           font-size: 12px;
           float: right;
 
           &:hover {
-            color: palette(Blue, $shade: 50);
+            color: #ccc;
           }
 
           span {
@@ -48,21 +48,18 @@
 
         .column-dropdown {
           background: rgba(255, 255, 255, 1);
-          @include box-shadow(0, 0, 3px, rgba(0, 0, 0, 0.3));
+          @include box-shadow(0, 0, 5px, rgba(0, 0, 0, 0.3));
           color: #444;
           display: none;
           font-size: 12px;
           position: absolute;
           right: 0px;
           top: 0px;
-
-          div:first-child {
-            padding: 10px;
-          }
+          z-index: 100;
 
           div {
             cursor: pointer;
-            padding: 10px 10px 9px 10px;
+            padding: 15px;
 
             &:hover {
               background: #eee;
@@ -72,19 +69,19 @@
             b {
               float: right;
               font-weight: 600;
-              margin-left: 10px;
+              margin-left: 20px;
             }
           }
         }
       }
 
       .search-header {
-        background: palette(Blue, $shade: 800);
-        height: 40px;
+        background: #111;
+        height: 50px;
         padding: 0 !important;
 
         span {
-          color: palette(Blue, $shade: 300);
+          color: #666;
           font-size: 12px;
           line-height: 40px;
           padding: 0 20px;
@@ -93,9 +90,9 @@
         input {
           background: transparent;
           border: none;
-          color: palette(Blue, $shade: 300);
+          color: #666;
           font-size: 13px;
-          height: 40px;
+          height: 50px;
         }
       }
 
@@ -171,22 +168,23 @@
         }
 
         .add-card {
-          background: palette(Teal, $shade: 400);
           @include border-radius(4px);
-          color: palette(Teal, $shade: 50);
+          color: palette(Blue, $shade: 600);
           cursor: pointer;
-          font-size: 11px;
-          padding: 7px 20px;
+          font-size: 13px;
+          font-weight: 600;
+          padding: 10px 20px;
           margin: 10px;
           text-align: center;
 
           &:hover {
-            background: palette(Teal, $shade: 500);
+            background: #ddd;
+            color: palette(Blue, $shade: 700);
           }
 
           span {
-            font-size: 10px;
-            margin-right: 5px;
+            font-size: 9px;
+            margin-right: 8px;
           }
         }
       }
@@ -275,6 +273,7 @@
       }
 
       .search-column {
+        background: #e6e6e6;
         color: #999;
         font-size: 14px;
         line-height: 24px;
