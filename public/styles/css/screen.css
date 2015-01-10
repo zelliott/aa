@@ -1718,36 +1718,45 @@ input[type=range]::-webkit-slider-thumb {
       .process-bkg .container .process .column-header a b {
         font-weight: 600;
         margin-left: 10px; }
-    .process-bkg .container .process .column-header .column-header-filter {
+  .process-bkg .container .process .column-sub-header {
+    background: #444;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    display: block;
+    height: 23px;
+    padding: 6px 20px 8px 20px;
+    position: relative; }
+    .process-bkg .container .process .column-sub-header .column-header-filter {
       color: #999;
       cursor: pointer;
       display: inline-block;
-      font-size: 12px;
-      float: right; }
-      .process-bkg .container .process .column-header .column-header-filter:hover {
+      font-size: 12px; }
+      .process-bkg .container .process .column-sub-header .column-header-filter:hover {
         color: #ccc; }
-      .process-bkg .container .process .column-header .column-header-filter span {
+      .process-bkg .container .process .column-sub-header .column-header-filter span {
         font-size: 8px;
         margin-left: 5px; }
-    .process-bkg .container .process .column-header .column-dropdown {
+    .process-bkg .container .process .column-sub-header .pull-right {
+      margin-top: 3px; }
+    .process-bkg .container .process .column-sub-header .column-dropdown {
       background: white;
       -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       color: #444;
       display: none;
-      font-size: 12px;
+      font-size: 11px;
       position: absolute;
-      right: 0px;
-      top: 0px;
+      left: 20px;
+      top: 10px;
       z-index: 100; }
-      .process-bkg .container .process .column-header .column-dropdown div {
+      .process-bkg .container .process .column-sub-header .column-dropdown div {
         cursor: pointer;
-        padding: 15px; }
-        .process-bkg .container .process .column-header .column-dropdown div:hover {
+        padding: 10px 15px; }
+        .process-bkg .container .process .column-sub-header .column-dropdown div:hover {
           background: #eee;
           color: #222; }
-        .process-bkg .container .process .column-header .column-dropdown div b {
+        .process-bkg .container .process .column-sub-header .column-dropdown div b {
           float: right;
           font-weight: 600;
           margin-left: 20px; }
@@ -1776,7 +1785,7 @@ input[type=range]::-webkit-slider-thumb {
       font-size: 12px;
       padding: 10px 20px; }
       .process-bkg .container .process .column .card:hover {
-        background: #ddd; }
+        background: #e6e6e6; }
       .process-bkg .container .process .column .card .card-contact {
         display: inline-block; }
         .process-bkg .container .process .column .card .card-contact > div {
@@ -1788,7 +1797,7 @@ input[type=range]::-webkit-slider-thumb {
         .process-bkg .container .process .column .card .card-contact .card-email {
           color: #2196F3; }
     .process-bkg .container .process .column .on {
-      background: #ddd !important;
+      background: #e6e6e6 !important;
       position: relative; }
       .process-bkg .container .process .column .on .on-append {
         display: inline-block;
@@ -1834,7 +1843,7 @@ input[type=range]::-webkit-slider-thumb {
       margin: 10px;
       text-align: center; }
       .process-bkg .container .process .column .add-card:hover {
-        background: #ddd;
+        background: #e6e6e6;
         color: #1976D2; }
       .process-bkg .container .process .column .add-card span {
         font-size: 9px;

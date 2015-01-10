@@ -14,6 +14,7 @@ block body
         .column-header
           a New Candidates
             b 4
+        .column-sub-header
           .column-header-filter All
             span.oi(data-glyph='caret-bottom')
           .column-dropdown
@@ -23,10 +24,13 @@ block body
               b 3
             div Saved
               b 1
+          .column-header-filter.pull-right Sort by
+            span.oi(data-glyph='caret-bottom')
       .pure-u-1-5(data-step='4', data-intro='Candidates in the phone interview stage.  Can filter by status (unscheduled, scheduled, post interview)', data-position='right')
         .column-header
           a Phone Interviews
             b 4
+        .column-sub-header
           .column-header-filter All
             span.oi(data-glyph='caret-bottom')
           .column-dropdown
@@ -38,10 +42,13 @@ block body
               b 2
             div Unscheduled
               b 3
+          .column-header-filter.pull-right Sort by
+            span.oi(data-glyph='caret-bottom')
       .pure-u-1-5(data-step='5', data-intro='Candidates in the onsite interview stage.', data-position='left')
         .column-header
           a Onsite Interviews
             b 1
+        .column-sub-header
           .column-header-filter All
             span.oi(data-glyph='caret-bottom')
           .column-dropdown
@@ -53,10 +60,13 @@ block body
               b 1
             div Unscheduled
               b 0
+          .column-header-filter.pull-right Sort by
+            span.oi(data-glyph='caret-bottom')
       .pure-u-1-5(data-step='6', data-intro='Candidates to which an offer has been extended to.', data-position='left')
         .column-header
           a Offer Extended
             b 0
+        .column-sub-header
           .column-header-filter All
             span.oi(data-glyph='caret-bottom')
           .column-dropdown
@@ -68,10 +78,20 @@ block body
               b 0
             div Waiting
               b 0
+          .column-header-filter.pull-right Sort by
+            span.oi(data-glyph='caret-bottom')
       .pure-u-1-5
         .column-header.search-header(data-step='7', data-intro='Quickly search for any active candidate, and it will pull up their candidate "card".', data-position='left')
           span.oi(data-glyph='magnifying-glass')
           input(type='text', value='Search for a candidate')
+        .column-sub-header
+          .column-header-filter.pull-right Sort by
+            span.oi(data-glyph='caret-bottom')
+          .column-dropdown
+            div First
+            div Last
+            div Date
+            div Position
 
       //- Candidates
       .pure-u-1-5
@@ -116,6 +136,10 @@ block body
           .add-card.open-modal(data='.add-modal')
             span.oi(data-glyph='plus')
             | Add a new candidate
+            
+          //-.add-card
+            span.oi(data-glyph='data-transfer-upload')
+            | Upload from CSV
       
       //- Phone
       .pure-u-1-5
