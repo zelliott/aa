@@ -21,19 +21,25 @@ block body
             .left-title My Tasks
             .left-tab.tab-on(data='.view-a')
               | Notify Candidates
-              b 3
+              b 5
             .left-sub-tabs.view-a
               .left-sub-tab
-                | Need More Info
+                | Advanced to Phone
+                b 1
+              .left-sub-tab
+                | Advanced to Onsite
+                b 1
+              .left-sub-tab
+                | Offer Extended
+                b 1
+              .left-sub-tab
+                | Saved
                 b 2
               .left-sub-tab
                 | Rejected
                 b 0
-              .left-sub-tab
-                | Offer Update
-                b 1
             .left-tab(data='.view-b')
-              | Manage Interviews
+              | Schedule Interviews
               b 1
             .left-sub-tabs.tab-closed.view-b
               .left-sub-tab
@@ -42,6 +48,9 @@ block body
               .left-sub-tab
                 | Scheduled
                 b 0
+            .left-tab(data='.view-c')
+              | Update Offers
+              b 1
             //-.left-tab(data='.view-c')
               | Onsite Interviews
               b 0

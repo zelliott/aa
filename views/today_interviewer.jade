@@ -145,6 +145,9 @@ block body
                     | Saved
                   div 5 days ago
                 .task-action
+                  button.btn-flat.btn-blue.open-modal(data='.note-modal')
+                    span.oi.oi-l(data-glyph='document')
+                    | Feedback
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review again
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
                     span.oi(data-glyph='x')
