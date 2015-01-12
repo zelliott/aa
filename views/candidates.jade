@@ -93,10 +93,10 @@ block body
               .header-select
                 .select-box
                 span.oi(data-glyph='caret-bottom')
-              .header-filter All Departments.
+              .header-filter All Departments
                 span.oi.oi-r(data-glyph='caret-bottom')
                 .header-dropdown
-                  div All Departments.
+                  div All Departments
                     b 21
                   div Design
                     b 8
@@ -131,7 +131,7 @@ block body
               .header-action
                 span.oi.oi-l(data-glyph='magnifying-glass')
                 | Search
-              //- .header-filter.pull-right Most recent
+               .header-filter.pull-right Most recent
                 span.oi.oi-r(data-glyph='caret-bottom')
                 .header-dropdown
                   div Oldest first
@@ -148,6 +148,8 @@ block body
                 .task-info
                   .status Unreviewed
                   div 2 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
               .task    
                 .task-body
                   .body-icon
@@ -157,6 +159,8 @@ block body
                 .task-info
                   .status Unreviewed
                   div 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
               .task
                 .task-body
                   .body-icon
@@ -166,6 +170,8 @@ block body
                 .task-info
                   .status Unreviewed
                   div 7 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
             .content-tasks.view-b
               .task
                 .task-body
@@ -178,6 +184,11 @@ block body
                     span.oi.oi-l(data-glyph='box')
                     | Saved
                   div 7 days ago
+                .task-action
+                  button.btn-flat.btn-blue.open-modal(data='.note-modal')
+                    span.oi.oi-l(data-glyph='document')
+                    | Feedback
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review again
               .task
                 .task-body
                   .body-icon
@@ -189,6 +200,11 @@ block body
                     span.oi.oi-l(data-glyph='box')
                     | Saved
                   div 10 days ago
+                .task-action
+                  button.btn-flat.btn-blue.open-modal(data='.note-modal')
+                    span.oi.oi-l(data-glyph='document')
+                    | Feedback
+                  button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review again
             .content-tasks.view-c
               .task
                 .task-body
@@ -292,7 +308,7 @@ block body
           
         .pure-u-1-5
           .right-info(data-step='8', data-intro='This is the right column for god knows what.  Maybe activity...', data-position='left')
-            .right-block.today-block
+            //-.right-block.today-block
               span.time 3:00 PM PST 
               span.date Monday, January 5th
             include ./includes/activity.jade

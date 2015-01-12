@@ -69,6 +69,17 @@ block body
               .header-select
                 .select-box
                 span.oi(data-glyph='caret-bottom')
+              .header-filter All Departments
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div All Departments
+                    b 21
+                  div Design
+                    b 8
+                  div Engineering
+                    b 7
+                  div Product
+                    b 6
               .header-filter All Positions
                 span.oi.oi-r(data-glyph='caret-bottom')
                 .header-dropdown
@@ -90,7 +101,7 @@ block body
               .header-action
                 span.oi.oi-l(data-glyph='magnifying-glass')
                 | Search
-              //- .header-filter.pull-right Most recent
+              .header-filter.pull-right Most recent
                 span.oi.oi-r(data-glyph='caret-bottom')
                 .header-dropdown
                   div Oldest first
@@ -217,7 +228,7 @@ block body
           
         .pure-u-1-5
           .right-info
-            .right-block.today-block
+            //-.right-block.today-block
               span.time 3:00 PM PST 
               span.date Monday, January 5th
             include ./includes/activity.jade
