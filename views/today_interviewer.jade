@@ -12,13 +12,10 @@ block body
       .today.pure-g
         .pure-u-1-5
           .left-nav(data-step='2', data-intro='These are the common tasks that the interviewer must complete.  First, reviewing new candidates, and choosing to either advance, reject, or save each application.  Second, upcoming interviews that the interviewer has.  Third, post-interview decisions that the interviewer must make (i.e. further advancement, offer, or rejection).', data-position='right')
-            //-.left-search
-              span.oi(data-glyph='magnifying-glass')
-              input(type='text', value='Search for a candidate')
             .left-filler
             .left-title My Tasks
             .left-tab.tab-on(data='.view-a')
-              | Manage New Candidates
+              | Manage Applicants
               b 4
             .left-sub-tabs.view-a
               .left-sub-tab
@@ -27,14 +24,8 @@ block body
               .left-sub-tab(data-step='3', data-intro='Why saving?  If an interviewer reviews a new candidate, and can\'t immediately make a decision, but still wants to keep them in the process, they can choose to save that candidate.  Also useful if more information is required, or you\'re unsure if you will have room for additional employees/interns.', data-position='right')
                 | Saved
                 b 1
-              .left-sub-tab
-                | Advanced
-                b 0
-              .left-sub-tab
-                | Rejected
-                b 0
             .left-tab(data='.view-b')
-              | My Interviews
+              | Interviews
               b 3
             .left-sub-tabs.tab-closed.view-b
               .left-sub-tab
@@ -44,7 +35,7 @@ block body
                 | Onsite Interviews
                 b 1
             .left-tab(data='.view-c')
-              | My Decisions
+              | Decisions
               b 1
             .left-sub-tabs.tab-closed.view-c
               .left-sub-tab
@@ -53,51 +44,44 @@ block body
               .left-sub-tab
                 | Onsite Decision
                 b 0
-            //-.left-separator
-            //-.left-title Positions
-            //-.left-checkgroup
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Design
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Engineering
-            //-.left-title Filters
-            //-.left-checkgroup
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Resume
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Cover Letter
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Recommendation
         
         .pure-u-3-5
           .content(data-step='4', data-intro='The list of new candidates to be managed.  Personal info on the left, recruitment info on the right, action item in blue.', data-position='bottom')
             .content-header
+              .header-select
+                .select-box
+                span.oi(data-glyph='caret-bottom')
               .header-filter Materials
                 span.oi.oi-r(data-glyph='caret-bottom')
                 .header-dropdown
-                  div Resume
+                  div 
+                    //-span.oi.oi-l(data-glyph='check')
+                    | Resume
                     b 3
-                  div Portfolio
+                  div
+                    //-span.oi.oi-l(data-glyph='check')
+                    | Portfolio
                     b 2
               .header-action
                 span.oi.oi-l(data-glyph='magnifying-glass')
                 | Search
+              //- .header-filter.pull-right Most recent
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div Oldest first
+                  div First name
+                  div Last name
             .content-tasks.view-a
               .task
                 .task-body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Luke Dunphy
-                    span.info  Designer
+                    span.info  Software Engineer
                 .task-info
                   .status
                     | Unreviewed
-                  div 5 days ago
+                  div 2 days ago
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
@@ -108,7 +92,7 @@ block body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Gloria Pritchett
-                    span.info  Designer
+                    span.info  Product Manager
                 .task-info
                   .status
                     | Unreviewed
@@ -123,11 +107,11 @@ block body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Gob Bluth
-                    span.info  Designer
+                    span.info  Client Solutions
                 .task-info
                   .status
                     | Unreviewed
-                  div 5 days ago
+                  div 7 days ago
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.review-modal') Review
                   //-button.btn-flat.btn-delete.open-modal(data='.delete-modal')
@@ -137,13 +121,13 @@ block body
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Rob Stark
-                    span.info  Designer
+                    a.title(href='/candidate') Tobias Funke
+                    span.info  Data Wranger
                 .task-info
                   .status
                     span.oi.oi-l(data-glyph='box')
                     | Saved
-                  div 5 days ago
+                  div 10 days ago
                 .task-action
                   button.btn-flat.btn-blue.open-modal(data='.note-modal')
                     span.oi.oi-l(data-glyph='document')
@@ -165,8 +149,8 @@ block body
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Don Draper
-                    span.info Engineer
+                    a.title(href='/candidate') Jon Snow
+                    span.info UI Developer
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
               .task
@@ -182,7 +166,7 @@ block body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Lindsay Bluth
-                    span.info Designer
+                    span.info UI Designer
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
               .task
@@ -198,7 +182,7 @@ block body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Peggy Olson
-                    span.info Designer
+                    span.info Data Solutions
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
                             
@@ -207,8 +191,8 @@ block body
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Don Draper
-                    span.info Engineer
+                    a.title(href='/candidate') Jon Snow
+                    span.info UI Developer
                 .task-eval
                   .eval
                     .eval-score 10
@@ -216,7 +200,7 @@ block body
                   .status
                     span.oi.oi-l(data-glyph='headphones')
                     | Post Interview
-                  div 5 days ago 
+                  div 3 days ago 
                 .task-action
                   button.btn-flat.btn-blue
                     span.oi.oi-l(data-glyph='document')
@@ -233,12 +217,12 @@ block body
             .right-block.today-block
               span.time 11:00 AM PST 
               span.date Monday, January 20th
-            .right-block
+            //-.right-block
               .block-title Today
               .flow
                 .event.current-event
                   .date 12:00 PM
-                  .title Phone Interview with Don Draper
+                  .title Phone Interview with Jon Snow
                 .path
                 .event
                   .date 1:00 PM
@@ -247,3 +231,4 @@ block body
                 .event
                   .date 3:00 PM
                   .title Onsite Interview with Peggy Olson
+            include ./includes/activity.jade

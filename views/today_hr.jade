@@ -21,25 +21,25 @@ block body
             .left-title My Tasks
             .left-tab.tab-on(data='.view-a')
               | Notify Candidates
-              b 5
+              b 3
             .left-sub-tabs.view-a
               .left-sub-tab
                 | Advanced to Phone
-                b 1
+                b 0
               .left-sub-tab
                 | Advanced to Onsite
-                b 1
+                b 0
               .left-sub-tab
                 | Offer Extended
                 b 1
               .left-sub-tab
                 | Saved
-                b 2
+                b 1
               .left-sub-tab
                 | Rejected
-                b 0
+                b 1
             .left-tab(data='.view-b')
-              | Schedule Interviews
+              | Manage Phone Interviews
               b 1
             .left-sub-tabs.tab-closed.view-b
               .left-sub-tab
@@ -49,67 +49,65 @@ block body
                 | Scheduled
                 b 0
             .left-tab(data='.view-c')
-              | Update Offers
+              | Manage Onsite Interviews
               b 1
-            //-.left-tab(data='.view-c')
-              | Onsite Interviews
-              b 0
-            //-.left-sub-tabs.tab-closed.view-c
+            .left-sub-tabs.tab-closed.view-c
               .left-sub-tab
                 | Unscheduled
-                b 0
+                b 1
               .left-sub-tab
                 | Scheduled
                 b 0
-                
-            //-.left-separator
-            //-.left-title Positions
-            //-.left-checkgroup
-              div
-                //-b &#x25a2;
-                span.oi.oi-l(data-glyph='task')
-                | Design
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Engineering
-            //-.left-title Filters
-            //-.left-checkgroup
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Resume
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Cover Letter
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Recommendation
+            .left-tab(data='.view-d')
+              | Update Offers
+              b 1
               
         
         .pure-u-3-5
           .content(data-step='3', data-intro='Here is the list of candidates that need to be notified because of some status update.  Luke\'s application has been saved by the reviewer... the feedback attached will probably explain that more information is needed.  Gloria\'s application also has feedback, but she was rejected.  Gob has an offer extended to him, and you have to notify him via email.  Once you have notified the candidate, you click the "Notified" button, and the task is completed.', data-position='bottom')
             .content-header
-              //-div.tab-on.tab-a
-                | New Candidates
-                b 5
-              //-div.tab-b To Be Scheduled
-              //-div.header-action
-                span.oi.oi-l(data-glyph='plus')
-                | Add new candidate
+              .header-select
+                .select-box
+                span.oi(data-glyph='caret-bottom')
+              .header-filter All Positions
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div All Positions
+                    b 10
+                  div Designer
+                    b 5
+                  div Engineer
+                    b 2
+                  div Tester
+                    b 3  
+              .header-filter Materials
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div Resume
+                    b 3
+                  div Portfolio
+                    b 2
               .header-action
                 span.oi.oi-l(data-glyph='magnifying-glass')
                 | Search
+              //- .header-filter.pull-right Most recent
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div Oldest first
+                  div First name
+                  div Last name
             .content-tasks.view-a
               .task
                 .task-body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Luke Dunphy
-                    span.info  Advertising
+                    span.info  Software Engineering
                 .task-info
                   .status
                     span.oi.oi-l(data-glyph='box')
                     | Saved
-                  div 5 days ago
+                  div 2 days ago
                 .task-action
                   button.btn-flat.btn-blue.open-modal(data='.note-modal')
                     span.oi.oi-l(data-glyph='document')
@@ -120,7 +118,7 @@ block body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Gloria Pritchett
-                    span.info  Engineer
+                    span.info  Product Manager
                 .task-info
                   .status
                     span.oi.oi-l(data-glyph='x')
@@ -136,12 +134,12 @@ block body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Gob Bluth
-                    span.info Management
+                    span.info Client Solutions
                 .task-info
                   .status
                     span.oi.oi-l(data-glyph='check')
                     | Offer extended
-                  div 5 days ago
+                  div 7 days ago
                 .task-action
                   button.btn-bkg.btn-blue Notified
             .content-tasks.view-b 
@@ -149,13 +147,13 @@ block body
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Don Draper
-                    span.info Designer
+                    a.title(href='/candidate') Jon Snow
+                    span.info UI Developer
                 .task-info
                   .status
                     span.oi.oi-l(data-glyph='headphones')
                     | Unscheduled
-                  div 5 days ago
+                  div 4 days ago
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.schedule-modal')
                     span.oi.oi-l(data-glyph='calendar')
@@ -165,7 +163,7 @@ block body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Linsday Bluth
-                    span.info Engineer
+                    span.info UI Designer
                 .task-arrow
                   span.oi(data-glyph='arrow-right')
                 .task-body
@@ -188,21 +186,4 @@ block body
             .right-block.today-block
               span.time 3:00 PM PST 
               span.date Monday, January 5th
-            //-.right-block
-              .block-title Today
-              .flow
-                .event
-                  .date 9:00 AM
-                  .title Phone Interview with John Smith
-                .path
-                .event
-                  .date 11:00 AM
-                  .title Phone Interview with Nick Cage
-                .path
-                .event
-                  .date 3:00 PM
-                  .title Onsite Interview with Jessica Martin
-                .path
-                .event.current-event
-                  .date 4:30 PM
-                  .title Onsite Interview with Bob Barley
+            include ./includes/activity.jade

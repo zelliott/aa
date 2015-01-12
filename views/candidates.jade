@@ -18,17 +18,17 @@ block body
             .left-add.open-modal(data='.add-modal')
               span.oi.oi-l(data-glyph='plus')
               | Add new candidate 
-            .left-title Active Candidates
+            .left-title Applicants
+              //- b 0
             .left-tab.tab-on(data='.view-a')
-              | New
-              b 0
-            .left-sub-tabs.view-a
-              .left-sub-tab
-                | Unreviewed
-                b 0
-              .left-sub-tab
-                | Saved
-                b 0
+              | Unreviewed
+              b 3
+            .left-tab(data='.view-b')
+              | Saved
+              b 2
+            .left-separator
+            .left-title Active Candidates
+              //- b 10
             .left-tab(data='.view-c')
               | Phone Interviews
               b 5
@@ -44,14 +44,14 @@ block body
                 b 0
             .left-tab(data='.view-d')
               | Onsite Interviews
-              b 0
+              b 3
             .left-sub-tabs.view-d.tab-closed
               .left-sub-tab
                 | Unscheduled
-                b 0
+                b 2
               .left-sub-tab
                 | Scheduled
-                b 0
+                b 1
               .left-sub-tab
                 | Post Interview
                 b 0
@@ -69,7 +69,7 @@ block body
                 | Declined
                 b 1
             .left-separator
-            .left-tab(data='.view-b', data-step='3', data-intro='Active candidates are those who are in the recruitment system and still being considered.', data-position='right')
+            //-.left-tab(data='.view-b', data-step='3', data-intro='Active candidates are those who are in the recruitment system and still being considered.', data-position='right')
               | Active
               b 10
             .left-tab(data='.view-f', data-step='4', data-intro='Candidates who weren\'t a good fit for some reason.  These candidates are no longer considered active.', data-position='right')
@@ -78,30 +78,9 @@ block body
             .left-tab(data='.view-g', data-step='5', data-intro='No candidate is ever removed from this app.  Instead, after a certain amount of time inactive (a month or so) the candidate is archived.  This way, candidates who re-apply will already have a bunch of useful data in the system.  We can also search for candidates who we previously interviewed/recruited.', data-position='right')
               | Archived
               b 1000
-            .left-tab(data='.view-h', data-step='6', data-intro='Active + Rejected + Archived = All', data-position='right')
+            //-.left-tab(data='.view-h', data-step='6', data-intro='Active + Rejected + Archived = All', data-position='right')
               | All
-              b 1150  
-            .left-separator
-            //-.left-title Positions
-            //-.left-checkgroup
-              div
-                //-b &#x25a2;
-                span.oi.oi-l(data-glyph='task')
-                | Design
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Engineering
-            //-.left-title Filters
-            //-.left-checkgroup
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Resume
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Cover Letter
-              div
-                span.oi.oi-l(data-glyph='task')
-                | Recommendation
+              b 1150
               
         
         .pure-u-3-5
@@ -111,16 +90,30 @@ block body
               .view-desc All candidates being reviewed or interviewed in the system.
               span.oi(data-glyph='x')
             .content-header
+              .header-select
+                .select-box
+                span.oi(data-glyph='caret-bottom')
+              .header-filter All Departments.
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div All Departments.
+                    b 21
+                  div Design
+                    b 8
+                  div Engineering
+                    b 7
+                  div Product
+                    b 6  
               .header-filter All Positions
                 span.oi.oi-r(data-glyph='caret-bottom')
                 .header-dropdown
                   div All Positions
                     b 10
-                  div Designer
+                  div UI Designer
                     b 5
-                  div Engineer
+                  div UI Developer
                     b 2
-                  div Tester
+                  div Software Engineer
                     b 3  
               .header-filter Materials
                 span.oi.oi-r(data-glyph='caret-bottom')
@@ -129,12 +122,21 @@ block body
                     b 3
                   div Portfolio
                     b 2
-              //-.header-action.open-modal(data='.add-modal')
-                span.oi.oi-l(data-glyph='plus')
-                | Add new candidate
+              //-.header-filter.pull-right by first name
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div first name
+                  div last name
+                  div position
               .header-action
                 span.oi.oi-l(data-glyph='magnifying-glass')
                 | Search
+              //- .header-filter.pull-right Most recent
+                span.oi.oi-r(data-glyph='caret-bottom')
+                .header-dropdown
+                  div Oldest first
+                  div First name
+                  div Last name
             .content-tasks.view-b
             .content-tasks.view-a
               .task
@@ -142,16 +144,16 @@ block body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Luke Dunphy
-                    span.info  Advertising
+                    span.info  Software Engineer
                 .task-info
                   .status Unreviewed
-                  div 5 days ago
+                  div 2 days ago
               .task    
                 .task-body
                   .body-icon
                   .body-info
                     a.title(href='/candidate') Gloria Pritchett
-                    span.info  Engineer
+                    span.info Product Manager
                 .task-info
                   .status Unreviewed
                   div 5 days ago
@@ -159,41 +161,83 @@ block body
                 .task-body
                   .body-icon
                   .body-info
+                    a.title(href='/candidate') Don Draper
+                    span.info Sales Executive
+                .task-info
+                  .status Unreviewed
+                  div 7 days ago
+            .content-tasks.view-b
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
                     a.title(href='/candidate') Gob Bluth
-                    span.info  Management
+                    span.info  Client Solutions
                 .task-info
                   .status
                     span.oi.oi-l(data-glyph='box')
                     | Saved
-                  div 5 days ago
+                  div 7 days ago
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Jon Snow
+                    span.info  UI Developer
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='box')
+                    | Saved
+                  div 10 days ago
             .content-tasks.view-c
               .task
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Don Draper
-                    span.info  Designer
+                    a.title(href='/candidate') Jon Snow
+                    span.info  UI Developer
                 .task-info
                   .status
                     span.oi.oi-l(data-glyph='headphones')
                     | Unscheduled
-                  div 5 days ago
+                  div 3 days ago
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.schedule-modal')
                     span.oi.oi-l(data-glyph='calendar')
                     | Schedule
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Linsday Bluth
+                    span.info UI Designer
+                .task-arrow
+                  span.oi(data-glyph='arrow-right')
+                .task-body
+                  .body-info
+                    a.title(href='') Michael Bluth
+                    span.info 1/20/2015 at 1:00 PM
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='headphones')
+                    | Scheduled
+                  div 5 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.schedule-modal')
+                    span.oi.oi-l(data-glyph='calendar')
+                    | Reschedule
             .content-tasks.view-d
               .task
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Don Draper
-                    span.info  Designer
+                    a.title(href='/candidate') Jon Snow
+                    span.info  UI Developer
                 .task-info
                   .status
                     span.oi.oi-l(data-glyph='home')
                     | Unscheduled
-                  div 5 days ago
+                  div 4 days ago
                 .task-action
                   button.btn-bkg.btn-blue.open-modal(data='.schedule-modal')
                     span.oi.oi-l(data-glyph='calendar')
@@ -203,12 +247,12 @@ block body
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Don Draper
-                    span.info  Designer
+                    a.title(href='/candidate') Jon Snow
+                    span.info  UI Developer
                 .task-info
                   .status
                     | Offer extended
-                  div 5 days ago
+                  div 3 days ago
                 .task-action
                   button.btn-bkg.btn-blue
                     span.oi.oi-l(data-glyph='check')
@@ -216,17 +260,31 @@ block body
                   button.btn-flat.btn-gray
                     span.oi.oi-l(data-glyph='x')
                     | Declined
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Gloria Pritchett
+                    span.info  Product Manager
+                .task-info
+                  .status
+                    | Offer extended
+                  div 6 days ago
+                .task-action
+                  button.btn-flat.btn-green
+                    span.oi.oi-l(data-glyph='check')
+                    | Accepted
             .content-tasks.view-f
               .task
                 .task-body
                   .body-icon
                   .body-info
-                    a.title(href='/candidate') Don Draper
-                    span.info  Designer
+                    a.title(href='/candidate') Jon Snow
+                    span.info  UI Developer
                 .task-info
                   .status
                     | Rejected
-                  div 5 days ago
+                  div 16 days ago
                 .task-action
                   button.btn-flat.btn-blue.open-modal(data='.note-modal')
                     span.oi.oi-l(data-glyph='document')
@@ -237,21 +295,4 @@ block body
             .right-block.today-block
               span.time 3:00 PM PST 
               span.date Monday, January 5th
-            //-.right-block
-              .block-title Today
-              .flow
-                .event
-                  .date 9:00 AM
-                  .title Phone Interview with John Smith
-                .path
-                .event
-                  .date 11:00 AM
-                  .title Phone Interview with Nick Cage
-                .path
-                .event
-                  .date 3:00 PM
-                  .title Onsite Interview with Jessica Martin
-                .path
-                .event.current-event
-                  .date 4:30 PM
-                  .title Onsite Interview with Bob Barley
+            include ./includes/activity.jade

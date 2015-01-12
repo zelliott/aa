@@ -28,6 +28,15 @@ button {
   }
 }
 
+.btn-flat.btn-green {
+  color: palette(Teal, $shade: 400);
+
+  // &:hover {
+  //   background: palette(Teal, $shade: 50);
+  //   color: palette(Teal, $shade: 600);
+  // }
+}
+
 .btn-flat.btn-gray {
   color: #999;
 

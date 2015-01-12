@@ -10,25 +10,6 @@
         height: 100vh;
         padding-bottom: 40px;
 
-        // .left-search {
-        //   background: #111;
-        //
-        //   span {
-        //     background: #111;
-        //     color: #666;
-        //     font-size: 12px;
-        //     padding: 0 0 0 20px;
-        //   }
-        //
-        //   input {
-        //     background: transparent;
-        //     border: none;
-        //     color: #666;
-        //     font-size: 13px;
-        //     padding: 21px 20px;
-        //   }
-        // }
-
         .left-add {
           background: #111;
           border-bottom: 1px solid #000;
@@ -59,6 +40,11 @@
           font-size: 14px;
           font-weight: 600;
           padding: 20px 20px 10px 20px;
+
+          b {
+            float: right;
+            font-weight: 600;
+          }
         }
 
         .left-separator {
@@ -145,6 +131,31 @@
 
         .content-header {
 
+          .header-select {
+            cursor: pointer;
+            display: inline-block;
+            float: left;
+            margin-left: 13px;
+
+            .select-box {
+              border: 2px solid #bbb;
+              display: inline-block;
+              height: 10px;
+              width: 10px;
+              margin: 22px 10px 0 0;
+            }
+
+            span {
+              font-size: 10px;
+              float: right;
+              margin-top: 1px;
+            }
+
+            &:hover .select-box {
+              border-color: #888;
+            }
+          }
+
           .header-filter {
             color: #999;
             cursor: pointer;
@@ -171,7 +182,8 @@
             left: 0px;
             line-height: normal;
             top: 15px;
-            width: 130px;
+            width: 150px;
+            z-index: 100;
 
             div:first-child {
               padding: 10px;
@@ -481,6 +493,55 @@
             .future-event {
               color: palette(Teal, $shade: 400);
               font-weight: 500;
+            }
+          }
+
+          .activity-chunk {
+            cursor: pointer;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-left: -20px;
+            padding-left: 20px;
+            border-top: 1px solid #d6d6d6;
+            width: calc(100% + 20px);
+
+            &:hover {
+              background: #ddd;
+            }
+
+            &:hover .body {
+              color: #444;
+
+              a {
+                border-bottom-color: palette(Blue, $shade: 300);
+                color: palette(Blue, $shade: 500);
+
+                &:hover {
+                  border-bottom-color: palette(Blue, $shade: 400);
+                  color: palette(Blue, $shade: 700);
+                }
+              }
+            }
+
+            &:hover .time {
+              color: #777;
+            }
+
+            .body {
+              color: #777;
+              font-size: 13px;
+              padding-right: 20px;
+
+              a {
+                border-bottom: 1px dotted #999;
+                color: #444;
+              }
+            }
+
+            .time {
+              color: #999;
+              font-size: 12px;
+              margin-bottom: 5px;
             }
           }
         }

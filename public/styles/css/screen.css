@@ -814,6 +814,9 @@ button {
     background: #FFEBEE;
     color: #C62828; }
 
+.btn-flat.btn-green {
+  color: #26A69A; }
+
 .btn-flat.btn-gray {
   color: #999; }
   .btn-flat.btn-gray:hover {
@@ -1396,7 +1399,7 @@ input[type=range]::-webkit-slider-thumb {
       .today-bkg .container .candidate .content .content-header .header-action span.oi,
       .today-bkg .container .today .content .content-header .header-action span.oi {
         cursor: pointer;
-        font-size: 10px; }
+        font-size: 11px; }
       .candidate-bkg .container .candidate .content .content-header .header-action:hover,
       .candidate-bkg .container .today .content .content-header .header-action:hover,
       .today-bkg .container .candidate .content .content-header .header-action:hover,
@@ -2010,6 +2013,9 @@ input[type=range]::-webkit-slider-thumb {
       font-size: 14px;
       font-weight: 600;
       padding: 20px 20px 10px 20px; }
+      .today-bkg .container .today .left-nav .left-title b {
+        float: right;
+        font-weight: 600; }
     .today-bkg .container .today .left-nav .left-separator {
       border-top: 1px solid #333;
       margin: 10px 0; }
@@ -2059,6 +2065,23 @@ input[type=range]::-webkit-slider-thumb {
       .today-bkg .container .today .left-nav .tab-on:hover {
         background: #444;
         color: #eee; }
+  .today-bkg .container .today .content .content-header .header-select {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin-left: 13px; }
+    .today-bkg .container .today .content .content-header .header-select .select-box {
+      border: 2px solid #bbb;
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      margin: 22px 10px 0 0; }
+    .today-bkg .container .today .content .content-header .header-select span {
+      font-size: 10px;
+      float: right;
+      margin-top: 1px; }
+    .today-bkg .container .today .content .content-header .header-select:hover .select-box {
+      border-color: #888; }
   .today-bkg .container .today .content .content-header .header-filter {
     color: #999;
     cursor: pointer;
@@ -2081,7 +2104,8 @@ input[type=range]::-webkit-slider-thumb {
     left: 0px;
     line-height: normal;
     top: 15px;
-    width: 130px; }
+    width: 150px;
+    z-index: 100; }
     .today-bkg .container .today .content .content-header .header-dropdown div:first-child {
       padding: 10px; }
     .today-bkg .container .today .content .content-header .header-dropdown div {
@@ -2284,5 +2308,36 @@ input[type=range]::-webkit-slider-thumb {
     .today-bkg .container .today .right-info .right-block .flow .future-event {
       color: #26A69A;
       font-weight: 500; }
+    .today-bkg .container .today .right-info .right-block .activity-chunk {
+      cursor: pointer;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-left: -20px;
+      padding-left: 20px;
+      border-top: 1px solid #d6d6d6;
+      width: calc(100% + 20px); }
+      .today-bkg .container .today .right-info .right-block .activity-chunk:hover {
+        background: #ddd; }
+      .today-bkg .container .today .right-info .right-block .activity-chunk:hover .body {
+        color: #444; }
+        .today-bkg .container .today .right-info .right-block .activity-chunk:hover .body a {
+          border-bottom-color: #64B5F6;
+          color: #2196F3; }
+          .today-bkg .container .today .right-info .right-block .activity-chunk:hover .body a:hover {
+            border-bottom-color: #42A5F5;
+            color: #1976D2; }
+      .today-bkg .container .today .right-info .right-block .activity-chunk:hover .time {
+        color: #777; }
+      .today-bkg .container .today .right-info .right-block .activity-chunk .body {
+        color: #777;
+        font-size: 13px;
+        padding-right: 20px; }
+        .today-bkg .container .today .right-info .right-block .activity-chunk .body a {
+          border-bottom: 1px dotted #999;
+          color: #444; }
+      .today-bkg .container .today .right-info .right-block .activity-chunk .time {
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 5px; }
 
 /*# sourceMappingURL=screen.css.map */
