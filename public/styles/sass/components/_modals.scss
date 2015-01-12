@@ -301,20 +301,22 @@
 .review-modal {
   overflow: hidden;
   padding: 0;
-  width: 900px;
+  width: 1000px;
 
   .modal-nav-bar {
-    background: #444;
+    border-bottom: 1px solid #ddd;
+    background: #eee;
     padding: 7px 20px;
 
     div {
-      color: #ccc;
+      color: #999;
       cursor: pointer;
       display: inline-block;
       font-size: 12px;
+      font-weight: 600;
 
       &:hover {
-        color: #fff;
+        color: #666;
       }
 
       span.oi {
@@ -399,24 +401,40 @@
     background: #777;
 
     .modal-side-nav {
-      border-right: 1px solid #666;
+      background: #666;
+      border-right: 1px solid #555;
       display: inline-block;
       height: 406px;
       padding: 20px;
       vertical-align: top;
 
-      img {
-        @include box-shadow(0, 0, 5px, #444);
-        height: 100px;
-        width: 80px;
+      &:hover {
+        background: #555;
+        border-color: #444;
       }
 
-      .img-title {
-        color: #eee;
+      // img {
+      //   @include box-shadow(0, 0, 5px, #444);
+      //   height: 100px;
+      //   width: 80px;
+      // }
+      //
+      // .img-title {
+      //   color: #eee;
+      //   font-size: 14px;
+      //   margin-top: 5px;
+      //   text-align: center;
+      //   width: 80px;
+      // }
+
+      textarea {
+        background: transparent;
+        border: none;
+        color: #ccc;
         font-size: 14px;
-        margin-top: 5px;
-        text-align: center;
-        width: 80px;
+        height: 406px;
+        width: 210px;
+        resize: none;
       }
     }
 
@@ -428,7 +446,7 @@
       img {
         @include box-shadow(0, 0, 5px, #444);
         height: 400px;
-        width: 738px;
+        width: 698px;
       }
     }
   }

@@ -1079,17 +1079,19 @@ textarea:focus {
 .review-modal {
   overflow: hidden;
   padding: 0;
-  width: 900px; }
+  width: 1000px; }
   .review-modal .modal-nav-bar {
-    background: #444;
+    border-bottom: 1px solid #ddd;
+    background: #eee;
     padding: 7px 20px; }
     .review-modal .modal-nav-bar div {
-      color: #ccc;
+      color: #999;
       cursor: pointer;
       display: inline-block;
-      font-size: 12px; }
+      font-size: 12px;
+      font-weight: 600; }
       .review-modal .modal-nav-bar div:hover {
-        color: #fff; }
+        color: #666; }
       .review-modal .modal-nav-bar div span.oi {
         font-size: 10px; }
     .review-modal .modal-nav-bar div:not(.pull-right) span.oi {
@@ -1142,23 +1144,23 @@ textarea:focus {
   .review-modal .modal-viewing {
     background: #777; }
     .review-modal .modal-viewing .modal-side-nav {
-      border-right: 1px solid #666;
+      background: #666;
+      border-right: 1px solid #555;
       display: inline-block;
       height: 406px;
       padding: 20px;
       vertical-align: top; }
-      .review-modal .modal-viewing .modal-side-nav img {
-        -webkit-box-shadow: 0 0 5px #444;
-        -moz-box-shadow: 0 0 5px #444;
-        box-shadow: 0 0 5px #444;
-        height: 100px;
-        width: 80px; }
-      .review-modal .modal-viewing .modal-side-nav .img-title {
-        color: #eee;
+      .review-modal .modal-viewing .modal-side-nav:hover {
+        background: #555;
+        border-color: #444; }
+      .review-modal .modal-viewing .modal-side-nav textarea {
+        background: transparent;
+        border: none;
+        color: #ccc;
         font-size: 14px;
-        margin-top: 5px;
-        text-align: center;
-        width: 80px; }
+        height: 406px;
+        width: 210px;
+        resize: none; }
     .review-modal .modal-viewing .modal-doc-view {
       display: inline-block;
       padding: 20px;
@@ -1168,7 +1170,7 @@ textarea:focus {
         -moz-box-shadow: 0 0 5px #444;
         box-shadow: 0 0 5px #444;
         height: 400px;
-        width: 738px; }
+        width: 698px; }
 
 input[type=range] {
   -webkit-appearance: none !important;

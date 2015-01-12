@@ -180,6 +180,40 @@ block body
                   button.btn-bkg.btn-blue.open-modal(data='.schedule-modal')
                     span.oi.oi-l(data-glyph='calendar')
                     | Reschedule
+            .content-tasks.view-c
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Don Draper
+                    span.info Sales Executive
+                .task-info
+                  .status
+                    span.oi.oi-l(data-glyph='home')
+                    | Unscheduled
+                  div 3 days ago
+                .task-action
+                  button.btn-bkg.btn-blue.open-modal(data='.schedule-modal')
+                    span.oi.oi-l(data-glyph='calendar')
+                    | Schedule
+            .content-tasks.view-d
+              .task
+                .task-body
+                  .body-icon
+                  .body-info
+                    a.title(href='/candidate') Jon Snow
+                    span.info  UI Developer
+                .task-info
+                  .status
+                    | Offer extended
+                  div 3 days ago
+                .task-action
+                  button.btn-bkg.btn-blue
+                    span.oi.oi-l(data-glyph='check')
+                    | Accepted
+                  button.btn-flat.btn-gray
+                    span.oi.oi-l(data-glyph='x')
+                    | Declined
           
         .pure-u-1-5
           .right-info
